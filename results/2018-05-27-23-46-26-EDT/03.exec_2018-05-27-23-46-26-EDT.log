@@ -1,356 +1,0 @@
-###################################
-START AT: 2018-05-27-23:46:45
-###################################
-
-
-##### 01.interactive.e2e.py ######
-  0%|          | 0/20 [00:00<?, ?it/s]  5%|▌         | 1/20 [00:02<00:39,  2.06s/it] 10%|█         | 2/20 [00:03<00:34,  1.89s/it] 15%|█▌        | 3/20 [00:05<00:31,  1.86s/it] 20%|██        | 4/20 [00:07<00:28,  1.80s/it] 25%|██▌       | 5/20 [00:08<00:26,  1.77s/it] 30%|███       | 6/20 [00:10<00:24,  1.75s/it] 35%|███▌      | 7/20 [00:12<00:22,  1.73s/it] 40%|████      | 8/20 [00:13<00:20,  1.72s/it] 45%|████▌     | 9/20 [00:15<00:18,  1.71s/it] 50%|█████     | 10/20 [00:16<00:16,  1.70s/it] 55%|█████▌    | 11/20 [00:18<00:15,  1.70s/it] 60%|██████    | 12/20 [00:20<00:13,  1.69s/it] 65%|██████▌   | 13/20 [00:21<00:11,  1.69s/it] 70%|███████   | 14/20 [00:23<00:10,  1.69s/it] 75%|███████▌  | 15/20 [00:25<00:08,  1.68s/it] 80%|████████  | 16/20 [00:26<00:06,  1.68s/it] 85%|████████▌ | 17/20 [00:34<00:06,  2.02s/it] 90%|█████████ | 18/20 [00:36<00:04,  2.01s/it] 95%|█████████▌| 19/20 [00:37<00:01,  1.98s/it]100%|██████████| 20/20 [00:39<00:00,  1.96s/it]
-0it [00:00, ?it/s]1it [00:00,  2.89it/s]2it [00:00,  2.93it/s]3it [00:01,  2.96it/s]4it [00:01,  2.92it/s]5it [00:01,  2.90it/s]6it [00:02,  2.91it/s]7it [00:02,  2.92it/s]8it [00:02,  2.92it/s]9it [00:03,  2.93it/s]10it [00:03,  2.92it/s]11it [00:03,  2.91it/s]12it [00:04,  2.92it/s]13it [00:04,  2.92it/s]14it [00:04,  2.92it/s]15it [00:05,  2.93it/s]16it [00:05,  2.93it/s]17it [00:05,  2.92it/s]18it [00:06,  2.91it/s]19it [00:06,  2.92it/s]20it [00:06,  2.92it/s]
-Client-Request-ID=e04826cd-6229-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 28 May 2018 03:47:43 GMT, Server-Request-ID=2b7f0d52-101e-00c4-3936-f62bf7000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:2b7f0d52-101e-00c4-3936-f62bf7000000Time:2018-05-28T03:47:43.9202789Z</Message></Error>.
-Client-Request-ID=e04826cf-6229-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 28 May 2018 03:47:43 GMT, Server-Request-ID=7230412c-d01e-005a-3836-f652b0000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7230412c-d01e-005a-3836-f652b0000000Time:2018-05-28T03:47:44.3228071Z</Message></Error>.
-Client-Request-ID=e04826d1-6229-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 28 May 2018 03:47:44 GMT, Server-Request-ID=53a91ec7-801e-002f-4936-f6d50b000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:53a91ec7-801e-002f-4936-f6d50b000000Time:2018-05-28T03:47:44.4890378Z</Message></Error>.
-Client-Request-ID=e04826d3-6229-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 28 May 2018 03:47:44 GMT, Server-Request-ID=b528728e-f01e-012f-7f36-f6935e000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b528728e-f01e-012f-7f36-f6935e000000Time:2018-05-28T03:47:44.6512328Z</Message></Error>.
-Client-Request-ID=e04826d5-6229-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 28 May 2018 03:47:44 GMT, Server-Request-ID=ac4b5d99-e01e-00da-0836-f6f11a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ac4b5d99-e01e-00da-0836-f6f11a000000Time:2018-05-28T03:47:44.8112611Z</Message></Error>.
-Azure ML Core SDK Version: 0.1.0.972625
-Found config.json in: /data/git/ViennaTest/results/2018-05-27-23-46-26-EDT/scripts/aml_config/config.json
-Workspace details:
-aml-notebooks haieastus2ws3 eastus2
-Find the best run.
-Best run is: fec15a3d-124c-4bf2-bb15-6975f94fe906
-Metrics: {'alpha': 0.4, 'mse': 3295.741064355809, 'columns': ['age', 'gender', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6']}
-Run history url:
-https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-01/run-history/run-details/fec15a3d-124c-4bf2-bb15-6975f94fe906
-plot mse_over_alpha.png
-upload mse_over_alpha.png.
-deploying to ACI...
-Registering model: best_model.pkl
-Creating image
-Traceback (most recent call last):
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 1014, in create_image
-    resp.raise_for_status()
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
-    raise HTTPError(http_error_msg, response=self)
-requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://eastus2.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/images?api-version=2018-03-01-preview
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "./01.interactive.e2e.py", line 139, in <module>
-    driver = 'score.py')
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 900, in deploy_webservice
-    enable_gpu, tags, description)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 1021, in create_image
-    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
-azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
-Response Code: 404
-Headers: {'Date': 'Mon, 28 May 2018 03:47:21 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '9147e4c993ef4faaa8f83e9a4548943c', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload', 'Content-Encoding': 'gzip'}
-Content: b'{"code":"NotFound","statusCode":404,"message":"The specified resource was not found","details":[{"code":"NoSuchModelRegistered","message":"One ore more models are not registered in Account Subscription: fac34303-435d-4486-8c3f-7094d82a0b60, ResourceGroup: aml-notebooks, Account: haieastus2ws3."}]}'
-
-
-##### 02.lcoal.py ################
-Azure ML Core SDK Version: 0.1.0.972625
-Found config.json in: /data/git/ViennaTest/results/2018-05-27-23-46-26-EDT/scripts/aml_config/config.json
-Workspace details:
-aml-notebooks haieastus2ws3 eastus2
-/tmp/e2e-test/02 already exists, remove it.
-/tmp/e2e-test/02
-e2e-02
-copy train-sklearn.py to the project folder.
-load run config
-
-##################################################
-submitting train-sklearn.py for a local run...
-##################################################
-
-https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-02/run-history/run-details/e2e-02_1527479266
-RunId: e2e-02_1527479266
-
-Streaming azureml-logs/60_control_log.txt
-=========================================
-
-Uploading experiment status to history service.
-Adding run profile attachment azureml-logs/60_control_log.txt
-Running: ['python', 'azureml-setup/run_script.py', 'python', 'azureml-setup/context_manager_injector.py', '-i', 'OutputCollection:context_managers.RunHistory', 'train-sklearn.py']
-Logging experiment running status in history service.
-Uploading experiment status to history service.
-Adding run profile attachment azureml-logs/80_driver_log.txt
-
-Streaming azureml-logs/80_driver_log.txt
-========================================
-
-alpha is 0.00, and mse is 3424.32
-alpha is 0.05, and mse is 3408.92
-alpha is 0.10, and mse is 3372.65
-alpha is 0.15, and mse is 3345.15
-alpha is 0.20, and mse is 3325.29
-alpha is 0.25, and mse is 3311.56
-alpha is 0.30, and mse is 3302.67
-alpha is 0.35, and mse is 3297.66
-alpha is 0.40, and mse is 3295.74
-alpha is 0.45, and mse is 3296.32
-alpha is 0.50, and mse is 3298.91
-alpha is 0.55, and mse is 3303.14
-alpha is 0.60, and mse is 3308.70
-alpha is 0.65, and mse is 3315.36
-alpha is 0.70, and mse is 3322.90
-alpha is 0.75, and mse is 3331.17
-alpha is 0.80, and mse is 3340.02
-alpha is 0.85, and mse is 3349.36
-alpha is 0.90, and mse is 3359.09
-alpha is 0.95, and mse is 3369.13
-The experiment completed successfully. Starting post-processing steps.
-
-Execution Summary
-=================
-RunId: e2e-02_1527479266
-
-
-##################################################
-Submitting train-sklearn.py for a local conda run...
-##################################################
-
-https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-02/run-history/run-details/e2e-02_1527479288
-RunId: e2e-02_1527479288
-
-Streaming azureml-logs/80_driver_log.txt
-========================================
-
-alpha is 0.00, and mse is 3424.32
-alpha is 0.05, and mse is 3408.92
-alpha is 0.10, and mse is 3372.65
-alpha is 0.15, and mse is 3345.15
-alpha is 0.20, and mse is 3325.29
-alpha is 0.25, and mse is 3311.56
-alpha is 0.30, and mse is 3302.67
-alpha is 0.35, and mse is 3297.66
-alpha is 0.40, and mse is 3295.74
-alpha is 0.45, and mse is 3296.32
-alpha is 0.50, and mse is 3298.91
-alpha is 0.55, and mse is 3303.14
-alpha is 0.60, and mse is 3308.70
-alpha is 0.65, and mse is 3315.36
-alpha is 0.70, and mse is 3322.90
-alpha is 0.75, and mse is 3331.17
-alpha is 0.80, and mse is 3340.02
-alpha is 0.85, and mse is 3349.36
-alpha is 0.90, and mse is 3359.09
-alpha is 0.95, and mse is 3369.13
-The experiment completed successfully. Starting post-processing steps.
-Traceback (most recent call last):
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 380, in _make_request
-    httplib_response = conn.getresponse(buffering=True)
-TypeError: getresponse() got an unexpected keyword argument 'buffering'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 69, in wait_for_completion
-    self._stream_run_output(file_handle=sys.stdout, wait_post_processing=wait_post_processing)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 201, in _stream_run_output
-    self._current_status = self.get_status()
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 136, in get_status
-    return self._get_run_status_with_retry(3)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 158, in _get_run_status_with_retry
-    return _commands.run_status(self._project_object, self._run_config_object, self._run_id)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 558, in run_status
-    return _get_status_from_history(project_object, run_id, project_context)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 811, in _get_status_from_history
-    response = session.get(runstatus_uri, headers=headers)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 521, in get
-    return self.request('GET', url, **kwargs)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
-    resp = self.send(prep, **send_kwargs)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
-    r = adapter.send(request, **kwargs)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
-    timeout=timeout
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
-    chunked=chunked)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
-    httplib_response = conn.getresponse()
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 1331, in getresponse
-    response.begin()
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 297, in begin
-    version, status, reason = self._read_status()
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 258, in _read_status
-    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/socket.py", line 586, in readinto
-    return self._sock.recv_into(b)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/contrib/pyopenssl.py", line 280, in recv_into
-    return self.connection.recv_into(*args, **kwargs)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/OpenSSL/SSL.py", line 1813, in recv_into
-    result = _lib.SSL_read(self._ssl, buf, nbytes)
-KeyboardInterrupt
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "./02.local.py", line 84, in <module>
-    run.wait_for_completion(show_output = True)
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 79, in wait_for_completion
-    raise ExperimentExecutionException(error_message)
-azureml.exceptions.azureml_exception.ExperimentExecutionException: The output streaming for the run interrupted.
-But the run is still executing on the compute target. 
-To cancel the run, execute: az ml run cancel -r e2e-02_1527479288 -t local -p /tmp/e2e-test/02
-
-
-##### 03.aci.py ##################
-Traceback (most recent call last):
-  File "./03.aci.py", line 1, in <module>
-    import azureml.core
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/__init__.py", line 5, in <module>
-    from azureml.core.workspace import Workspace
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 24, in <module>
-    from azureml.core import project
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 14, in <module>
-    from azureml.core.run_history import RunHistory
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run_history.py", line 9, in <module>
-    from azureml.core.run import Run
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 13, in <module>
-    from azureml.assets.persistence import persistence
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/assets/persistence/__init__.py", line 33, in <module>
-    from azureml.assets.persistence import sklearn_persistence
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/assets/persistence/sklearn_persistence.py", line 6, in <module>
-    import sklearn
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/sklearn/__init__.py", line 134, in <module>
-    from .base import clone
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/sklearn/base.py", line 11, in <module>
-    from scipy import sparse
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/scipy/sparse/__init__.py", line 229, in <module>
-    from .csr import *
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/scipy/sparse/csr.py", line 15, in <module>
-    from ._sparsetools import csr_tocsc, csr_tobsr, csr_count_blocks, \
-KeyboardInterrupt
-
-
-##### 04.dsvm ####################
-Traceback (most recent call last):
-  File "./04.dsvm.py", line 1, in <module>
-    import azureml.core
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/__init__.py", line 5, in <module>
-    from azureml.core.workspace import Workspace
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 8, in <module>
-    import json
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/json/__init__.py", line 107, in <module>
-    from .encoder import JSONEncoder
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 670, in _load_unlocked
-KeyboardInterrupt
-
-
-##### 05.spark ###################
-Traceback (most recent call last):
-  File "./05.spark.py", line 1, in <module>
-    import azureml.core
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/__init__.py", line 5, in <module>
-    from azureml.core.workspace import Workspace
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 11, in <module>
-    import requests
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/__init__.py", line 43, in <module>
-    import urllib3
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/__init__.py", line 8, in <module>
-    from .connectionpool import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 29, in <module>
-    from .connection import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connection.py", line 50, in <module>
-    from ._collections import HTTPHeaderDict
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
-  File "<frozen importlib._bootstrap_external>", line 779, in get_code
-  File "<frozen importlib._bootstrap_external>", line 487, in _compile_bytecode
-KeyboardInterrupt
-
-
-##### 07.sklearn.hd.py ###########
-Traceback (most recent call last):
-  File "./07.sklearn.hd.py", line 1, in <module>
-    import azureml.core
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/__init__.py", line 5, in <module>
-    from azureml.core.workspace import Workspace
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 11, in <module>
-    import requests
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/__init__.py", line 43, in <module>
-    import urllib3
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/__init__.py", line 8, in <module>
-    from .connectionpool import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 29, in <module>
-    from .connection import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connection.py", line 39, in <module>
-    from .util.ssl_ import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/__init__.py", line 22, in <module>
-    from .url import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/url.py", line 14, in <module>
-    class Url(namedtuple('Url', url_attrs)):
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/collections/__init__.py", line 429, in namedtuple
-    exec(class_definition, namespace)
-  File "<string>", line 1, in <module>
-KeyboardInterrupt
-
-
-##### 08.tf.hd.py ################
-Traceback (most recent call last):
-  File "./08.tf.hd.py", line 1, in <module>
-    import azureml.core
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/__init__.py", line 5, in <module>
-    from azureml.core.workspace import Workspace
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 11, in <module>
-    import requests
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/__init__.py", line 43, in <module>
-    import urllib3
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/__init__.py", line 8, in <module>
-    from .connectionpool import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 29, in <module>
-    from .connection import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connection.py", line 39, in <module>
-    from .util.ssl_ import (
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/__init__.py", line 3, in <module>
-    from .connection import is_connection_dropped
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/connection.py", line 3, in <module>
-    from .wait import wait_for_read
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/wait.py", line 1, in <module>
-    from .selectors import (
-  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
-  File "<frozen importlib._bootstrap_external>", line 779, in get_code
-  File "<frozen importlib._bootstrap_external>", line 489, in _compile_bytecode
-  File "<frozen importlib._bootstrap>", line 224, in _verbose_message
-KeyboardInterrupt
-
-
-##### 10.o16n.py #################
-Traceback (most recent call last):
-  File "./10.o16n.py", line 1, in <module>
-    from sklearn.datasets import load_diabetes
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/sklearn/__init__.py", line 134, in <module>
-    from .base import clone
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/sklearn/base.py", line 10, in <module>
-    import numpy as np
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/__init__.py", line 158, in <module>
-    from . import add_newdocs
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/add_newdocs.py", line 13, in <module>
-    from numpy.lib import add_newdoc
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/lib/__init__.py", line 8, in <module>
-    from .type_check import *
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/lib/type_check.py", line 11, in <module>
-    import numpy.core.numeric as _nx
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/core/__init__.py", line 74, in <module>
-    from numpy.testing import _numpy_tester
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/testing/__init__.py", line 12, in <module>
-    from . import decorators as dec
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/testing/decorators.py", line 6, in <module>
-    from .nose_tools.decorators import *
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/testing/nose_tools/decorators.py", line 20, in <module>
-    from .utils import SkipTest, assert_warns
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/numpy/testing/nose_tools/utils.py", line 13, in <module>
-    import shutil
-  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/shutil.py", line 36, in <module>
-    from pwd import getpwnam
-KeyboardInterrupt
-
-
-########### END AT 2018-05-27-23:48:25
