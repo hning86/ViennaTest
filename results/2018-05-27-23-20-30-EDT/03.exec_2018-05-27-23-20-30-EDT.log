@@ -1,0 +1,175 @@
+###################################
+START AT: 2018-05-27-23:20:49
+###################################
+
+
+##### 01.interactive.e2e.py ######
+Azure ML Core SDK Version: 0.1.0.972625
+Found config.json in: /data/git/ViennaTest/results/2018-05-27-23-20-30-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+Find the best run.
+Best run is: 369ff1ed-aee4-42fd-85ff-8832d5ef1b26
+Metrics: {'alpha': 0.4, 'mse': 3295.741064355809, 'columns': ['age', 'gender', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6']}
+Run history url:
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-01/run-history/run-details/369ff1ed-aee4-42fd-85ff-8832d5ef1b26
+plot mse_over_alpha.png
+upload mse_over_alpha.png.
+deploying to ACI...
+Registering model: best_model.pkl
+Creating image
+
+
+##### 02.lcoal.py ################
+Azure ML Core SDK Version: 0.1.0.972625
+Found config.json in: /data/git/ViennaTest/results/2018-05-27-23-20-30-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/02 already exists, remove it.
+/tmp/e2e-test/02
+e2e-02
+copy train-sklearn.py to the project folder.
+load run config
+
+##################################################
+submitting train-sklearn.py for a local run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-02/run-history/run-details/e2e-02_1527477697
+RunId: e2e-02_1527477697
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/60_control_log.txt
+Running: ['python', 'azureml-setup/run_script.py', 'python', 'azureml-setup/context_manager_injector.py', '-i', 'OutputCollection:context_managers.RunHistory', 'train-sklearn.py']
+Logging experiment running status in history service.
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-02_1527477697
+
+
+##################################################
+Submitting train-sklearn.py for a local conda run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-02/run-history/run-details/e2e-02_1527477716
+RunId: e2e-02_1527477716
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/60_control_log.txt
+Creating Conda environment...
+Logging experiment preparation status in history service.
+
+CondaValueError: prefix already exists: /home/ninghai/.azureml/envs/azureml_b7bd945e51376e9efca4a23e2fbed66e
+
+
+
+
+Remove all packages in environment /home/ninghai/.azureml/envs/azureml_b7bd945e51376e9efca4a23e2fbed66e:
+
+
+## Package Plan ##
+
+  environment location: /home/ninghai/.azureml/envs/azureml_b7bd945e51376e9efca4a23e2fbed66e
+
+
+The following packages will be REMOVED:
+
+    ca-certificates: 2018.03.07-0        
+    certifi:         2018.4.16-py36_0    
+    libedit:         3.1-heed3624_0      
+    libffi:          3.2.1-hd88cf55_4    
+    libgcc-ng:       7.2.0-hdf63c60_3    
+    libstdcxx-ng:    7.2.0-hdf63c60_3    
+    ncurses:         6.0-h9df7e31_2      
+    openssl:         1.0.2o-h20670df_0   
+    pip:             10.0.1-py36_0       
+    psutil:          5.4.5-py36h14c3975_0
+    python:          3.6.2-hca45abc_19   
+    readline:        7.0-ha6073c6_4      
+    setuptools:      39.1.0-py36_0       
+    sqlite:          3.23.1-he433501_0   
+    tk:              8.6.7-hc745277_3    
+    wheel:           0.31.1-py36_0       
+    xz:              5.2.4-h14c3975_4    
+    zlib:            1.2.11-ha838bed_2   
+
+Proceed ([y]/n)? 
+
+
+Command '['conda', 'env', 'create', '-p', '/home/ninghai/.azureml/envs/azureml_b7bd945e51376e9efca4a23e2fbed66e', '-f', 'azureml-setup/mutated_conda_dependencies.yml']' returned non-zero exit status 1.
+Logging experiment failed status in history service.
+
+Execution Summary
+=================
+RunId: e2e-02_1527477716
+
+
+
+##### 03.aci.py ##################
+Azure ML Core SDK Version: 0.1.0.972625
+Found config.json in: /data/git/ViennaTest/results/2018-05-27-23-20-30-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/03
+e2e-03
+copy train-sklearn.py to the project folder.
+
+##################################################
+ACI run...
+##################################################
+
+Create a run config object for ACI
+base image is continuumio/miniconda3:4.4.10
+submitting run...
+
+
+##### 04.dsvm ####################
+
+
+##### 05.spark ###################
+
+
+##### 07.sklearn.hd.py ###########
+
+
+##### 08.tf.hd.py ################
+
+
+##### 10.o16n.py #################
+
+
+########### END AT 2018-05-27-23:22:19
