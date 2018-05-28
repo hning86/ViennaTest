@@ -1,0 +1,26 @@
+./update-daily.sh: 3: ./update-daily.sh: source: not found
+  Cache entry deserialization failed, entry ignored
+  Could not find a version that satisfies the requirement azureml-requirements (from versions: )
+No matching distribution found for azureml-requirements
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+  Cache entry deserialization failed, entry ignored
+  Could not find a version that satisfies the requirement azureml-contrib-tensorboard (from versions: )
+No matching distribution found for azureml-contrib-tensorboard
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+  Cache entry deserialization failed, entry ignored
+  Could not find a version that satisfies the requirement azureml-contrib-widgets (from versions: )
+No matching distribution found for azureml-contrib-widgets
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+  Cache entry deserialization failed, entry ignored
+  Could not find a version that satisfies the requirement azureml-contrib-daskonbatch (from versions: )
+No matching distribution found for azureml-contrib-daskonbatch
+You are using pip version 9.0.1, however version 10.0.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+./update-daily.sh: 10: ./update-daily.sh: jupyter: not found
+./update-daily.sh: 11: ./update-daily.sh: jupyter: not found
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: No module named azureml.core
