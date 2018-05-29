@@ -46,7 +46,7 @@ python ./08.tf.hd.py
 
 echo ""
 echo ""
-echo "##### 10.o16n.py #################"
+echo "##### 10.o16n.py ($(date + %F-%T)) #################"
 python ./10.o16n.py
 
 echo ""
