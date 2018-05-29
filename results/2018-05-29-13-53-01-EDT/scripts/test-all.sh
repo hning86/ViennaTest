@@ -6,7 +6,7 @@ echo "###################################"
 echo "START AT: $(date +%F-%T)"
 echo "###################################"
 
-source activate $env_name
+#. activate $env_name
 
 #python ./00.config.py
 
