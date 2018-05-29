@@ -1,0 +1,142 @@
+Client-Request-ID=3dabb8f0-6375-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 19:19:42 GMT, Server-Request-ID=5e2ef689-a01e-005a-7481-f7434e000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:5e2ef689-a01e-005a-7481-f7434e000000Time:2018-05-29T19:19:43.2856002Z</Message></Error>.
+Client-Request-ID=3dabb8f2-6375-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 19:19:43 GMT, Server-Request-ID=7628acbd-001e-0088-0e82-f7c0a0000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7628acbd-001e-0088-0e82-f7c0a0000000Time:2018-05-29T19:19:44.7495357Z</Message></Error>.
+Client-Request-ID=3dabb8f4-6375-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 19:19:44 GMT, Server-Request-ID=54007fe3-201e-0054-3482-f76afe000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:54007fe3-201e-0054-3482-f76afe000000Time:2018-05-29T19:19:44.9057657Z</Message></Error>.
+Client-Request-ID=3dabb8f6-6375-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 19:19:44 GMT, Server-Request-ID=e91e71d2-f01e-0078-6e82-f78651000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e91e71d2-f01e-0078-6e82-f78651000000Time:2018-05-29T19:19:45.0605511Z</Message></Error>.
+Client-Request-ID=3ecd7021-6375-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 19:19:44 GMT, Server-Request-ID=7d99003e-401e-0020-6582-f75e0e000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7d99003e-401e-0020-6582-f75e0e000000Time:2018-05-29T19:19:45.2210202Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 927, in deploy_webservice
+    resp.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://eastus2euap.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/services?api-version=2018-03-01-preview
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 142, in <module>
+    driver = 'score.py')
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 934, in deploy_webservice
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 409
+Headers: {'Date': 'Tue, 29 May 2018 19:21:20 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '236757c589444334b0f5efb5d4030d08', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"Conflict","statusCode":409,"message":"Conflict","details":[{"code":"ServiceWithNameExists","message":"Workspace haieastus2euapws already contains a Service with name: rrs01"}]}'
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 302, in _error_catcher
+    yield
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 380, in read
+    data = self._fp.read()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 462, in read
+    s = self._safe_read(self.length)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 614, in _safe_read
+    raise IncompleteRead(b''.join(s), amt)
+http.client.IncompleteRead: IncompleteRead(0 bytes read, 90 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 129, in <module>
+    hr = search(hrc, "sklearn-hyperdrive")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/hyperdrive/search.py", line 78, in search
+    auth_header['Authorization'])
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/apis/experiment_api.py", line 205, in create_experiment
+    (data) = self.create_experiment_with_http_info(arm_scope, config, authorization, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/apis/experiment_api.py", line 295, in create_experiment_with_http_info
+    _return_http_data_only=params.get('_return_http_data_only'))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/api_client.py", line 334, in call_api
+    response_type, auth_settings, callback, _return_http_data_only)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/api_client.py", line 157, in __call_api
+    post_params=post_params, body=body)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/api_client.py", line 370, in request
+    body=body)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/rest.py", line 217, in POST
+    body=body)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/rest.py", line 164, in request
+    headers=headers)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/poolmanager.py", line 321, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/retry.py", line 357, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 617, in urlopen
+    **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 467, in from_httplib
+    **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 159, in __init__
+    self._body = self.read(decode_content=decode_content)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 401, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 320, in _error_catcher
+    raise ProtocolError('Connection broken: %r' % e, e)
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(0 bytes read, 90 more expected)', IncompleteRead(0 bytes read, 90 more expected))
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 302, in _error_catcher
+    yield
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 380, in read
+    data = self._fp.read()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 462, in read
+    s = self._safe_read(self.length)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 614, in _safe_read
+    raise IncompleteRead(b''.join(s), amt)
+http.client.IncompleteRead: IncompleteRead(0 bytes read, 90 more expected)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 134, in <module>
+    hr = search(hrc, "sklearn-hyperdrive")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/hyperdrive/search.py", line 78, in search
+    auth_header['Authorization'])
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/apis/experiment_api.py", line 205, in create_experiment
+    (data) = self.create_experiment_with_http_info(arm_scope, config, authorization, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/apis/experiment_api.py", line 295, in create_experiment_with_http_info
+    _return_http_data_only=params.get('_return_http_data_only'))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/api_client.py", line 334, in call_api
+    response_type, auth_settings, callback, _return_http_data_only)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/api_client.py", line 157, in __call_api
+    post_params=post_params, body=body)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/api_client.py", line 370, in request
+    body=body)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/rest.py", line 217, in POST
+    body=body)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/restclients/hyperdrive/rest.py", line 164, in request
+    headers=headers)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/request.py", line 70, in request
+    **urlopen_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/request.py", line 148, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/poolmanager.py", line 321, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/retry.py", line 357, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/packages/six.py", line 686, in reraise
+    raise value
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 617, in urlopen
+    **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 467, in from_httplib
+    **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 159, in __init__
+    self._body = self.read(decode_content=decode_content)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 401, in read
+    raise IncompleteRead(self._fp_bytes_read, self.length_remaining)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/contextlib.py", line 99, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/response.py", line 320, in _error_catcher
+    raise ProtocolError('Connection broken: %r' % e, e)
+urllib3.exceptions.ProtocolError: ('Connection broken: IncompleteRead(0 bytes read, 90 more expected)', IncompleteRead(0 bytes read, 90 more expected))
+Client-Request-ID=f264ceb2-637a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 20:00:33 GMT, Server-Request-ID=94df5d7c-901e-0041-4587-f77d4d000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:94df5d7c-901e-0041-4587-f77d4d000000Time:2018-05-29T20:00:33.9711485Z</Message></Error>.
+Client-Request-ID=f428f1ec-637a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 20:00:36 GMT, Server-Request-ID=e55a0f96-901e-006e-6c87-f77086000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e55a0f96-901e-006e-6c87-f77086000000Time:2018-05-29T20:00:36.9337775Z</Message></Error>.
+Client-Request-ID=f428f1ee-637a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 20:00:37 GMT, Server-Request-ID=91d0c0ea-c01e-005c-2787-f770f1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:91d0c0ea-c01e-005c-2787-f770f1000000Time:2018-05-29T20:00:37.0914198Z</Message></Error>.
+Client-Request-ID=f428f1f0-637a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 20:00:36 GMT, Server-Request-ID=fcb841de-f01e-0057-2287-f78b9a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:fcb841de-f01e-0057-2287-f78b9a000000Time:2018-05-29T20:00:37.2493090Z</Message></Error>.
+Client-Request-ID=f428f1f2-637a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 29 May 2018 20:00:37 GMT, Server-Request-ID=1a9e5c02-e01e-0080-6b87-f7daaf000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:1a9e5c02-e01e-0080-6b87-f7daaf000000Time:2018-05-29T20:00:37.4082141Z</Message></Error>.

@@ -1,0 +1,2022 @@
+###################################
+START AT: 2018-05-29-15:18:39
+###################################
+. /home/ninghai/miniconda3/bin/activate daily
+/usr/bin/python
+/home/ninghai/miniconda3/envs/daily/bin/python
+/home/ninghai/miniconda3/envs/daily/bin/python
+###### azureml.core ########
+0.1.0.978900
+############################
+
+
+##### 01.interactive.e2e.py (2018-05-29-15:18:40) ######
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+start sequential parameter sweep...
+try alpha value of 0.00
+try alpha value of 0.05
+try alpha value of 0.10
+try alpha value of 0.15
+try alpha value of 0.20
+try alpha value of 0.25
+try alpha value of 0.30
+try alpha value of 0.35
+try alpha value of 0.40
+try alpha value of 0.45
+try alpha value of 0.50
+try alpha value of 0.55
+try alpha value of 0.60
+try alpha value of 0.65
+try alpha value of 0.70
+try alpha value of 0.75
+try alpha value of 0.80
+try alpha value of 0.85
+try alpha value of 0.90
+try alpha value of 0.95
+Find the best run.
+Best run is: 54d4a53e-65b3-4cef-b0e0-45e25985c6f2
+Metrics: {'alpha': 0.4, 'mse': 3295.741064355809, 'columns': ['age', 'gender', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6']}
+Run history url:
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-01/run-history/run-details/54d4a53e-65b3-4cef-b0e0-45e25985c6f2
+plot mse_over_alpha.png
+upload mse_over_alpha.png.
+deploying to ACI...
+Registering model: best_model.pkl
+Creating image
+Image creation operation finished for image rrs01:2, operation "Succeeded"
+Creating service
+
+
+##### 02.lcoal.py (2018-05-29-15:21:20) ################
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/02 already exists, remove it.
+/tmp/e2e-test/02
+e2e-02
+copy train-sklearn.py to the project folder.
+load run config
+
+##################################################
+submitting train-sklearn.py for a local run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-02/run-history/run-details/e2e-02_1527621683
+RunId: e2e-02_1527621683
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-02_1527621683
+
+
+##################################################
+Submitting train-sklearn.py for a local conda run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-02/run-history/run-details/e2e-02_1527621713
+RunId: e2e-02_1527621713
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/60_control_log.txt
+Running: ['/home/ninghai/.azureml/envs/azureml_2a9900e538c4d66a9c044566e96aa6f1/bin/python', 'azureml-setup/run_script.py', '/home/ninghai/.azureml/envs/azureml_2a9900e538c4d66a9c044566e96aa6f1/bin/python', 'azureml-setup/context_manager_injector.py', '-i', 'OutputCollection:context_managers.RunHistory', 'train-sklearn.py']
+Logging experiment running status in history service.
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-02_1527621713
+
+When alpha is 0.40, we have min MSE 3295.74.
+
+
+##### 03.aci.py (2018-05-29-15:22:08) ##################
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/03 already exists, remove it.
+/tmp/e2e-test/03
+e2e-03
+copy train-sklearn.py to the project folder.
+
+##################################################
+ACI run...
+##################################################
+
+Create a run config object for ACI
+base image is continuumio/miniconda3:4.4.10
+submitting run...
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-03/run-history/run-details/e2e-03_1527621732243
+RunId: e2e-03_1527621732243
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-03_1527621732243
+
+When alpha is 0.40, we have min MSE 3295.74.
+
+
+##### 04.dsvm (2018-05-29-15:35:59) ####################
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/04 already exists, remove it.
+/tmp/e2e-test/04
+e2e-04
+copy train-sklearn.py to the project folder.
+
+##################################################
+Bare VM run
+##################################################
+
+Load the cpu-dsvm config from aml_config directory...
+submit run...
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-04/run-history/run-details/e2e-04_1527622564062
+RunId: e2e-04_1527622564062
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-04_1527622564062
+
+
+##################################################
+DSVM Docker run...
+##################################################
+
+Load cpu-dsvm run config and make it to use Docker.
+Base Docker image is: continuumio/miniconda3:4.4.10
+submitting run...
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-04/run-history/run-details/e2e-04_1527622588140
+RunId: e2e-04_1527622588140
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/60_control_log.txt
+Logging experiment running status in history service.
+Running: ['sudo', 'docker', 'run', '--name', 'e2e-04_1527622588140', '--rm', '-v', '/tmp/azureml_runs/e2e-04_1527622588140:/azureml-run', '-e', 'AZUREML_DOCKERFILE_PATH=azureml-setup/Dockerfile', '-e', 'AZUREML_CONDA_ENVIRONMENT_EXISTENCE_INDICATOR=$HOME/.azureml/locks/azureml_2a9900e538c4d66a9c044566e96aa6f1', '-e', 'AZUREML_CONDA_ENVIRONMENT_PATH=/azureml-envs/azureml_2a9900e538c4d66a9c044566e96aa6f1', '-e', 'AZUREML_CONDA_LOCK_PATH=$HOME/.azureml/locks/azureml_conda_lock', '-e', 'EXAMPLE_ENV_VAR=EXAMPLE_VALUE', '-e', 'AZUREML_CONTEXT_MANAGER_OUTPUTCOLLECTION=null', '-e', 'AZUREML_RUN_TOKEN_EXPIRY=1528227388', '-e', 'AZUREML_RUN_TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IkZBOEE2NkNFNzcyMzY3MkI2M0YzN0ZEMjhBRDZFQTkxMTMxQjQ1QzQiLCJ0eXAiOiJKV1QifQ.eyJydW5pZCI6ImUyZS0wNF8xNTI3NjIyNTg4MTQwIiwicm9sZSI6IkNvbnRyaWJ1dG9yIiwic2NvcGUiOiIvc3Vic2NyaXB0aW9ucy9mYWMzNDMwMy00MzVkLTQ0ODYtOGMzZi03MDk0ZDgyYTBiNjAvcmVzb3VyY2VHcm91cHMvYW1sLW5vdGVib29rcy9wcm92aWRlcnMvTWljcm9zb2Z0Lk1hY2hpbmVMZWFybmluZ1NlcnZpY2VzL3dvcmtzcGFjZXMvaGFpZWFzdHVzMmV1YXB3cyIsImFjY291bnRpZCI6Ijc1MGU4MGJlLTEyOTAtNDcyOC04OTYwLTVhY2ZlMTk4MGM2ZSIsIndvcmtzcGFjZUlkIjoiNzUwZTgwYmUtMTI5MC00NzI4LTg5NjAtNWFjZmUxOTgwYzZlIiwicHJvamVjdGlkIjoiNGJkY2JiNjYtMDZmOC00Yjk1LWEzMzUtMmE0MDUxNzJmMDQxIiwiZGlzY292ZXJ5IjoiaHR0cHM6Ly9lYXN0dXMyZXVhcC5leHBlcmltZW50cy5henVyZW1sLm5ldC9kaXNjb3ZlcnkiLCJ0aWQiOiI3MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDciLCJvaWQiOiIzNDI2YmU4MC02NzI5LTQ4MzktYTk3ZC1jNzlhMzRlNWJhMWQiLCJleHAiOjE1MjgyMjczODgsImlzcyI6ImF6dXJlbWwiLCJhdWQiOiJhenVyZW1sIn0.Zxjvs_5sKmLK-LnHvOkAS4l4VN7aqrE7gJMofOm75UtX59LxMIZeBbYTlhIXACk1stnW_piVJM-EKvottvFoE4pc34pwdtfRrFaqXMZ9eVJBbID08hyzqvsMZYOzfcojnSGExcQtr3ILnKxrYUPLKdG-2MAib5CoDA8pc0v3-vhlaZWZJ5BYg3uNIVeuDqNhRNqDc6GpLLKTYBMK4UNGETjRfw62W9t1RRKETw8KSsOJintWCyzYmFWlHbf61pSWRu8XAhHl3a9I4HIGBM5AJDmn9fyVoKunvmHjkYJhXBKSyY5Xczwej2LoSX5_vQLxstKq32I-iPemZCaXoNO_pA', '-e', 'PYTHONUNBUFFERED=True', '-e', 'AZUREML_ARM_PROJECT_NAME=e2e-04', '-e', 'AZUREML_ARM_WORKSPACE_NAME=haieastus2euapws', '-e', 'AZUREML_ARM_SUBSCRIPTION=fac34303-435d-4486-8c3f-7094d82a0b60', '-e', 'AZUREML_ARM_RESOURCEGROUP=aml-notebooks', '-e', 'AZUREML_ARM_SCOPE=/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-04', '-e', 'AZUREML_DISCOVERY_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net/discovery', '-e', 'AZUREML_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net', '-e', 'AZUREML_RUN_CONFIGURATION=azureml-setup/mutated_run_configuration.yml', '-e', 'AZUREML_INSTRUMENTATION_KEY=c684677d-b3a0-4709-a00e-78e5b31cfafa', '-e', 'AZUREML_DRIVERLOG_PATH=azureml-logs/driver_log.txt', '-e', 'AZUREML_CONTROLLOG_PATH=azureml-logs/control_log.txt', '-e', 'AZUREML_LOGDIRECTORY_PATH=azureml-logs/', '-e', 'AZUREML_COMPLETEFILE_PATH=azureml-setup/complete', '-e', 'AZUREML_PIDFILE_PATH=azureml-setup/pid.txt', '-e', 'AZUREML_RUN_ID=e2e-04_1527622588140', 'azureml/azureml_4bbfede4df844acbba1732fe0369fe2a', '/bin/bash', '-c', '"/azureml-envs/azureml_2a9900e538c4d66a9c044566e96aa6f1/bin/python" "azureml-setup/run_script.py" "/azureml-envs/azureml_2a9900e538c4d66a9c044566e96aa6f1/bin/python" "azureml-setup/context_manager_injector.py" "-i" "OutputCollection:context_managers.RunHistory" "train-sklearn.py"']
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-04_1527622588140
+
+load cpu-dsvm run config and make it use a custom Docker image.
+base image: ninghai/azureml:0.3
+
+##################################################
+submitting train-sklearn.py for a Custom Docker run on VM...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-04/run-history/run-details/e2e-04_1527622609983
+RunId: e2e-04_1527622609983
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-04_1527622609983
+
+When alpha is 0.40, we have min MSE 3295.74.
+
+
+##### 05.spark (2018-05-29-15:37:24) ###################
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/05 already exists, remove it.
+/tmp/e2e-test/05
+e2e-05
+copy train-spark.py and iris.csv to the project folder.
+create an ACI run config.
+base image is microsoft/mmlspark:0.12
+
+##################################################
+submitting train-spark.py for a Spark run on ACI...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-05/run-history/run-details/e2e-05_1527622649687
+RunId: e2e-05_1527622649687
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Execution Summary
+=================
+RunId: e2e-05_1527622649687
+
+attach a VM target:
+Load the cpu-dsvm config and make it run Spark:
+base image is: microsoft/mmlspark:0.12
+
+##################################################
+submitting train-spark.py for a Spark run on Docker in VM...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-05/run-history/run-details/e2e-05_1527623104502
+RunId: e2e-05_1527623104502
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/60_control_log.txt
+Logging experiment running status in history service.
+Running: ['sudo', 'docker', 'run', '--name', 'e2e-05_1527623104502', '--rm', '-v', '/tmp/azureml_runs/e2e-05_1527623104502:/azureml-run', '-e', 'PYSPARK_PYTHON=/azureml-envs/azureml_40b348c4d7381beefb01312cdebdaa0b/bin/python', '-e', 'AZUREML_DOCKERFILE_PATH=azureml-setup/Dockerfile', '-e', 'AZUREML_CONDA_ENVIRONMENT_EXISTENCE_INDICATOR=$HOME/.azureml/locks/azureml_40b348c4d7381beefb01312cdebdaa0b', '-e', 'AZUREML_CONDA_ENVIRONMENT_PATH=/azureml-envs/azureml_40b348c4d7381beefb01312cdebdaa0b', '-e', 'AZUREML_CONDA_LOCK_PATH=$HOME/.azureml/locks/azureml_conda_lock', '-e', 'EXAMPLE_ENV_VAR=EXAMPLE_VALUE', '-e', 'AZUREML_CONTEXT_MANAGER_OUTPUTCOLLECTION=null', '-e', 'AZUREML_RUN_TOKEN_EXPIRY=1528227905', '-e', 'AZUREML_RUN_TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IkZBOEE2NkNFNzcyMzY3MkI2M0YzN0ZEMjhBRDZFQTkxMTMxQjQ1QzQiLCJ0eXAiOiJKV1QifQ.eyJydW5pZCI6ImUyZS0wNV8xNTI3NjIzMTA0NTAyIiwicm9sZSI6IkNvbnRyaWJ1dG9yIiwic2NvcGUiOiIvc3Vic2NyaXB0aW9ucy9mYWMzNDMwMy00MzVkLTQ0ODYtOGMzZi03MDk0ZDgyYTBiNjAvcmVzb3VyY2VHcm91cHMvYW1sLW5vdGVib29rcy9wcm92aWRlcnMvTWljcm9zb2Z0Lk1hY2hpbmVMZWFybmluZ1NlcnZpY2VzL3dvcmtzcGFjZXMvaGFpZWFzdHVzMmV1YXB3cyIsImFjY291bnRpZCI6Ijc1MGU4MGJlLTEyOTAtNDcyOC04OTYwLTVhY2ZlMTk4MGM2ZSIsIndvcmtzcGFjZUlkIjoiNzUwZTgwYmUtMTI5MC00NzI4LTg5NjAtNWFjZmUxOTgwYzZlIiwicHJvamVjdGlkIjoiNjczMTkyYjMtNjU5OC00MjlhLThhNWMtNTc5YWVhY2UxNTIyIiwiZGlzY292ZXJ5IjoiaHR0cHM6Ly9lYXN0dXMyZXVhcC5leHBlcmltZW50cy5henVyZW1sLm5ldC9kaXNjb3ZlcnkiLCJ0aWQiOiI3MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDciLCJvaWQiOiIzNDI2YmU4MC02NzI5LTQ4MzktYTk3ZC1jNzlhMzRlNWJhMWQiLCJleHAiOjE1MjgyMjc5MDUsImlzcyI6ImF6dXJlbWwiLCJhdWQiOiJhenVyZW1sIn0.VxYjhdmhtlH8Cp76jW4HNMZnM8fniNCs019bJNGrQmqcBuClkHOfB5ZFmGg8QCdSDm6anvyplCG4JDfZiZieKv07TP5w7CRaWiRboAlc5AgGOPTwPmAam8n2eA48dv25QwJJyDfm8yb9OpSvyh82oFRpuqytDSsO7Hdp6d9U3H_Htx9RbSxD9D1Xrp8zhzHv_oB00TcOvrtuAJOfV1Z3LR8LwaYNpuYRNlLgdj2hunU5Ar6nPS75cglr8_-329Z1D0gkQXVqJiMAheThmxXYzG9OJiBq0ZnJuruTpSouL-plwoqL2FwCZfg__l9WVcm6ebuvqDj1QYU7RSMLz_RwjQ', '-e', 'PYTHONUNBUFFERED=True', '-e', 'AZUREML_ARM_PROJECT_NAME=e2e-05', '-e', 'AZUREML_ARM_WORKSPACE_NAME=haieastus2euapws', '-e', 'AZUREML_ARM_SUBSCRIPTION=fac34303-435d-4486-8c3f-7094d82a0b60', '-e', 'AZUREML_ARM_RESOURCEGROUP=aml-notebooks', '-e', 'AZUREML_ARM_SCOPE=/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-05', '-e', 'AZUREML_DISCOVERY_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net/discovery', '-e', 'AZUREML_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net', '-e', 'AZUREML_RUN_CONFIGURATION=azureml-setup/mutated_run_configuration.yml', '-e', 'AZUREML_INSTRUMENTATION_KEY=c684677d-b3a0-4709-a00e-78e5b31cfafa', '-e', 'AZUREML_DRIVERLOG_PATH=azureml-logs/driver_log.txt', '-e', 'AZUREML_CONTROLLOG_PATH=azureml-logs/control_log.txt', '-e', 'AZUREML_LOGDIRECTORY_PATH=azureml-logs/', '-e', 'AZUREML_COMPLETEFILE_PATH=azureml-setup/complete', '-e', 'AZUREML_PIDFILE_PATH=azureml-setup/pid.txt', '-e', 'AZUREML_RUN_ID=e2e-05_1527623104502', 'azureml/azureml_2ed57bef1da71375bd881703708d5260', '/bin/bash', '-c', '"/azureml-envs/azureml_40b348c4d7381beefb01312cdebdaa0b/bin/python" "azureml-setup/run_script.py" "$SPARK_HOME/bin/spark-submit" "--repositories" "https://mmlspark.azureedge.net/maven,https://azuremldownloads.blob.core.windows.net/repo5qh91kdjs6" "--packages" "com.microsoft.ml.spark:mmlspark_2.11:0.12,com.microsoft:dprep_2.11:0.18.0,com.microsoft.sqlserver:mssql-jdbc:6.2.1.jre8" "--driver-java-options" "-Dlog4j.configuration=file:./azureml-setup/log4j.properties" "--conf" "spark.eventLog.enabled=true" "--conf" "spark.eventLog.dir=./azureml-logs" "azureml-setup/context_manager_injector.py" "-i" "OutputCollection:context_managers.RunHistory" "train-spark.py"']
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+https://mmlspark.azureedge.net/maven added as a remote repository with the name: repo-1
+https://azuremldownloads.blob.core.windows.net/repo5qh91kdjs6 added as a remote repository with the name: repo-2
+Ivy Default Cache set to: /root/.ivy2/cache
+The jars for the packages stored in: /root/.ivy2/jars
+:: loading settings :: url = jar:file:/home/mmlspark/lib/spark/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.microsoft.ml.spark#mmlspark_2.11 added as a dependency
+com.microsoft#dprep_2.11 added as a dependency
+com.microsoft.sqlserver#mssql-jdbc added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+	confs: [default]
+	found com.microsoft.ml.spark#mmlspark_2.11;0.12 in repo-1
+	found io.spray#spray-json_2.11;1.3.2 in central
+	found com.microsoft.cntk#cntk;2.4 in central
+	found org.openpnp#opencv;3.2.0-1 in central
+	found com.microsoft.ml.lightgbm#lightgbmlib;2.0.120 in central
+	found com.microsoft#dprep_2.11;0.18.0 in repo-2
+	found com.microsoft.programSynthesis#tText;4.1.0-preview2018010901 in repo-2
+	found com.microsoft.programSynthesis#dsl;4.1.0-preview2018010901 in repo-2
+	found com.microsoft.programSynthesis#sText;4.1.0-preview2018010901 in repo-2
+	found com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre8 in central
+:: resolution report :: resolve 490ms :: artifacts dl 35ms
+	:: modules in use:
+	com.microsoft#dprep_2.11;0.18.0 from repo-2 in [default]
+	com.microsoft.cntk#cntk;2.4 from central in [default]
+	com.microsoft.ml.lightgbm#lightgbmlib;2.0.120 from central in [default]
+	com.microsoft.ml.spark#mmlspark_2.11;0.12 from repo-1 in [default]
+	com.microsoft.programSynthesis#dsl;4.1.0-preview2018010901 from repo-2 in [default]
+	com.microsoft.programSynthesis#sText;4.1.0-preview2018010901 from repo-2 in [default]
+	com.microsoft.programSynthesis#tText;4.1.0-preview2018010901 from repo-2 in [default]
+	com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre8 from central in [default]
+	io.spray#spray-json_2.11;1.3.2 from central in [default]
+	org.openpnp#opencv;3.2.0-1 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   10  |   0   |   0   |   0   ||   10  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+	confs: [default]
+	0 artifacts copied, 10 already retrieved (0kB/11ms)
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.2.1
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Reading for machine learning
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.3,3.0,1.1,0.1]|  0.0|[6.26757550224811...|[0.98526184411454...|       0.0|
+|[4.6,3.2,1.4,0.2]|  0.0|[5.86849421046488...|[0.97948346731980...|       0.0|
+|[4.8,3.0,1.4,0.3]|  0.0|[4.95898047282683...|[0.94005672382128...|       0.0|
+|[4.9,2.4,3.3,1.0]|  1.0|[0.21956936270278...|[0.16973766232262...|       1.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.38109356215142...|[0.95221617255939...|       0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.38109356215142...|[0.95221617255939...|       0.0|
+|[5.0,2.3,3.3,1.0]|  1.0|[-0.1326209056637...|[0.10991315857413...|       1.0|
+|[5.0,3.4,1.5,0.2]|  0.0|[5.74172270656993...|[0.97340826063213...|       0.0|
+|[5.0,3.4,1.6,0.4]|  0.0|[5.23651695379636...|[0.96458476473892...|       0.0|
+|[5.0,3.5,1.3,0.3]|  0.0|[5.95595636101492...|[0.98128952304455...|       0.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9791666666666666
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-05_1527623104502
+
+attach HDI
+Load HDI run config.
+
+##################################################
+submitting train-spark.py for a HDI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-05/run-history/run-details/e2e-05_1527623142877
+RunId: e2e-05_1527623142877
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/60_control_log.txt
+  adding: iris.csv (deflated 82%)
+  adding: azureml-logs/ (stored 0%)
+  adding: azureml-logs/control_log.txt (deflated 12%)
+  adding: train-spark.py (deflated 62%)
+  adding: .amlignore (deflated 25%)
+  adding: azureml-setup/ (stored 0%)
+  adding: azureml-setup/interrupt_sender.py (deflated 57%)
+  adding: azureml-setup/killable_subprocess.pyc (deflated 55%)
+  adding: azureml-setup/conda_manager.pyc (deflated 50%)
+  adding: azureml-setup/log4j.properties (deflated 56%)
+  adding: azureml-setup/log_history_status.pyc (deflated 62%)
+  adding: azureml-setup/spark_cache.py (deflated 20%)
+  adding: azureml-setup/context_managers.py (deflated 64%)
+  adding: azureml-setup/run_script.py (deflated 67%)
+  adding: azureml-setup/conda_lock.pyc (deflated 52%)
+  adding: azureml-setup/conda_manager.py (deflated 69%)
+  adding: azureml-setup/context_manager_injector.py (deflated 59%)
+  adding: azureml-setup/interrupt_sender.pyc (deflated 47%)
+  adding: azureml-setup/mutated_run_configuration.yml (deflated 46%)
+  adding: azureml-setup/conda_lock.py (deflated 54%)
+  adding: azureml-setup/hdi_utilities.py (deflated 49%)
+  adding: azureml-setup/project_fetcher.pyc (deflated 51%)
+  adding: azureml-setup/hdi_utilities.pyc (deflated 47%)
+  adding: azureml-setup/execution_timer.py (deflated 68%)
+  adding: azureml-setup/execution_timer.pyc (deflated 63%)
+  adding: azureml-setup/project_fetcher.py (deflated 62%)
+  adding: azureml-setup/upload_artifacts.pyc (deflated 44%)
+  adding: azureml-setup/hdi_control_script.py (deflated 64%)
+  adding: azureml-setup/mutated_conda_dependencies.yml (deflated 29%)
+  adding: azureml-setup/pid.txt (stored 0%)
+  adding: azureml-setup/log_history_status.py (deflated 67%)
+  adding: azureml-setup/killable_subprocess.py (deflated 68%)
+  adding: azureml-setup/99brokenproxy (deflated 26%)
+  adding: azureml-setup/prepare_environment.py (deflated 36%)
+  adding: azureml-setup/upload_artifacts.py (deflated 60%)
+  adding: azureml-setup/hdi_context_manager.py (deflated 56%)
+  adding: aml_config/ (stored 0%)
+  adding: aml_config/cpu-dsvm.runconfig (deflated 55%)
+  adding: aml_config/myhdi.compute (deflated 12%)
+  adding: aml_config/local.runconfig (deflated 56%)
+  adding: aml_config/cpu-dsvm.compute (deflated 13%)
+  adding: aml_config/myhdi.runconfig (deflated 55%)
+  adding: aml_config/conda_dependencies.yml (deflated 49%)
+  adding: aml_config/project.json (deflated 19%)
+  adding: aml_config/docker.runconfig (deflated 56%)
+  adding: assets/ (stored 0%)
+Logging experiment running status in history service.
+Running: ['/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/bin/python', 'azureml-setup/run_script.py', '/usr/hdp/current/spark2-client/bin/spark-submit', '--repositories', 'https://mmlspark.azureedge.net/maven,https://azuremldownloads.blob.core.windows.net/repo5qh91kdjs6', '--packages', 'com.microsoft.ml.spark:mmlspark_2.11:0.12,com.microsoft:dprep_2.11:0.18.0,com.microsoft.sqlserver:mssql-jdbc:6.2.1.jre8', '--driver-java-options', '-Dlog4j.configuration=file:./code.zip/azureml-setup/log4j.properties', '--conf', 'spark.yarn.appMasterEnv.PYSPARK_PYTHON=./azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/bin/python', '--conf', 'spark.yarn.appMasterEnv.AZUREML_RUN_ID=e2e-05_1527623142877', '--conf', 'spark.executorEnv.AZUREML_RUN_ID=e2e-05_1527623142877', '--conf', 'spark.yarn.appMasterEnv.AZUREML_PIDFILE_PATH=azureml-setup/pid.txt', '--conf', 'spark.executorEnv.AZUREML_PIDFILE_PATH=azureml-setup/pid.txt', '--conf', 'spark.yarn.appMasterEnv.AZUREML_COMPLETEFILE_PATH=azureml-setup/complete', '--conf', 'spark.executorEnv.AZUREML_COMPLETEFILE_PATH=azureml-setup/complete', '--conf', 'spark.yarn.appMasterEnv.AZUREML_LOGDIRECTORY_PATH=azureml-logs/', '--conf', 'spark.executorEnv.AZUREML_LOGDIRECTORY_PATH=azureml-logs/', '--conf', 'spark.yarn.appMasterEnv.AZUREML_CONTROLLOG_PATH=azureml-logs/control_log.txt', '--conf', 'spark.executorEnv.AZUREML_CONTROLLOG_PATH=azureml-logs/control_log.txt', '--conf', 'spark.yarn.appMasterEnv.AZUREML_DRIVERLOG_PATH=azureml-logs/driver_log.txt', '--conf', 'spark.executorEnv.AZUREML_DRIVERLOG_PATH=azureml-logs/driver_log.txt', '--conf', 'spark.yarn.appMasterEnv.AZUREML_INSTRUMENTATION_KEY=c684677d-b3a0-4709-a00e-78e5b31cfafa', '--conf', 'spark.executorEnv.AZUREML_INSTRUMENTATION_KEY=c684677d-b3a0-4709-a00e-78e5b31cfafa', '--conf', 'spark.yarn.appMasterEnv.AZUREML_RUN_CONFIGURATION=azureml-setup/mutated_run_configuration.yml', '--conf', 'spark.executorEnv.AZUREML_RUN_CONFIGURATION=azureml-setup/mutated_run_configuration.yml', '--conf', 'spark.yarn.appMasterEnv.AZUREML_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net', '--conf', 'spark.executorEnv.AZUREML_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net', '--conf', 'spark.yarn.appMasterEnv.AZUREML_DISCOVERY_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net/discovery', '--conf', 'spark.executorEnv.AZUREML_DISCOVERY_SERVICE_ENDPOINT=https://eastus2euap.experiments.azureml.net/discovery', '--conf', 'spark.yarn.appMasterEnv.AZUREML_ARM_SCOPE=/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-05', '--conf', 'spark.executorEnv.AZUREML_ARM_SCOPE=/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-05', '--conf', 'spark.yarn.appMasterEnv.AZUREML_ARM_RESOURCEGROUP=aml-notebooks', '--conf', 'spark.executorEnv.AZUREML_ARM_RESOURCEGROUP=aml-notebooks', '--conf', 'spark.yarn.appMasterEnv.AZUREML_ARM_SUBSCRIPTION=fac34303-435d-4486-8c3f-7094d82a0b60', '--conf', 'spark.executorEnv.AZUREML_ARM_SUBSCRIPTION=fac34303-435d-4486-8c3f-7094d82a0b60', '--conf', 'spark.yarn.appMasterEnv.AZUREML_ARM_ACCOUNT_NAME=', '--conf', 'spark.executorEnv.AZUREML_ARM_ACCOUNT_NAME=', '--conf', 'spark.yarn.appMasterEnv.AZUREML_ARM_WORKSPACE_NAME=haieastus2euapws', '--conf', 'spark.executorEnv.AZUREML_ARM_WORKSPACE_NAME=haieastus2euapws', '--conf', 'spark.yarn.appMasterEnv.AZUREML_ARM_PROJECT_NAME=e2e-05', '--conf', 'spark.executorEnv.AZUREML_ARM_PROJECT_NAME=e2e-05', '--conf', 'spark.yarn.appMasterEnv.PYTHONUNBUFFERED=True', '--conf', 'spark.executorEnv.PYTHONUNBUFFERED=True', '--conf', 'spark.yarn.appMasterEnv.AZUREML_RUN_TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IkZBOEE2NkNFNzcyMzY3MkI2M0YzN0ZEMjhBRDZFQTkxMTMxQjQ1QzQiLCJ0eXAiOiJKV1QifQ.eyJydW5pZCI6ImUyZS0wNV8xNTI3NjIzMTQyODc3Iiwicm9sZSI6IkNvbnRyaWJ1dG9yIiwic2NvcGUiOiIvc3Vic2NyaXB0aW9ucy9mYWMzNDMwMy00MzVkLTQ0ODYtOGMzZi03MDk0ZDgyYTBiNjAvcmVzb3VyY2VHcm91cHMvYW1sLW5vdGVib29rcy9wcm92aWRlcnMvTWljcm9zb2Z0Lk1hY2hpbmVMZWFybmluZ1NlcnZpY2VzL3dvcmtzcGFjZXMvaGFpZWFzdHVzMmV1YXB3cyIsImFjY291bnRpZCI6Ijc1MGU4MGJlLTEyOTAtNDcyOC04OTYwLTVhY2ZlMTk4MGM2ZSIsIndvcmtzcGFjZUlkIjoiNzUwZTgwYmUtMTI5MC00NzI4LTg5NjAtNWFjZmUxOTgwYzZlIiwicHJvamVjdGlkIjoiNjczMTkyYjMtNjU5OC00MjlhLThhNWMtNTc5YWVhY2UxNTIyIiwiZGlzY292ZXJ5IjoiaHR0cHM6Ly9lYXN0dXMyZXVhcC5leHBlcmltZW50cy5henVyZW1sLm5ldC9kaXNjb3ZlcnkiLCJ0aWQiOiI3MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDciLCJvaWQiOiIzNDI2YmU4MC02NzI5LTQ4MzktYTk3ZC1jNzlhMzRlNWJhMWQiLCJleHAiOjE1MjgyMjc5NDMsImlzcyI6ImF6dXJlbWwiLCJhdWQiOiJhenVyZW1sIn0.HuczvVRCefW0xMR__c0V2u2O9H1sfmAKD0Q-7Xv4qHz3RYcxEnwu35tZ6SmuK2eYRb-WKSghGtxlv9nsU-g-K-W3UpAf21xQZaHNAh8NYkT4aGkNWSjn4dQTXkNIH6FkTKzgW9e1CFZEbPUeRfUO0q96qWHJV8H-FxaEGuUucQe9mfYlMVc6mwov_k-tRle_M4TpHGlhHObYUAaQ30aJ6sEC52xuM7mZ6uG7ETYoElpOAU9LGRnY7404zXmSMoJhA54cDrFKBuqU_hNftzV3edNcd-_Bh88yb9U_HhhwDE6jR1WPHWAz4GcQOTjKAoiE5Ys1Es7S6gG9lTj-c4NtRw', '--conf', 'spark.executorEnv.AZUREML_RUN_TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6IkZBOEE2NkNFNzcyMzY3MkI2M0YzN0ZEMjhBRDZFQTkxMTMxQjQ1QzQiLCJ0eXAiOiJKV1QifQ.eyJydW5pZCI6ImUyZS0wNV8xNTI3NjIzMTQyODc3Iiwicm9sZSI6IkNvbnRyaWJ1dG9yIiwic2NvcGUiOiIvc3Vic2NyaXB0aW9ucy9mYWMzNDMwMy00MzVkLTQ0ODYtOGMzZi03MDk0ZDgyYTBiNjAvcmVzb3VyY2VHcm91cHMvYW1sLW5vdGVib29rcy9wcm92aWRlcnMvTWljcm9zb2Z0Lk1hY2hpbmVMZWFybmluZ1NlcnZpY2VzL3dvcmtzcGFjZXMvaGFpZWFzdHVzMmV1YXB3cyIsImFjY291bnRpZCI6Ijc1MGU4MGJlLTEyOTAtNDcyOC04OTYwLTVhY2ZlMTk4MGM2ZSIsIndvcmtzcGFjZUlkIjoiNzUwZTgwYmUtMTI5MC00NzI4LTg5NjAtNWFjZmUxOTgwYzZlIiwicHJvamVjdGlkIjoiNjczMTkyYjMtNjU5OC00MjlhLThhNWMtNTc5YWVhY2UxNTIyIiwiZGlzY292ZXJ5IjoiaHR0cHM6Ly9lYXN0dXMyZXVhcC5leHBlcmltZW50cy5henVyZW1sLm5ldC9kaXNjb3ZlcnkiLCJ0aWQiOiI3MmY5ODhiZi04NmYxLTQxYWYtOTFhYi0yZDdjZDAxMWRiNDciLCJvaWQiOiIzNDI2YmU4MC02NzI5LTQ4MzktYTk3ZC1jNzlhMzRlNWJhMWQiLCJleHAiOjE1MjgyMjc5NDMsImlzcyI6ImF6dXJlbWwiLCJhdWQiOiJhenVyZW1sIn0.HuczvVRCefW0xMR__c0V2u2O9H1sfmAKD0Q-7Xv4qHz3RYcxEnwu35tZ6SmuK2eYRb-WKSghGtxlv9nsU-g-K-W3UpAf21xQZaHNAh8NYkT4aGkNWSjn4dQTXkNIH6FkTKzgW9e1CFZEbPUeRfUO0q96qWHJV8H-FxaEGuUucQe9mfYlMVc6mwov_k-tRle_M4TpHGlhHObYUAaQ30aJ6sEC52xuM7mZ6uG7ETYoElpOAU9LGRnY7404zXmSMoJhA54cDrFKBuqU_hNftzV3edNcd-_Bh88yb9U_HhhwDE6jR1WPHWAz4GcQOTjKAoiE5Ys1Es7S6gG9lTj-c4NtRw', '--conf', 'spark.yarn.appMasterEnv.AZUREML_RUN_TOKEN_EXPIRY=1528227943', '--conf', 'spark.executorEnv.AZUREML_RUN_TOKEN_EXPIRY=1528227943', '--conf', 'spark.yarn.appMasterEnv.AZUREML_CONTEXT_MANAGER_HDISETUP=null', '--conf', 'spark.executorEnv.AZUREML_CONTEXT_MANAGER_HDISETUP=null', '--conf', 'spark.yarn.appMasterEnv.AZUREML_CONTEXT_MANAGER_OUTPUTCOLLECTION=null', '--conf', 'spark.executorEnv.AZUREML_CONTEXT_MANAGER_OUTPUTCOLLECTION=null', '--conf', 'spark.yarn.appMasterEnv.EXAMPLE_ENV_VAR=EXAMPLE_VALUE', '--conf', 'spark.executorEnv.EXAMPLE_ENV_VAR=EXAMPLE_VALUE', '--conf', 'spark.yarn.appMasterEnv.AZUREML_CONDA_LOCK_PATH=/home/ninghai/.azureml/locks/azureml_conda_lock', '--conf', 'spark.executorEnv.AZUREML_CONDA_LOCK_PATH=/home/ninghai/.azureml/locks/azureml_conda_lock', '--conf', 'spark.yarn.appMasterEnv.AZUREML_CONDA_ENVIRONMENT_PATH=/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b', '--conf', 'spark.executorEnv.AZUREML_CONDA_ENVIRONMENT_PATH=/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b', '--conf', 'spark.yarn.appMasterEnv.AZUREML_CONDA_ENVIRONMENT_EXISTENCE_INDICATOR=/home/ninghai/.azureml/locks/azureml_40b348c4d7381beefb01312cdebdaa0b', '--conf', 'spark.executorEnv.AZUREML_CONDA_ENVIRONMENT_EXISTENCE_INDICATOR=/home/ninghai/.azureml/locks/azureml_40b348c4d7381beefb01312cdebdaa0b', '--conf', 'spark.yarn.appMasterEnv.AZUREML_TARGET_TYPE=cluster', '--conf', 'spark.executorEnv.AZUREML_TARGET_TYPE=cluster', '--master', 'yarn', '--deploy-mode', 'cluster', '--archives', '/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b.zip,code.zip', '--files', './azureml-setup/context_manager_injector.py,./azureml-setup/context_managers.py,./azureml-setup/hdi_context_manager.py', 'azureml-setup/context_manager_injector.py', '-i', 'HdiSetup:hdi_context_manager.HdiSetup', '-i', 'OutputCollection:context_managers.RunHistory', 'train-spark.py']
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+Ivy Default Cache set to: /home/ninghai/.ivy2/cache
+The jars for the packages stored in: /home/ninghai/.ivy2/jars
+https://mmlspark.azureedge.net/maven added as a remote repository with the name: repo-1
+https://azuremldownloads.blob.core.windows.net/repo5qh91kdjs6 added as a remote repository with the name: repo-2
+:: loading settings :: url = jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/ivy-2.4.0.jar!/org/apache/ivy/core/settings/ivysettings.xml
+com.microsoft.ml.spark#mmlspark_2.11 added as a dependency
+com.microsoft#dprep_2.11 added as a dependency
+com.microsoft.sqlserver#mssql-jdbc added as a dependency
+:: resolving dependencies :: org.apache.spark#spark-submit-parent;1.0
+	confs: [default]
+	found com.microsoft.ml.spark#mmlspark_2.11;0.12 in repo-1
+	found io.spray#spray-json_2.11;1.3.2 in central
+	found com.microsoft.cntk#cntk;2.4 in central
+	found org.openpnp#opencv;3.2.0-1 in central
+	found com.microsoft.ml.lightgbm#lightgbmlib;2.0.120 in central
+	found com.microsoft#dprep_2.11;0.18.0 in repo-2
+	found com.microsoft.programSynthesis#tText;4.1.0-preview2018010901 in repo-2
+	found com.microsoft.programSynthesis#dsl;4.1.0-preview2018010901 in repo-2
+	found com.microsoft.programSynthesis#sText;4.1.0-preview2018010901 in repo-2
+	found com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre8 in central
+:: resolution report :: resolve 507ms :: artifacts dl 14ms
+	:: modules in use:
+	com.microsoft#dprep_2.11;0.18.0 from repo-2 in [default]
+	com.microsoft.cntk#cntk;2.4 from central in [default]
+	com.microsoft.ml.lightgbm#lightgbmlib;2.0.120 from central in [default]
+	com.microsoft.ml.spark#mmlspark_2.11;0.12 from repo-1 in [default]
+	com.microsoft.programSynthesis#dsl;4.1.0-preview2018010901 from repo-2 in [default]
+	com.microsoft.programSynthesis#sText;4.1.0-preview2018010901 from repo-2 in [default]
+	com.microsoft.programSynthesis#tText;4.1.0-preview2018010901 from repo-2 in [default]
+	com.microsoft.sqlserver#mssql-jdbc;6.2.1.jre8 from central in [default]
+	io.spray#spray-json_2.11;1.3.2 from central in [default]
+	org.openpnp#opencv;3.2.0-1 from central in [default]
+	---------------------------------------------------------------------
+	|                  |            modules            ||   artifacts   |
+	|       conf       | number| search|dwnlded|evicted|| number|dwnlded|
+	---------------------------------------------------------------------
+	|      default     |   10  |   0   |   0   |   0   ||   10  |   0   |
+	---------------------------------------------------------------------
+:: retrieving :: org.apache.spark#spark-submit-parent
+	confs: [default]
+	0 artifacts copied, 10 already retrieved (0kB/13ms)
+18/05/29 19:46:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+18/05/29 19:46:01 INFO MetricsConfig: loaded properties from hadoop-metrics2-azure-file-system.properties
+18/05/29 19:46:01 INFO WasbAzureIaasSink: Init starting.
+18/05/29 19:46:01 INFO AzureIaasSink: Init starting. Initializing MdsLogger.
+18/05/29 19:46:01 INFO AzureIaasSink: Init completed.
+18/05/29 19:46:01 INFO WasbAzureIaasSink: Init completed.
+18/05/29 19:46:01 INFO MetricsSinkAdapter: Sink azurefs2 started
+18/05/29 19:46:01 INFO MetricsSystemImpl: Scheduled snapshot period at 60 second(s).
+18/05/29 19:46:01 INFO MetricsSystemImpl: azure-file-system metrics system started
+18/05/29 19:46:02 INFO RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm1, rm2]...
+18/05/29 19:46:02 INFO RequestHedgingRMFailoverProxyProvider: Found active RM [rm1]
+18/05/29 19:46:02 INFO Client: Requesting a new application from cluster with 4 NodeManagers
+18/05/29 19:46:02 INFO Client: Verifying our application has not requested more than the maximum memory capability of the cluster (51200 MB per container)
+18/05/29 19:46:02 INFO Client: Will allocate AM container, with 1408 MB memory including 384 MB overhead
+18/05/29 19:46:02 INFO Client: Setting up container launch context for our AM
+18/05/29 19:46:02 INFO Client: Setting up the launch environment for our AM container
+18/05/29 19:46:02 INFO Client: Preparing resources for our AM container
+18/05/29 19:46:04 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.ml.spark_mmlspark_2.11-0.12.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.ml.spark_mmlspark_2.11-0.12.jar
+18/05/29 19:46:04 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft_dprep_2.11-0.18.0.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft_dprep_2.11-0.18.0.jar
+18/05/29 19:46:05 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.sqlserver_mssql-jdbc-6.2.1.jre8.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.sqlserver_mssql-jdbc-6.2.1.jre8.jar
+18/05/29 19:46:05 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/io.spray_spray-json_2.11-1.3.2.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/io.spray_spray-json_2.11-1.3.2.jar
+18/05/29 19:46:05 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.cntk_cntk-2.4.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.cntk_cntk-2.4.jar
+18/05/29 19:46:07 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/org.openpnp_opencv-3.2.0-1.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/org.openpnp_opencv-3.2.0-1.jar
+18/05/29 19:46:08 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.ml.lightgbm_lightgbmlib-2.0.120.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.ml.lightgbm_lightgbmlib-2.0.120.jar
+18/05/29 19:46:08 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.programSynthesis_tText-4.1.0-preview2018010901.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.programSynthesis_tText-4.1.0-preview2018010901.jar
+18/05/29 19:46:08 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.programSynthesis_sText-4.1.0-preview2018010901.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.programSynthesis_sText-4.1.0-preview2018010901.jar
+18/05/29 19:46:08 INFO Client: Uploading resource file:/home/ninghai/.ivy2/jars/com.microsoft.programSynthesis_dsl-4.1.0-preview2018010901.jar -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/com.microsoft.programSynthesis_dsl-4.1.0-preview2018010901.jar
+18/05/29 19:46:09 INFO Client: Uploading resource file:/tmp/azureml_runs/e2e-05_1527623142877/azureml-setup/context_manager_injector.py -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/context_manager_injector.py
+18/05/29 19:46:09 INFO Client: Uploading resource file:/tmp/azureml_runs/e2e-05_1527623142877/azureml-setup/context_managers.py -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/context_managers.py
+18/05/29 19:46:09 INFO Client: Uploading resource file:/tmp/azureml_runs/e2e-05_1527623142877/azureml-setup/hdi_context_manager.py -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/hdi_context_manager.py
+18/05/29 19:46:09 INFO Client: Uploading resource file:/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b.zip -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip
+18/05/29 19:46:14 INFO Client: Uploading resource file:/tmp/azureml_runs/e2e-05_1527623142877/code.zip -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/code.zip
+18/05/29 19:46:15 WARN Client: Same name resource file:/tmp/azureml_runs/e2e-05_1527623142877/azureml-setup/context_manager_injector.py added multiple times to distributed cache
+18/05/29 19:46:15 INFO Client: Uploading resource file:/usr/hdp/current/spark2-client/python/lib/pyspark.zip -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/pyspark.zip
+18/05/29 19:46:15 INFO Client: Uploading resource file:/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/py4j-0.10.4-src.zip
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.ml.spark_mmlspark_2.11-0.12.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft_dprep_2.11-0.18.0.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.sqlserver_mssql-jdbc-6.2.1.jre8.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/io.spray_spray-json_2.11-1.3.2.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.cntk_cntk-2.4.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/org.openpnp_opencv-3.2.0-1.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.ml.lightgbm_lightgbmlib-2.0.120.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.programSynthesis_tText-4.1.0-preview2018010901.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.programSynthesis_sText-4.1.0-preview2018010901.jar added multiple times to distributed cache.
+18/05/29 19:46:15 WARN Client: Same path resource file:/home/ninghai/.ivy2/jars/com.microsoft.programSynthesis_dsl-4.1.0-preview2018010901.jar added multiple times to distributed cache.
+18/05/29 19:46:15 INFO Client: Uploading resource file:/tmp/spark-ce8db975-0fb5-4131-a58e-ff705876b4df/__spark_conf__1950920349198227118.zip -> wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001/__spark_conf__.zip
+18/05/29 19:46:15 INFO SecurityManager: Changing view acls to: ninghai
+18/05/29 19:46:15 INFO SecurityManager: Changing modify acls to: ninghai
+18/05/29 19:46:15 INFO SecurityManager: Changing view acls groups to: 
+18/05/29 19:46:15 INFO SecurityManager: Changing modify acls groups to: 
+18/05/29 19:46:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(ninghai); groups with view permissions: Set(); users  with modify permissions: Set(ninghai); groups with modify permissions: Set()
+18/05/29 19:46:15 INFO Client: Submitting application application_1527512542584_0001 to ResourceManager
+18/05/29 19:46:15 INFO YarnClientImpl: Submitted application application_1527512542584_0001
+18/05/29 19:46:16 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:16 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:46:17 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:18 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:19 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:20 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:21 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:22 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:23 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:24 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:25 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:26 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:27 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:28 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:29 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:30 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:31 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:32 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:33 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:34 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:35 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:36 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:37 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:38 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:39 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:40 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:41 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:43 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:44 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:45 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:46 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:47 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:48 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:49 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:50 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:51 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:52 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:53 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:54 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:55 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:56 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:57 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:58 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:46:59 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:00 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:01 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:02 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:03 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:04 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:05 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:06 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:07 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:08 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:09 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:10 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:11 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:47:12 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:12 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.13
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:47:13 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:14 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:15 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:16 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:17 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:18 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:19 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:20 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:21 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:22 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:23 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:24 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:25 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:26 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:27 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:28 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:29 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:30 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:31 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:32 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:33 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:34 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:35 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:36 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:37 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:38 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:39 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:40 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:41 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:42 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:43 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:44 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:45 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:46 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:47 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:48 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:49 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:50 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:51 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:52 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:53 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:54 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:55 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:56 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:57 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:58 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:47:59 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:00 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:01 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:02 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:03 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:04 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:05 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:06 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:07 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:08 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:09 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:10 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:11 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:12 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:13 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:14 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:15 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:16 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:17 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:18 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:19 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:20 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:21 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:22 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:23 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:23 INFO Client: 
+	 client token: N/A
+	 diagnostics: [Tue May 29 19:48:23 +0000 2018] Application is Activated, waiting for resources to be assigned for AM.  Details : AM Partition = <DEFAULT_PARTITION> ; Partition Resource = <memory:204800, vCores:60> ; Queue's Absolute capacity = 50.0 % ; Queue's Absolute used capacity = 0.0 % ; Queue's Absolute max capacity = 100.0 % ; 
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:48:24 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:25 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:26 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:27 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:28 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:29 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:30 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:48:31 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:31 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.13
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:48:32 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:33 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:34 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:35 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:36 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:37 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:38 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:39 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:40 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:41 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:42 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:43 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:44 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:45 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:46 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:47 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:48 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:49 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:50 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:51 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:52 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:53 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:54 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:55 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:56 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:57 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:58 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:48:59 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:00 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:01 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:02 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:03 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:04 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:05 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:06 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:07 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:08 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:09 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:10 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:11 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:12 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:13 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:14 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:15 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:16 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:17 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:18 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:18 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:49:19 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:20 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:21 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:22 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:23 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:24 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:25 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:49:26 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:26 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.13
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:49:27 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:28 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:29 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:30 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:31 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:32 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:33 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:34 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:35 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:36 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:37 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:38 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:39 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:40 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:41 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:42 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:43 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:44 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:45 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:46 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:47 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:48 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:49 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:50 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:51 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:52 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:53 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:54 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:55 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:56 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:57 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:58 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:49:59 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:00 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:01 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:02 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:03 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:04 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:05 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:06 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:07 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:08 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:09 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:10 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:10 INFO Client: 
+	 client token: N/A
+	 diagnostics: [Tue May 29 19:50:10 +0000 2018] Application is Activated, waiting for resources to be assigned for AM.  Details : AM Partition = <DEFAULT_PARTITION> ; Partition Resource = <memory:204800, vCores:60> ; Queue's Absolute capacity = 50.0 % ; Queue's Absolute used capacity = 0.0 % ; Queue's Absolute max capacity = 100.0 % ; 
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:50:11 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:12 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:13 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:14 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:15 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:16 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:17 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:18 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:50:19 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:19 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.14
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:50:20 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:21 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:22 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:23 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:24 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:25 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:26 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:27 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:28 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:29 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:30 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:31 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:32 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:33 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:34 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:35 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:36 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:37 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:38 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:39 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:40 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:41 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:42 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:43 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:44 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:45 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:46 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:47 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:48 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:49 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:50 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:51 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:52 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:53 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:54 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:55 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:56 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:57 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:58 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:50:59 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:00 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:01 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:02 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:03 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:04 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:05 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:06 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:06 INFO Client: 
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:51:07 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:08 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:09 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:10 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:11 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:12 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:13 INFO Client: Application report for application_1527512542584_0001 (state: ACCEPTED)
+18/05/29 19:51:14 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:14 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.14
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1527623175713
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:51:15 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:16 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:17 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:18 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:19 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:20 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:21 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:22 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:23 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:24 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:25 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:26 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:27 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:28 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:29 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:30 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:31 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:32 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:33 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:34 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:35 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:36 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:37 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:38 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:39 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:40 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:41 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:42 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:43 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:44 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:45 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:46 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:47 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:48 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:49 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:50 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:51 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:52 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:53 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:54 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:55 INFO Client: Application report for application_1527512542584_0001 (state: RUNNING)
+18/05/29 19:51:56 INFO Client: Application report for application_1527512542584_0001 (state: FINISHED)
+18/05/29 19:51:56 INFO Client: 
+	 client token: N/A
+	 diagnostics: User application exited with status 1
+	 ApplicationMaster host: 10.0.0.14
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1527623175713
+	 final status: FAILED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0001/
+	 user: ninghai
+18/05/29 19:51:56 WARN AzureFileSystemThreadPoolExecutor: Disabling threads for Delete operation as thread count 0 is <= 1
+18/05/29 19:51:56 INFO AzureFileSystemThreadPoolExecutor: Time taken for Delete operation is: 179 ms with threads: 0
+18/05/29 19:51:56 INFO Client: Deleted staging directory wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0001
+Exception in thread "main" org.apache.spark.SparkException: Application application_1527512542584_0001 finished with failed status
+	at org.apache.spark.deploy.yarn.Client.run(Client.scala:1241)
+	at org.apache.spark.deploy.yarn.Client$.main(Client.scala:1287)
+	at org.apache.spark.deploy.yarn.Client.main(Client.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:745)
+	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:187)
+	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:212)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:126)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+18/05/29 19:51:56 INFO ShutdownHookManager: Shutdown hook called
+18/05/29 19:51:56 INFO ShutdownHookManager: Deleting directory /tmp/spark-ce8db975-0fb5-4131-a58e-ff705876b4df
+18/05/29 19:51:56 INFO MetricsSystemImpl: Stopping azure-file-system metrics system...
+18/05/29 19:51:56 INFO MetricsSinkAdapter: azurefs2 thread interrupted.
+18/05/29 19:51:56 INFO MetricsSystemImpl: azure-file-system metrics system stopped.
+18/05/29 19:51:56 INFO MetricsSystemImpl: azure-file-system metrics system shutdown complete.
+18/05/29 19:51:58 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.0.0.21:10200
+18/05/29 19:51:58 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm1, rm2]...
+18/05/29 19:51:58 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm1]
+18/05/29 19:51:59 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+18/05/29 19:52:00 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+Container: container_e25_1527512542584_0001_01_000001 on 10.0.0.13_30050_1527623517812
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:00 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Tue May 29 19:51:57 +0000 2018
+LogLength:548
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/05/29 19:48:21 ERROR ApplicationMaster: User application exited with status 1
+
+End of LogType:stderr
+
+Container: container_e25_1527512542584_0001_02_000001 on 10.0.0.13_30050_1527623517812
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:00 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Tue May 29 19:51:57 +0000 2018
+LogLength:548
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/05/29 19:49:16 ERROR ApplicationMaster: User application exited with status 1
+
+End of LogType:stderr
+
+Container: container_e25_1527512542584_0001_03_000001 on 10.0.0.13_30050_1527623517812
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:01 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Tue May 29 19:51:57 +0000 2018
+LogLength:548
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/05/29 19:50:09 ERROR ApplicationMaster: User application exited with status 1
+
+End of LogType:stderr
+
+Container: container_e25_1527512542584_0001_04_000001 on 10.0.0.14_30050_1527623518295
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:01 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Tue May 29 19:51:58 +0000 2018
+LogLength:548
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/05/29 19:51:05 ERROR ApplicationMaster: User application exited with status 1
+
+End of LogType:stderr
+
+Container: container_e25_1527512542584_0001_05_000001 on 10.0.0.14_30050_1527623518295
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:02 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Tue May 29 19:51:58 +0000 2018
+LogLength:697
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/05/29 19:51:55 ERROR ApplicationMaster: User application exited with status 1
+18/05/29 19:51:56 ERROR NativeAzureFileSystem: Failed to delete files / subfolders in blob user/ninghai/.sparkStaging/application_1527512542584_0001
+
+End of LogType:stderr
+
+
+Specified ALL for -am option. Printed logs for all am containers.
+18/05/29 19:52:04 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.0.0.21:10200
+18/05/29 19:52:04 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm1, rm2]...
+18/05/29 19:52:04 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm1]
+18/05/29 19:52:05 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+18/05/29 19:52:05 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+Container: container_e25_1527512542584_0001_01_000001 on 10.0.0.13_30050_1527623517812
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:06 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Tue May 29 19:51:57 +0000 2018
+LogLength:8721
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Reading for machine learning
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.3,3.0,1.1,0.1]|  0.0|[6.34637953023586...|[0.98035608640833...|       0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|[5.62154777318021...|[0.96289310023227...|       0.0|
+|[4.9,2.5,4.5,1.7]|  2.0|[-2.1780339589509...|[0.01851587163326...|       1.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.48425661807315...|[0.94666962768228...|       0.0|
+|[5.0,2.3,3.3,1.0]|  1.0|[-0.0961814850091...|[0.08739418074187...|       1.0|
+|[5.0,3.0,1.6,0.2]|  0.0|[4.83536476613573...|[0.90073384152518...|       0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|[5.83693932790414...|[0.97105276236210...|       0.0|
+|[5.0,3.4,1.6,0.4]|  0.0|[5.32019088832273...|[0.96073952514244...|       0.0|
+|[5.0,3.5,1.6,0.6]|  0.0|[5.12795588983172...|[0.96355591877426...|       0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|[6.38713980922055...|[0.98537978652095...|       0.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9411764705882353
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 50, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 141, in __exit__
+    self.blacklist + [self.user_log_path])
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 87, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_01_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0001_02_000001 on 10.0.0.13_30050_1527623517812
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:07 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Tue May 29 19:51:57 +0000 2018
+LogLength:10712
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Reading for machine learning
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.3,3.0,1.1,0.1]|  0.0|[6.56767557032151...|[0.98409368922857...|       0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|[5.70256338279249...|[0.96252472595505...|       0.0|
+|[4.4,3.0,1.3,0.2]|  0.0|[6.02574646349824...|[0.97449415887574...|       0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|[6.11464354061677...|[0.97645769999704...|       0.0|
+|[4.7,3.2,1.6,0.2]|  0.0|[5.81321904878564...|[0.96968385451997...|       0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|[5.33107259443417...|[0.93451493521134...|       0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.67544565183094...|[0.95307937436576...|       0.0|
+|[5.0,3.2,1.2,0.2]|  0.0|[5.85859894815493...|[0.96348491765736...|       0.0|
+|[5.0,3.3,1.4,0.2]|  0.0|[5.88035753702955...|[0.96801938328510...|       0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|[6.00259095651454...|[0.97426988591537...|       0.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9555555555555556
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 141, in __exit__
+    self.blacklist + [self.user_log_path])
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 87, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 50, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 157, in __exit__
+    self.run_tracker.upload_file(self.driver_log_name, self.user_log_path)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/core/run.py", line 461, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_02_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 53, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0001_03_000001 on 10.0.0.13_30050_1527623517812
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:07 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Tue May 29 19:51:57 +0000 2018
+LogLength:10712
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Reading for machine learning
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.5,2.3,1.3,0.3]|  0.0|[3.50796311420355...|[0.62882081355072...|       0.0|
+|[4.6,3.6,1.0,0.2]|  0.0|[7.43863624372736...|[0.99520455126776...|       0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|[5.94479631530770...|[0.97133379861159...|       0.0|
+|[4.8,3.4,1.9,0.2]|  0.0|[5.80161487078829...|[0.97280868538052...|       0.0|
+|[4.9,2.5,4.5,1.7]|  2.0|[-2.4060520793990...|[0.01300363142422...|       1.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.46055795924763...|[0.94412702758675...|       0.0|
+|[5.0,2.0,3.5,1.0]|  1.0|[-1.4597122053259...|[0.01710946130425...|       1.0|
+|[5.0,3.0,1.6,0.2]|  0.0|[4.76719042092561...|[0.89178735629245...|       0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|[5.95476116047693...|[0.97346330601772...|       0.0|
+|[5.1,3.5,1.4,0.2]|  0.0|[6.20858876092388...|[0.97985614657397...|       0.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9574468085106383
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 141, in __exit__
+    self.blacklist + [self.user_log_path])
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 87, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 50, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 157, in __exit__
+    self.run_tracker.upload_file(self.driver_log_name, self.user_log_path)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/core/run.py", line 461, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_03_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 53, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0001_04_000001 on 10.0.0.14_30050_1527623518295
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:08 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Tue May 29 19:51:58 +0000 2018
+LogLength:10712
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Reading for machine learning
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.4,2.9,1.4,0.2]|  0.0|[5.42902324939381...|[0.95985516501065...|       0.0|
+|[4.4,3.0,1.3,0.2]|  0.0|[5.78304675724378...|[0.97248236623147...|       0.0|
+|[4.6,3.6,1.0,0.2]|  0.0|[7.38704653276478...|[0.99518576291680...|       0.0|
+|[4.7,3.2,1.6,0.2]|  0.0|[5.66114837882014...|[0.96875260490570...|       0.0|
+|[4.9,2.5,4.5,1.7]|  2.0|[-2.4320283844091...|[0.01283858410090...|       2.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.49798502961135...|[0.95485899887582...|       0.0|
+|[5.0,2.0,3.5,1.0]|  1.0|[-1.3253455578563...|[0.03017955241968...|       1.0|
+|[5.0,3.0,1.6,0.2]|  0.0|[4.81942478357154...|[0.91488439746812...|       0.0|
+|[5.0,3.4,1.6,0.4]|  0.0|[5.41031779559563...|[0.96472551858552...|       0.0|
+|[5.0,3.5,1.3,0.3]|  0.0|[6.17694181313349...|[0.98225845473572...|       0.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9574468085106383
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 141, in __exit__
+    self.blacklist + [self.user_log_path])
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 87, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 50, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 157, in __exit__
+    self.run_tracker.upload_file(self.driver_log_name, self.user_log_path)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/core/run.py", line 461, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_04_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 53, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0001_05_000001 on 10.0.0.14_30050_1527623518295
+LogAggregationType: AGGREGATED
+======================================================================================
+18/05/29 19:52:08 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Tue May 29 19:51:58 +0000 2018
+LogLength:10701
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Reading for machine learning
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.5,2.3,1.3,0.3]|  0.0|[3.30125985536087...|[0.52205648625706...|       0.0|
+|[4.8,3.0,1.4,0.3]|  0.0|[4.73044194439934...|[0.90630863975511...|       0.0|
+|[4.8,3.4,1.6,0.2]|  0.0|[5.80516514824629...|[0.97859706024343...|       0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|[4.81865194032741...|[0.90024604170859...|       0.0|
+|[5.0,3.0,1.6,0.2]|  0.0|[4.52293444956589...|[0.86767309287533...|       0.0|
+|[5.0,3.3,1.4,0.2]|  0.0|[5.50246542755794...|[0.96142288267814...|       0.0|
+|[5.1,3.5,1.4,0.2]|  0.0|[5.92129314747431...|[0.97883853283348...|       0.0|
+|[5.1,3.5,1.4,0.3]|  0.0|[5.72193933683433...|[0.97650747692017...|       0.0|
+|[5.1,3.8,1.9,0.4]|  0.0|[5.85610863801273...|[0.98850904482823...|       0.0|
+|[5.2,2.7,3.9,1.4]|  1.0|[-1.0091534840508...|[0.06287299045792...|       1.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.96875
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 141, in __exit__
+    self.blacklist + [self.user_log_path])
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 87, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 50, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 157, in __exit__
+    self.run_tracker.upload_file(self.driver_log_name, self.user_log_path)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/core/run.py", line 461, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0001/container_e25_1527512542584_0001_05_000001/azureml_40b348c4d7381beefb01312cdebdaa0b.zip/home/ninghai/.azureml/envs/azureml_40b348c4d7381beefb01312cdebdaa0b/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 53, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+
+End of LogType:stdout
+
+
+Specified ALL for -am option. Printed logs for all am containers.
+
+Execution Summary
+=================
+RunId: e2e-05_1527623142877
+
+{'Regularization Rate': [0.01, 0.01, 0.01, 0.01, 0.01], 'Accuracy': [0.9411764705882353, 0.9555555555555556, 0.9574468085106383, 0.9574468085106383, 0.96875]}
+
+
+##### 07.sklearn.hd.py (2018-05-29-15:52:32) ###########
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/07 already exists, remove it.
+/tmp/e2e-test/07
+e2e-07
+copy train-sklearn-one-model.py to the project folder.
+create or load BatchAI compute cpucluster...
+creating a new compute target...
+BatchAI provisioning operation finished, operation "Succeeded"
+create generic estimator.
+
+##################################################
+Batch AI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-07/run-history/run-details/e2e-07_1527623613186
+RunId: e2e-07_1527623613186
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha value is: 0.1
+Ridget model fitted.
+Mean Squared Error is: 3372.6496278100326
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-07_1527623613186
+
+configure hyperdrive.
+
+##################################################
+Hyperdrive run on Batch AI...
+##################################################
+
+
+
+##### 08.tf.hd.py (2018-05-29-15:59:26) ################
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/08 already exists, remove it.
+/tmp/e2e-test/08
+e2e-08
+copy mnist_tf.py to the project folder.
+create or load BatchAI compute gpucluster...
+cpucluster BatchAI
+creating a new compute target...
+BatchAI provisioning operation finished, operation "Succeeded"
+create TensorFlow estimator.
+
+##################################################
+submitting mnist_tf.py for a Batch AI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-08/run-history/run-details/e2e-08_1527624009102
+RunId: e2e-08_1527624009102
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Execution Summary
+=================
+RunId: e2e-08_1527624009102
+
+configure hyperdrive.
+
+##################################################
+submitting mnist_tf.py for a hyperdrive run on Batch AI...
+##################################################
+
+
+
+##### 10.o16n.py #################
+Azure ML Core SDK Version: 0.1.0.978900
+Found config.json in: /data/git/ViennaTest/results/2018-05-29-15-17-01-EDT/scripts/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+Registering model: mymodel
+Name: mymodel 	Version: 1 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Ridge regression model to predict diabetes
+Creating image
+Image creation operation finished for image myimage:1, operation "Succeeded"
+myimage(v.1 [Succeeded]) stored at haieastuacrqrtnjabs.azurecr.io/myimage:1 with build log https://amlbdbatchint.blob.core.windows.net/logs/haieastuacrqrtnjabs15276240485435702.txt?sr=b&sig=MdhyV57Y0Ib4IQp7abjJQ1Z98KY34Zm7m4ufE%2BdAqrI%3D&sv=2017-04-17&sp=r&se=2018-06-28T20%3A01%3A58Z
+Creating service
+ACI service creation operation finished, operation "Succeeded"
+{"result": [5215.19813157987, 3726.9954859385803]}
+rrs02 http://168.61.43.109:5001/score
+rrs01 http://40.114.36.104:5001/score
+
+
+###################################
+########### END AT 2018-05-29-16:07:36
+###################################
