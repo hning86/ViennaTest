@@ -6,7 +6,7 @@ echo "###################################"
 echo "START AT: $(date +%F-%T)"
 echo "###################################"
 
-#. activate $env_name
+. /home/ninghai/miniconda3/bin/activate $env_name
 
 #python ./00.config.py
 

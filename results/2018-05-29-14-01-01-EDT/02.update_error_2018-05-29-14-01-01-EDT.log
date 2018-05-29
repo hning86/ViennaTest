@@ -1,0 +1,20 @@
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+mkl-random 1.0.1 requires cython, which is not installed.
+mkl-fft 1.0.0 requires cython, which is not installed.
+Installing /home/ninghai/miniconda3/lib/python3.6/site-packages/azureml/contrib/widgets/static -> azureml_contrib_widgets
+Up to date: /home/ninghai/miniconda3/share/jupyter/nbextensions/azureml_contrib_widgets/index.js.map
+Up to date: /home/ninghai/miniconda3/share/jupyter/nbextensions/azureml_contrib_widgets/index.js
+Up to date: /home/ninghai/miniconda3/share/jupyter/nbextensions/azureml_contrib_widgets/extension.js
+- Validating: [32mOK[0m
+
+    To initialize this nbextension in the browser every time the notebook (or other app) loads:
+    
+          jupyter nbextension enable azureml.contrib.widgets --py --sys-prefix
+    
+Enabling notebook extension azureml_contrib_widgets/extension...
+      - Validating: [32mOK[0m
