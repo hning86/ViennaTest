@@ -12,8 +12,13 @@ which python
 . /home/ninghai/miniconda3/bin/activate $env_name
 which python
 
-python -c 'print("azureml.core.VERSION'
-python -c 'import azureml.core; print(azureml.core.VERSION)'
+. /home/ninghai/miniconda3/bin/activate daily
+
+cv="$(python -c 'import azureml.core; print(azureml.core.VERSION)')"
+echo "###### azureml.core ########"
+echo "${cv}"
+echo "############################"
+
 
 #python ./00.config.py
 
