@@ -7,7 +7,13 @@ echo "START AT: $(date +%F-%T)"
 echo "###################################"
 
 echo ". /home/ninghai/miniconda3/bin/activate $env_name"
+
+which python
 . /home/ninghai/miniconda3/bin/activate $env_name
+which python
+
+python -c 'print("azureml.core.VERSION'
+python -c 'import azureml.core; print(azureml.core.VERSION)'
 
 #python ./00.config.py
 

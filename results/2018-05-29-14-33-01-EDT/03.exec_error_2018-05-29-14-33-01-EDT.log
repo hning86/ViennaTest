@@ -1,3 +1,10 @@
+  File "<string>", line 1
+    print("azureml.core.VERSION
+                              ^
+SyntaxError: EOL while scanning string literal
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'azureml'
 Traceback (most recent call last):
   File "./01.interactive.e2e.py", line 6, in <module>
     import azureml.core
