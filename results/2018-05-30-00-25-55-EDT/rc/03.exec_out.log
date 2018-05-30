@@ -1,0 +1,49 @@
+###################################
+START AT: 2018-05-30-00:27:30
+###################################
+
+
+##### 01.interactive.e2e.py (2018-05-30-00:27:30) ######
+Azure ML Core SDK Version: 0.1.0.954785
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+start sequential parameter sweep...
+try alpha value of 0.00
+try alpha value of 0.05
+try alpha value of 0.10
+try alpha value of 0.15
+try alpha value of 0.20
+try alpha value of 0.25
+try alpha value of 0.30
+try alpha value of 0.35
+try alpha value of 0.40
+try alpha value of 0.45
+try alpha value of 0.50
+try alpha value of 0.55
+try alpha value of 0.60
+
+
+##### 02.local.py (2018-05-30-00:27:56) ################
+
+
+##### 03.aci.py (2018-05-30-00:27:56) ##################
+
+
+##### 04.dsvm (2018-05-30-00:27:56) ####################
+
+
+##### 05.spark (2018-05-30-00:27:56) ###################
+
+
+##### 07.sklearn.hd.py (2018-05-30-00:27:56) ###########
+
+
+##### 08.tf.hd.py (2018-05-30-00:27:56) ################
+
+
+##### 10.o16n.py () #################
+
+
+###################################
+########### END AT 2018-05-30-00:27:56
+###################################
