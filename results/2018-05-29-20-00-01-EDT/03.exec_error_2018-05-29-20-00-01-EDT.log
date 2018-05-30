@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eastus2euap.experiments.azureml.net', port=443): Max retries exceeded with url: /history/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-01/runs/50299827-f9c0-4a3c-b141-5b0873cf217e/runmetrics (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/msrest/service_client.py", line 257, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='eastus2euap.experiments.azureml.net', port=443): Max retries exceeded with url: /history/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-01/runs/50299827-f9c0-4a3c-b141-5b0873cf217e/runmetrics (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 67, in <module>
+    run.log("alpha", alpha)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/core/run.py", line 451, in log
+    self._client.log(name, value, description)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 22, in log
+    self.log_scalar(name, value, description)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 65, in log_scalar
+    return self._log(name, {name: value}, description)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 59, in _log
+    return self._client.post_runmetrics(self.get_run_id(), run_metric_dto)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/restclient/run_history_client.py", line 200, in post_runmetrics
+    run_metric_dto=run_metric_dto)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/restclient/project_client.py", line 58, in _execute_with_project_arguments
+    **kwargs_copy)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/restclient/clientbase.py", line 101, in _execute_with_base_arguments
+    return func(*args, **kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/azureml/restclient/operations/runmetric_operations.py", line 179, in post
+    request, header_parameters, body_content, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/msrest/service_client.py", line 290, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/msrest/exceptions.py", line 45, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/msrest/service_client.py", line 257, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/rc/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='eastus2euap.experiments.azureml.net', port=443): Max retries exceeded with url: /history/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-01/runs/50299827-f9c0-4a3c-b141-5b0873cf217e/runmetrics (Caused by ResponseError('too many 500 error responses',))
+date: extra operand ‘%F-%T’
+Try 'date --help' for more information.
+Client-Request-ID=084e5f74-63a1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 30 May 2018 00:33:11 GMT, Server-Request-ID=e7d51955-701e-0059-57ad-f7a22a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e7d51955-701e-0059-57ad-f7a22a000000Time:2018-05-30T00:33:11.6095936Z</Message></Error>.
+Client-Request-ID=084e5f76-63a1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 30 May 2018 00:33:12 GMT, Server-Request-ID=bbfdfc6a-d01e-0040-50ad-f72291000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:bbfdfc6a-d01e-0040-50ad-f72291000000Time:2018-05-30T00:33:13.0824713Z</Message></Error>.
+Client-Request-ID=09419feb-63a1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 30 May 2018 00:33:12 GMT, Server-Request-ID=e55dd758-901e-006e-41ad-f77086000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e55dd758-901e-006e-41ad-f77086000000Time:2018-05-30T00:33:13.2400069Z</Message></Error>.
+Client-Request-ID=09419fed-63a1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 30 May 2018 00:33:13 GMT, Server-Request-ID=91d521ab-c01e-005c-42ad-f770f1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:91d521ab-c01e-005c-42ad-f770f1000000Time:2018-05-30T00:33:13.3975127Z</Message></Error>.
+Client-Request-ID=09419fef-63a1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 30 May 2018 00:33:12 GMT, Server-Request-ID=fcbc613f-f01e-0057-55ad-f78b9a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:fcbc613f-f01e-0057-55ad-f78b9a000000Time:2018-05-30T00:33:13.5548385Z</Message></Error>.
