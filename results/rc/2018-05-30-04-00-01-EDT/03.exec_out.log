@@ -1,0 +1,77 @@
+###################################
+START AT: 2018-05-30-04:01:39
+###################################
+
+
+##### 01.interactive.e2e.py (2018-05-30-04:01:39) ######
+Azure ML Core SDK Version: 0.1.0.954785
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+start sequential parameter sweep...
+try alpha value of 0.00
+try alpha value of 0.05
+try alpha value of 0.10
+try alpha value of 0.15
+try alpha value of 0.20
+try alpha value of 0.25
+try alpha value of 0.30
+try alpha value of 0.35
+try alpha value of 0.40
+try alpha value of 0.45
+try alpha value of 0.50
+try alpha value of 0.55
+try alpha value of 0.60
+try alpha value of 0.65
+try alpha value of 0.70
+try alpha value of 0.75
+try alpha value of 0.80
+
+
+##### 02.local.py (2018-05-30-04:17:47) ################
+Azure ML Core SDK Version: 0.1.0.954785
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/02 already exists, remove it.
+
+
+##### 03.aci.py (2018-05-30-04:20:45) ##################
+Azure ML Core SDK Version: 0.1.0.954785
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/03 already exists, remove it.
+/tmp/e2e-test/03
+e2e-03
+copy train-sklearn.py to the project folder.
+
+##################################################
+ACI run...
+##################################################
+
+Create a run config object for ACI
+base image is continuumio/miniconda3:4.4.10
+submitting run...
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-03/run-history/run-details/e2e-03_1527668529312
+RunId: e2e-03_1527668529312
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+
+##### 04.dsvm (2018-05-30-04:38:09) ####################
+Azure ML Core SDK Version: 0.1.0.954785
+Workspace details:
+aml-notebooks haieastus2euapws eastus2euap
+/tmp/e2e-test/04 already exists, remove it.
+/tmp/e2e-test/04
+e2e-04
+copy train-sklearn.py to the project folder.
+
+##################################################
+Bare VM run
+##################################################
+
+Load the cpu-dsvm config from aml_config directory...
+submit run...
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2euapws/projects/e2e-04/run-history/run-details/e2e-04_1527669497774
+RunId: e2e-04_1527669497774

@@ -1,0 +1,82 @@
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 10, in <module>
+    from azureml.core.compute import AciCompute
+ImportError: cannot import name 'AciCompute'
+Traceback (most recent call last):
+  File "./02.local.py", line 51, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 110, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 258, in _start_internal_local_cloud
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2euap.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-02/localrun?runId=e2e-02_1527669116",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Traceback (most recent call last):
+  File "./03.aci.py", line 85, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2euap.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-03/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 70, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2euap.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-04/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Traceback (most recent call last):
+  File "./05.spark.py", line 81, in <module>
+    script_to_run = "train-spark.py")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2euap.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-05/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 48, in <module>
+    print(ct.name, ct.cluster_type)
+AttributeError: 'BatchAiCompute' object has no attribute 'cluster_type'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 49, in <module>
+    print(ct.name, ct.cluster_type)
+AttributeError: 'BatchAiCompute' object has no attribute 'cluster_type'
+date: extra operand ‘%F-%T’
+Try 'date --help' for more information.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 10, in <module>
+    from azureml.core.compute import AciCompute
+ImportError: cannot import name 'AciCompute'
