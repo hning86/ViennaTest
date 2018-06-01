@@ -1,0 +1,20 @@
+error: pathspec 'daily' did not match any file(s) known to git.
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 10, in <module>
+    from azureml.core.compute import AciCompute
+ImportError: cannot import name 'AciCompute'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 48, in <module>
+    print(ct.name, ct.cluster_type)
+AttributeError: 'BatchAiCompute' object has no attribute 'cluster_type'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 49, in <module>
+    print(ct.name, ct.cluster_type)
+AttributeError: 'BatchAiCompute' object has no attribute 'cluster_type'
+date: extra operand ‘%F-%T’
+Try 'date --help' for more information.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 10, in <module>
+    from azureml.core.compute import AciCompute
+ImportError: cannot import name 'AciCompute'
+Already on 'master'
