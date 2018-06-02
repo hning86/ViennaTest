@@ -1,0 +1,36 @@
+Already on 'master'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 6, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "./02.local.py", line 1, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "./03.aci.py", line 1, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 1, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "./05.spark.py", line 1, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 1, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 1, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+date: extra operand ‘%F-%T’
+Try 'date --help' for more information.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 6, in <module>
+    import azureml.core
+ModuleNotFoundError: No module named 'azureml'
+Already on 'master'
