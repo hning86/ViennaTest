@@ -1,0 +1,33 @@
+error: pathspec 'daily' did not match any file(s) known to git.
+<class 'AssertionError'>: 
+<traceback object at 0x7fe98b1de908>
+<class 'AssertionError'>: 
+<traceback object at 0x7fe98b1de908>
+<class 'AssertionError'>: 
+<traceback object at 0x7fe98b1de908>
+<class 'AssertionError'>: 
+<traceback object at 0x7fe98b1de908>
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 75, in <module>
+    run.upload_file(name = "outputs/" + model_file_name, path_or_stream = model_file_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 474, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 57, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+date: extra operand ‘%F-%T’
+Try 'date --help' for more information.
+Client-Request-ID=4fe87c9c-6672-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sat, 02 Jun 2018 14:36:18 GMT, Server-Request-ID=544d26fa-401e-0042-1f7f-fa9c29000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:544d26fa-401e-0042-1f7f-fa9c29000000Time:2018-06-02T14:36:18.8831818Z</Message></Error>.
+Client-Request-ID=4fe87c9e-6672-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sat, 02 Jun 2018 14:36:18 GMT, Server-Request-ID=4172b87c-401e-007d-1b7f-fa548a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:4172b87c-401e-007d-1b7f-fa548a000000Time:2018-06-02T14:36:19.0390153Z</Message></Error>.
+Client-Request-ID=4fe87ca0-6672-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sat, 02 Jun 2018 14:36:18 GMT, Server-Request-ID=bd506f25-601e-0018-287f-faface000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:bd506f25-601e-0018-287f-faface000000Time:2018-06-02T14:36:19.1996149Z</Message></Error>.
+Client-Request-ID=4fe87ca2-6672-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sat, 02 Jun 2018 14:36:19 GMT, Server-Request-ID=638e3901-801e-004d-4f7f-faea45000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:638e3901-801e-004d-4f7f-faea45000000Time:2018-06-02T14:36:19.3569026Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 88, in <module>
+    model.delete()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/model.py", line 313, in delete
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 412
+Headers: {'Date': 'Sat, 02 Jun 2018 14:42:03 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': 'fd31171b65e84a949a7cf73522efe4a7', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"PreconditionFailed","statusCode":412,"message":"PreconditionFailed","details":[{"code":"DeletionRequired","message":"The model with id mymodel:1 can not be deleted because it is currently being used in one or more images"}]}'
+Already on 'master'
