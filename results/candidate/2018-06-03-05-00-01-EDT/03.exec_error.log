@@ -42,3 +42,20 @@ Traceback (most recent call last):
   File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
     raise HTTPError(http_error_msg, response=self)
 requests.exceptions.HTTPError: 500 Server Error: InternalServerError for url: https://eastus2euap.experiments.azureml.net/credential/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/secrets
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 94, in <module>
+    run.wait_for_completion(show_output = True)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 69, in wait_for_completion
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 214, in _stream_run_output
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 830, in _get_content_from_uri
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 521, in get
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 407, in send
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 226, in cert_verify
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/certifi/cacert.pem
+Traceback (most recent call last):
+  File "./10.o16n.py", line 6, in <module>
+    import azureml.core
+ImportError: No module named azureml.core
+Already on 'master'
