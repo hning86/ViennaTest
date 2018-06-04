@@ -1,1 +1,131 @@
 Switched to branch 'candidate'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 57, in <module>
+    with root_run.child_run("alpha" + str(alpha)) as run:
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/run.py", line 423, in child_run
+    run_id=run_id)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/_run_impl/scope_client.py", line 42, in child_run
+    run_name=child_name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/restclient/run_history_client.py", line 127, in create_child_run
+    new_child_run=create_run_dto)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/restclient/project_client.py", line 58, in _execute_with_project_arguments
+    **kwargs_copy)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/restclient/clientbase.py", line 101, in _execute_with_base_arguments
+    return func(*args, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/restclient/operations/run_operations.py", line 414, in create_child
+    raise HttpOperationError(self._deserialize, response)
+msrest.exceptions.HttpOperationError: Operation returned an invalid status code 'Run with runId=66847793-da88-4ee4-b24f-6069d02b1fea already exists.'
+Traceback (most recent call last):
+  File "./03.aci.py", line 85, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/projects/e2e-03/run",
+    "status_code": 500,
+    "text": "{\n  \"error\": {\n    \"code\": \"ServiceError\",\n    \"message\": \"InternalServerError\",\n    \"target\": null,\n    \"details\": [],\n    \"innerError\": null,\n    \"debugInfo\": {\n      \"type\": \"System.Net.Http.HttpRequestException\",\n      \"message\": \"An error occurred while sending the request.\",\n      \"stackTrace\": \"   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()\\n   at System.Net.Http.DiagnosticsHandler.<SendAsync>d__2.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()\\n   at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.Client.ServiceInvoker.<_Invoke>d__18`1.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.Client/ServiceInvoker.cs:line 247\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Execution.Services.ProxyClients.RunHistoryServiceProxy.<AddOrModifyRun>d__3.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Execution/Services/ProxyClients/RunHistoryServiceProxy.cs:line 43\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Execution.Services.HistoryManager.<StartHistoryTracking>d__5.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Execution/Services/HistoryManager.cs:line 77\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Execution.EntryPoints.Api.Controllers.ExecutionController.<StartRun>d__26.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Execution/EntryPoints/Api/Controllers/ExecutionController.cs:line 331\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Execution.EntryPoints.Api.Controllers.ExecutionController.<StartRun>d__22.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Execution/EntryPoints/Api/Controllers/ExecutionController.cs:line 215\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at lambda_method(Closure , Object )\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()\",\n      \"innerException\": {\n        \"type\": \"System.Net.Http.CurlException\",\n        \"message\": \"Couldn't resolve host name\",\n        \"stackTrace\": \"   at System.Net.Http.CurlHandler.ThrowIfCURLEError(CURLcode error)\\n   at System.Net.Http.CurlHandler.MultiAgent.FinishRequest(StrongToWeakReference`1 easyWrapper, CURLcode messageResult)\",\n        \"innerException\": null,\n        \"data\": {},\n        \"errorResponse\": null\n      },\n      \"data\": {},\n      \"errorResponse\": null\n    }\n  },\n  \"correlation\": {\n    \"operation\": \"13c55855-49d99f35c936cc6c\",\n    \"request\": \"bqWD4n8YCMo=\"\n  }\n}"
+}
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 45, in <module>
+    password = 'Spark888*123'))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/project.py", line 285, in attach_legacy_compute_target
+    _compute_target_commands.attach_ssh_based_compute_targets(self, compute_target)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_compute_target_commands.py", line 67, in attach_ssh_based_compute_targets
+    ssh_key_info, project_context, compute_skeleton)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_compute_target_commands.py", line 163, in _set_password_or_key_info
+    set_credentials(project_context, key, password)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/credentials.py", line 21, in set_credentials
+    response.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 500 Server Error: InternalServerError for url: https://eastus2.experiments.azureml.net/credential/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/secrets
+Traceback (most recent call last):
+  File "./05.spark.py", line 81, in <module>
+    script_to_run = "train-spark.py")
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 365, in _start_internal
+    snapshot_id = snapshot_async.get()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 102, in create_snapshot
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/6a5106e2-cd60-45a0-9af3-66368ac991fc?parentSnapshotId=1862e172-d454-4f76-a7d3-f5edcaf9d160",
+    "status_code": 500,
+    "text": "{\n  \"error\": {\n    \"code\": \"ServiceError\",\n    \"message\": \"InternalServerError\",\n    \"target\": null,\n    \"details\": [],\n    \"innerError\": null,\n    \"debugInfo\": {\n      \"type\": \"System.Net.Http.HttpRequestException\",\n      \"message\": \"An error occurred while sending the request.\",\n      \"stackTrace\": \"   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()\\n   at System.Net.Http.DiagnosticsHandler.<SendAsync>d__2.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()\\n   at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.Client.ServiceInvoker.<_Invoke>d__18`1.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.Client/ServiceInvoker.cs:line 247\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.TeamAccounts.WorkspaceControllerBase.<GetWorkspace>d__21.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.TeamAccounts/WorkspaceControllerBase.cs:line 153\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.TeamAccounts.WorkspaceControllerBase.<LoadWorkspaceAsync>d__19.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.TeamAccounts/WorkspaceControllerBase.cs:line 100\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.TeamAccounts.WorkspaceControllerBase.<OnActionExecutionAsync>d__18.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.TeamAccounts/WorkspaceControllerBase.cs:line 89\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionFilter.<OnActionExecutionAsync>d__4.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()\",\n      \"innerException\": {\n        \"type\": \"System.Net.Http.CurlException\",\n        \"message\": \"Couldn't resolve host name\",\n        \"stackTrace\": \"   at System.Net.Http.CurlHandler.ThrowIfCURLEError(CURLcode error)\\n   at System.Net.Http.CurlHandler.MultiAgent.FinishRequest(StrongToWeakReference`1 easyWrapper, CURLcode messageResult)\",\n        \"innerException\": null,\n        \"data\": {},\n        \"errorResponse\": null\n      },\n      \"data\": {},\n      \"errorResponse\": null\n    }\n  },\n  \"correlation\": {\n    \"operation\": \"a5a84ac2-464ab7e4645aca89\",\n    \"request\": \"79YOduOAGTY=\"\n  }\n}"
+}
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 88, in <module>
+    run = sk_est.fit()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/train/estimator.py", line 451, in fit
+    return super(Estimator, self).fit()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/train/estimator.py", line 91, in fit
+    _telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/projects/e2e-07/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 92, in <module>
+    run = tfe.fit()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/train/dnn.py", line 320, in fit
+    return super(TensorFlow, self).fit()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/train/estimator.py", line 91, in fit
+    _telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/run.py", line 96, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/projects/e2e-08/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Client-Request-ID=2bee8684-683d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 04 Jun 2018 21:20:57 GMT, Server-Request-ID=eae6c7b1-901e-007f-3749-fcca03000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:eae6c7b1-901e-007f-3749-fcca03000000Time:2018-06-04T21:20:57.5238443Z</Message></Error>.
+Client-Request-ID=3679348c-683d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 04 Jun 2018 21:21:14 GMT, Server-Request-ID=8f62961e-a01e-00b0-2b49-fcadb1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:8f62961e-a01e-00b0-2b49-fcadb1000000Time:2018-06-04T21:21:15.2108894Z</Message></Error>.
+Client-Request-ID=3679348e-683d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 04 Jun 2018 21:21:15 GMT, Server-Request-ID=24af6748-801e-0085-6249-fc03e4000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:24af6748-801e-0085-6249-fc03e4000000Time:2018-06-04T21:21:15.4176963Z</Message></Error>.
+Client-Request-ID=36793490-683d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 04 Jun 2018 21:21:14 GMT, Server-Request-ID=fe814683-301e-00be-4649-fc41ba000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:fe814683-301e-00be-4649-fc41ba000000Time:2018-06-04T21:21:15.5827023Z</Message></Error>.
+Client-Request-ID=36793492-683d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Mon, 04 Jun 2018 21:21:15 GMT, Server-Request-ID=4c37c2bd-101e-010c-5b49-fcfc95000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:4c37c2bd-101e-010c-5b49-fcfc95000000Time:2018-06-04T21:21:15.7706236Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 50, in <module>
+    image.wait_for_creation(show_output = True)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/image.py", line 381, in wait_for_creation
+    self.update_creation_state()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/image.py", line 417, in update_creation_state
+    image = Image(self.workspace, id=self.id)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/image.py", line 55, in __init__
+    get_response_payload = self._get(workspace, name, id, tag)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/image.py", line 153, in _get
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 500
+Headers: {'Date': 'Mon, 04 Jun 2018 21:24:35 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': 'c761a216d14e40dfa288198dc8874098', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"InternalServerError","statusCode":500,"message":"An internal server error occurred. Please try again. If the problem persists, contact support"}'
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/aml_config/config.json
+Please, commit your changes or stash them before you can switch branches.
+Aborting
