@@ -1,0 +1,14 @@
+Current directory is: 
+/data/git/hai
+*** git stash ***
+*** git checkout master ***
+Your branch is up-to-date with 'origin/master'.
+*** git pull ***
+Updating eeacf34..23edc6e
+Fast-forward
+ clear-batchai-jobs.sh | 1 -
+ 1 file changed, 1 deletion(-)
+*** current branch ***
+  candidate
+  daily
+* master
