@@ -1,0 +1,44 @@
+Switched to branch 'daily'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 46, in <module>
+    root_run = Run.start_logging(workspace = ws, run_history_name = run_history_name)
+TypeError: start_logging() missing 1 required positional argument: 'history_name'
+Traceback (most recent call last):
+  File "./02.local.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./03.aci.py", line 31, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./05.spark.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 32, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 33, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Client-Request-ID=2c53580a-690c-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 22:02:43 GMT, Server-Request-ID=c7d2d173-c01e-002e-4618-fd77be000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:c7d2d173-c01e-002e-4618-fd77be000000Time:2018-06-05T22:02:44.0062617Z</Message></Error>.
+Client-Request-ID=2c53580c-690c-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 22:02:43 GMT, Server-Request-ID=88492053-f01e-0068-5d18-fd4339000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:88492053-f01e-0068-5d18-fd4339000000Time:2018-06-05T22:02:44.1641650Z</Message></Error>.
+Client-Request-ID=2c53580e-690c-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 22:02:44 GMT, Server-Request-ID=06a87a9d-d01e-000d-6018-fded7d000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:06a87a9d-d01e-000d-6018-fded7d000000Time:2018-06-05T22:02:44.3215085Z</Message></Error>.
+Client-Request-ID=2c535810-690c-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 22:02:44 GMT, Server-Request-ID=9c9fc775-701e-003b-0818-fd600d000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:9c9fc775-701e-003b-0818-fd600d000000Time:2018-06-05T22:02:44.4800386Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 80, in <module>
+    for w in ws.list_webservices():
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 876, in list_webservices
+    return Webservice.list(self)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 379, in list
+    service_obj = child.deserialize(workspace, service_dict)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 272, in deserialize
+    webservice = AciWebservice(None)
+TypeError: __init__() missing 1 required positional argument: 'name'
+Switched to branch 'master'
