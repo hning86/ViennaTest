@@ -71,3 +71,42 @@ azureml.exceptions.azureml_exception.ExperimentExecutionException: {
     "status_code": 500,
     "text": "{\n  \"error\": {\n    \"code\": \"ServiceError\",\n    \"message\": \"InternalServerError\",\n    \"target\": null,\n    \"details\": [],\n    \"innerError\": null,\n    \"debugInfo\": {\n      \"type\": \"System.Net.Http.HttpRequestException\",\n      \"message\": \"An error occurred while sending the request.\",\n      \"stackTrace\": \"   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()\\n   at System.Net.Http.DiagnosticsHandler.<SendAsync>d__2.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at System.Runtime.CompilerServices.ConfiguredTaskAwaitable`1.ConfiguredTaskAwaiter.GetResult()\\n   at System.Net.Http.HttpClient.<FinishSendAsyncBuffered>d__58.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.Client.ServiceInvoker.<_Invoke>d__18`1.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.Client/ServiceInvoker.cs:line 247\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.TeamAccounts.WorkspaceControllerBase.<GetWorkspace>d__21.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.TeamAccounts/WorkspaceControllerBase.cs:line 153\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.TeamAccounts.WorkspaceControllerBase.<LoadWorkspaceAsync>d__19.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.TeamAccounts/WorkspaceControllerBase.cs:line 100\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.MachineLearning.Common.WebApi.TeamAccounts.WorkspaceControllerBase.<OnActionExecutionAsync>d__18.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/Common/WebApi.TeamAccounts/WorkspaceControllerBase.cs:line 89\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionFilter.<OnActionExecutionAsync>d__4.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\\n--- End of stack trace from previous location where exception was thrown ---\\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()\",\n      \"innerException\": {\n        \"type\": \"System.Net.Http.CurlException\",\n        \"message\": \"Couldn't resolve host name\",\n        \"stackTrace\": \"   at System.Net.Http.CurlHandler.ThrowIfCURLEError(CURLcode error)\\n   at System.Net.Http.CurlHandler.MultiAgent.FinishRequest(StrongToWeakReference`1 easyWrapper, CURLcode messageResult)\",\n        \"innerException\": null,\n        \"data\": {},\n        \"errorResponse\": null\n      },\n      \"data\": {},\n      \"errorResponse\": null\n    }\n  },\n  \"correlation\": {\n    \"operation\": \"d85c9339-460fba55b9e4cbd6\",\n    \"request\": \"cRUh5hT2OAg=\"\n  }\n}"
 }
+Traceback (most recent call last):
+  File "./05.spark.py", line 86, in <module>
+    run.wait_for_completion(show_output = True)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 69, in wait_for_completion
+    self._stream_run_output(file_handle=sys.stdout, wait_post_processing=wait_post_processing)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 201, in _stream_run_output
+    self._current_status = self.get_status()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 136, in get_status
+    return self._get_run_status_with_retry(3)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/experiment_run.py", line 158, in _get_run_status_with_retry
+    return _commands.run_status(self._project_object, self._run_config_object, self._run_id)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 558, in run_status
+    return _get_status_from_history(project_object, run_id, project_context)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 811, in _get_status_from_history
+    response = session.get(runstatus_uri, headers=headers)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 521, in get
+    return self.request('GET', url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/adapters.py", line 407, in send
+    self.cert_verify(conn, request.url, verify, cert)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/adapters.py", line 226, in cert_verify
+    "invalid path: {0}".format(cert_loc))
+OSError: Could not find a suitable TLS CA certificate bundle, invalid path: /home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/certifi/cacert.pem
+  File "./07.sklearn.hd.py", line 34
+    print(project.project_directory, project.run_history.name, sep = '\n')
+                                                                   ^
+SyntaxError: invalid syntax
+  File "./08.tf.hd.py", line 35
+    print(project.project_directory, project.run_history.name, sep = '\n')
+                                                                   ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "./10.o16n.py", line 6, in <module>
+    import azureml.core
+ImportError: No module named azureml.core
+Already on 'master'
