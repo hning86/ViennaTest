@@ -1,0 +1,41 @@
+Switched to branch 'candidate'
+Client-Request-ID=e6a29cd9-6903-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:03:31 GMT, Server-Request-ID=2292ee6f-b01e-00a4-3b10-fd6ed5000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:2292ee6f-b01e-00a4-3b10-fd6ed5000000Time:2018-06-05T21:03:31.5950823Z</Message></Error>.
+Client-Request-ID=e6a29cdb-6903-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:03:31 GMT, Server-Request-ID=13f8bc6f-b01e-008d-5310-fd1897000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:13f8bc6f-b01e-008d-5310-fd1897000000Time:2018-06-05T21:03:31.7736114Z</Message></Error>.
+Client-Request-ID=e6a29cdd-6903-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:03:31 GMT, Server-Request-ID=2d78ec03-301e-0110-2e10-fd2482000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:2d78ec03-301e-0110-2e10-fd2482000000Time:2018-06-05T21:03:31.9378125Z</Message></Error>.
+Client-Request-ID=e6a29cdf-6903-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:03:32 GMT, Server-Request-ID=6d2b93d5-601e-0108-3310-fd0917000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:6d2b93d5-601e-0108-3310-fd0917000000Time:2018-06-05T21:03:32.1162583Z</Message></Error>.
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 147, in <module>
+    print(service.run(input_data=test_sample))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No schema supplied. Perhaps you meant http://None?
+Client-Request-ID=24d0645e-6909-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:41:02 GMT, Server-Request-ID=3d12deb2-b01e-0063-5315-fd1214000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:3d12deb2-b01e-0063-5315-fd1214000000Time:2018-06-05T21:41:02.9156370Z</Message></Error>.
+Client-Request-ID=24d06460-6909-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:41:02 GMT, Server-Request-ID=90edf1c3-a01e-0038-7b15-fd1568000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:90edf1c3-a01e-0038-7b15-fd1568000000Time:2018-06-05T21:41:03.1038888Z</Message></Error>.
+Client-Request-ID=24d06462-6909-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:41:02 GMT, Server-Request-ID=5ff8eccf-501e-00ae-2415-fd775c000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:5ff8eccf-501e-00ae-2415-fd775c000000Time:2018-06-05T21:41:03.2856236Z</Message></Error>.
+Client-Request-ID=24d06464-6909-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Tue, 05 Jun 2018 21:41:03 GMT, Server-Request-ID=f09b0a66-a01e-0033-7115-fd0d1c000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:f09b0a66-a01e-0033-7115-fd0d1c000000Time:2018-06-05T21:41:03.4717736Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 88, in <module>
+    model.delete()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/model.py", line 313, in delete
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 412
+Headers: {'Date': 'Tue, 05 Jun 2018 21:47:58 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '6dc261154cef4011ad13b11204650551', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"PreconditionFailed","statusCode":412,"message":"PreconditionFailed","details":[{"code":"DeletionRequired","message":"The model with id mymodel:26 can not be deleted because it is currently being used in one or more images"}]}'
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/best_model.pkl
+	e2e_test/mse_over_alpha.png
+Please, commit your changes or stash them before you can switch branches.
+Aborting
