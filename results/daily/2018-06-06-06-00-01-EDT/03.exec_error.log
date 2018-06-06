@@ -1,0 +1,96 @@
+Switched to branch 'daily'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 46, in <module>
+    root_run = Run.start_logging(workspace = ws, run_history_name = run_history_name)
+TypeError: start_logging() missing 1 required positional argument: 'history_name'
+Traceback (most recent call last):
+  File "./02.local.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./03.aci.py", line 31, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./05.spark.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 32, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 33, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Client-Request-ID=cccf6e86-6970-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 10:03:02 GMT, Server-Request-ID=c3cc83e7-501e-002c-527d-fdc906000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:c3cc83e7-501e-002c-527d-fdc906000000Time:2018-06-06T10:03:02.9274432Z</Message></Error>.
+Client-Request-ID=cccf6e88-6970-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 10:03:02 GMT, Server-Request-ID=28a20a06-301e-0083-5a7d-fd3bcb000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:28a20a06-301e-0083-5a7d-fd3bcb000000Time:2018-06-06T10:03:03.0854133Z</Message></Error>.
+Client-Request-ID=cccf6e8a-6970-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 10:03:02 GMT, Server-Request-ID=a7d182c7-301e-002a-1d7d-fdfab9000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:a7d182c7-301e-002a-1d7d-fdfab9000000Time:2018-06-06T10:03:03.2447095Z</Message></Error>.
+Client-Request-ID=cccf6e8c-6970-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 10:03:02 GMT, Server-Request-ID=f5d7483b-801e-002f-287d-fd2862000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:f5d7483b-801e-002f-287d-fd2862000000Time:2018-06-06T10:03:03.4010621Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/retry.py", line 357, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/packages/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 387, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 2, in raise_from
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 383, in _make_request
+    httplib_response = conn.getresponse()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 1331, in getresponse
+    response.begin()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 297, in begin
+    version, status, reason = self._read_status()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/http/client.py", line 266, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 50, in <module>
+    image.wait_for_creation(show_output = True)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/image.py", line 361, in wait_for_creation
+    operation_state, error = self._get_operation_state(MMS_WORKSPACE_API_VERSION)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/image.py", line 384, in _get_operation_state
+    resp = requests.get(self._operation_endpoint, headers=headers, params=params, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/api.py", line 72, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/adapters.py", line 490, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+Switched to branch 'master'
