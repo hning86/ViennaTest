@@ -1,0 +1,58 @@
+Switched to branch 'daily'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 46, in <module>
+    root_run = Run.start_logging(workspace = ws, run_history_name = run_history_name)
+TypeError: start_logging() missing 1 required positional argument: 'history_name'
+Traceback (most recent call last):
+  File "./02.local.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./03.aci.py", line 31, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./05.spark.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 32, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 33, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Client-Request-ID=d62b9020-69b3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 18:02:54 GMT, Server-Request-ID=4479c00d-b01e-000b-45c0-fddec2000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:4479c00d-b01e-000b-45c0-fddec2000000Time:2018-06-06T18:02:54.9146152Z</Message></Error>.
+Client-Request-ID=d62b9022-69b3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 18:02:54 GMT, Server-Request-ID=63f2e113-801e-004d-51c0-fdea45000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:63f2e113-801e-004d-51c0-fdea45000000Time:2018-06-06T18:02:55.0696954Z</Message></Error>.
+Client-Request-ID=d62b9024-69b3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 18:02:55 GMT, Server-Request-ID=ae33b97a-001e-006c-20c0-fdce3e000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ae33b97a-001e-006c-20c0-fdce3e000000Time:2018-06-06T18:02:55.2281757Z</Message></Error>.
+Client-Request-ID=d62b9026-69b3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 18:02:55 GMT, Server-Request-ID=cfa684d2-401e-000f-4fc0-fd53c5000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:cfa684d2-401e-000f-4fc0-fd53c5000000Time:2018-06-06T18:02:55.3846951Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 271, in _deploy_webservice
+    resp.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://eastus2euap.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/services?api-version=2018-03-01-preview
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 64, in <module>
+    image = image)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 787, in deploy_webservice
+    return Webservice.deploy_from_image(self, name, image, deploy_config, target)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 233, in deploy_from_image
+    return child._deploy(workspace, name, image, deployment_config)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 107, in _deploy
+    return Webservice._deploy_webservice(workspace, name, create_payload, AciWebservice)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 276, in _deploy_webservice
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 409
+Headers: {'Date': 'Wed, 06 Jun 2018 18:04:23 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': 'e2dad8d67de6410f9ea8e52d5c40abda', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"Conflict","statusCode":409,"message":"Conflict","details":[{"code":"ServiceWithNameExists","message":"Workspace haieastus2euapws already contains a Service with name: rrs02"}]}'
+Switched to branch 'master'
