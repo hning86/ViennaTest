@@ -1,0 +1,45 @@
+Already on 'master'
+Client-Request-ID=0a47f6ec-691d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:03:28 GMT, Server-Request-ID=0bfef66e-f01e-006f-1129-fdfce5000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:0bfef66e-f01e-006f-1129-fdfce5000000Time:2018-06-06T00:03:28.3338488Z</Message></Error>.
+Client-Request-ID=0a47f6ee-691d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:03:28 GMT, Server-Request-ID=e7bb04f8-401e-00f5-3f29-fd7020000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e7bb04f8-401e-00f5-3f29-fd7020000000Time:2018-06-06T00:03:28.7395209Z</Message></Error>.
+Client-Request-ID=0a47f6f0-691d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:03:28 GMT, Server-Request-ID=b56167d0-001e-0118-4329-fd3ff1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b56167d0-001e-0118-4329-fd3ff1000000Time:2018-06-06T00:03:28.9335870Z</Message></Error>.
+Client-Request-ID=0a47f6f2-691d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:03:28 GMT, Server-Request-ID=d6de9ee9-e01e-0112-4429-fd2678000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:d6de9ee9-e01e-0112-4429-fd2678000000Time:2018-06-06T00:03:29.0954907Z</Message></Error>.
+Client-Request-ID=0a47f6f4-691d-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:03:28 GMT, Server-Request-ID=dcc8fb4c-401e-00b1-2629-fdac4c000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:dcc8fb4c-401e-00b1-2629-fdac4c000000Time:2018-06-06T00:03:29.2901564Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 281, in _deploy_webservice
+    resp.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://eastus2.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/services?api-version=2018-03-01-preview
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 139, in <module>
+    driver = 'score.py')
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/workspace.py", line 819, in deploy_webservice
+    return Webservice.deploy_from_image(self, name, image, deploy_config, target)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 242, in deploy_from_image
+    return child._deploy(workspace, name, image, deployment_config)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 109, in _deploy
+    return Webservice._deploy_webservice(workspace, name, create_payload, AciWebservice)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 286, in _deploy_webservice
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 409
+Headers: {'Date': 'Wed, 06 Jun 2018 00:04:59 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': 'a4b5297838bf449dac20a2ca4977dbd1', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"Conflict","statusCode":409,"message":"Conflict","details":[{"code":"ServiceWithNameExists","message":"Workspace haieastus2ws3 already contains a Service with name: rrs01a"}]}'
+Client-Request-ID=351f3314-6920-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:26:07 GMT, Server-Request-ID=b9a1c502-e01e-00da-502c-fdf11a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b9a1c502-e01e-00da-502c-fdf11a000000Time:2018-06-06T00:26:08.6881505Z</Message></Error>.
+Client-Request-ID=351f3316-6920-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:26:09 GMT, Server-Request-ID=e7bfd544-401e-00f5-142c-fd7020000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e7bfd544-401e-00f5-142c-fd7020000000Time:2018-06-06T00:26:09.8366406Z</Message></Error>.
+Client-Request-ID=351f3318-6920-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:26:09 GMT, Server-Request-ID=b56677c6-001e-0118-6a2c-fd3ff1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b56677c6-001e-0118-6a2c-fd3ff1000000Time:2018-06-06T00:26:10.0440872Z</Message></Error>.
+Client-Request-ID=3606ab55-6920-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:26:09 GMT, Server-Request-ID=d6e53733-e01e-0112-802c-fd2678000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:d6e53733-e01e-0112-802c-fd2678000000Time:2018-06-06T00:26:10.2512236Z</Message></Error>.
+Client-Request-ID=3606ab57-6920-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 06 Jun 2018 00:26:10 GMT, Server-Request-ID=dccc2702-401e-00b1-062c-fdac4c000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:dccc2702-401e-00b1-062c-fdac4c000000Time:2018-06-06T00:26:10.4548384Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 89, in <module>
+    model.delete()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/model.py", line 300, in delete
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 412
+Headers: {'Date': 'Wed, 06 Jun 2018 00:32:22 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': 'd69a918191164c3f896c01b99c169626', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"PreconditionFailed","statusCode":412,"message":"PreconditionFailed","details":[{"code":"DeletionRequired","message":"The model with id mymodel:26 can not be deleted because it is currently being used in one or more images"}]}'
+Already on 'master'
