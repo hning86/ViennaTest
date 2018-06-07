@@ -1,0 +1,50 @@
+Switched to branch 'candidate'
+Client-Request-ID=dcc7d86f-6a74-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:04:39 GMT, Server-Request-ID=4517696d-b01e-00a4-0a81-fe6ed5000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:4517696d-b01e-00a4-0a81-fe6ed5000000Time:2018-06-07T17:04:39.4121164Z</Message></Error>.
+Client-Request-ID=dcc7d871-6a74-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:04:39 GMT, Server-Request-ID=7472b24d-b01e-008d-3d81-fe1897000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7472b24d-b01e-008d-3d81-fe1897000000Time:2018-06-07T17:04:39.6328408Z</Message></Error>.
+Client-Request-ID=dcc7d873-6a74-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:04:39 GMT, Server-Request-ID=c57e832a-301e-0110-2381-fe2482000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:c57e832a-301e-0110-2381-fe2482000000Time:2018-06-07T17:04:39.7914413Z</Message></Error>.
+Client-Request-ID=dcc7d875-6a74-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:04:39 GMT, Server-Request-ID=a1ce6e2d-601e-0108-5681-fe0917000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:a1ce6e2d-601e-0108-5681-fe0917000000Time:2018-06-07T17:04:39.9495422Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 291, in _deploy_webservice
+    resp.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://eastus2.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/services?api-version=2018-03-01-preview
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 139, in <module>
+    driver = 'score.py')
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 787, in deploy_webservice
+    return Webservice.deploy_from_image(self, name, image, deploy_config, target)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 253, in deploy_from_image
+    return child._deploy(workspace, name, image, deployment_config)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 108, in _deploy
+    return Webservice._deploy_webservice(workspace, name, create_payload, AciWebservice)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 296, in _deploy_webservice
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 409
+Headers: {'Date': 'Thu, 07 Jun 2018 17:06:05 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '92460c36c78a4062824be6c7f8aa579d', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"Conflict","statusCode":409,"message":"Conflict","details":[{"code":"ServiceWithNameExists","message":"Workspace haieastus2ws3 already contains a Service with name: rrs01a"}]}'
+2018-06-07 13:37:20,598 WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f8bf5191be0>: Failed to establish a new connection: [Errno 110] Connection timed out',)': /hyperdrive/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/projects/e2e-07/runs
+2018-06-07 13:39:27,830 WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f8bf5191c88>: Failed to establish a new connection: [Errno 110] Connection timed out',)': /hyperdrive/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/projects/e2e-07/runs
+2018-06-07 13:41:35,190 WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x7f8bf5191d68>: Failed to establish a new connection: [Errno 110] Connection timed out',)': /hyperdrive/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/projects/e2e-07/runs
+Client-Request-ID=54186abf-6a7a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:43:47 GMT, Server-Request-ID=d6d12683-d01e-00fb-6287-fe9c2b000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:d6d12683-d01e-00fb-6287-fe9c2b000000Time:2018-06-07T17:43:48.1054633Z</Message></Error>.
+Client-Request-ID=551b42c5-6a7a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:43:48 GMT, Server-Request-ID=b12d61f9-b01e-00e0-0c87-feb2b9000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b12d61f9-b01e-00e0-0c87-feb2b9000000Time:2018-06-07T17:43:48.4663899Z</Message></Error>.
+Client-Request-ID=551b42c7-6a7a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:43:48 GMT, Server-Request-ID=2b209102-d01e-001e-0487-fe8edc000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:2b209102-d01e-001e-0487-fe8edc000000Time:2018-06-07T17:43:48.7218747Z</Message></Error>.
+Client-Request-ID=551b42c9-6a7a-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 07 Jun 2018 17:43:48 GMT, Server-Request-ID=5728aad1-801e-006b-0a87-fe0967000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:5728aad1-801e-006b-0a87-fe0967000000Time:2018-06-07T17:43:48.8977551Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 88, in <module>
+    model.delete()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/model.py", line 313, in delete
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 412
+Headers: {'Date': 'Thu, 07 Jun 2018 17:50:52 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '89eda2b6dc93494982fca3f48c8f9726', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"PreconditionFailed","statusCode":412,"message":"PreconditionFailed","details":[{"code":"DeletionRequired","message":"The model with id mymodel:26 can not be deleted because it is currently being used in one or more images"}]}'
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/best_model.pkl
+	e2e_test/mse_over_alpha.png
+Please, commit your changes or stash them before you can switch branches.
+Aborting
