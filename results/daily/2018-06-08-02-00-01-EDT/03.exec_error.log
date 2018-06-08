@@ -1,0 +1,74 @@
+Switched to branch 'daily'
+Client-Request-ID=ad8ae754-6ae1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:03:34 GMT, Server-Request-ID=e3b58a48-d01e-001d-0cee-fe2815000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e3b58a48-d01e-001d-0cee-fe2815000000Time:2018-06-08T06:03:34.7572384Z</Message></Error>.
+Client-Request-ID=ad8ae756-6ae1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:03:34 GMT, Server-Request-ID=9571f7aa-d01e-0050-3bee-fee7f9000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:9571f7aa-d01e-0050-3bee-fee7f9000000Time:2018-06-08T06:03:34.9133904Z</Message></Error>.
+Client-Request-ID=ad8ae758-6ae1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:03:34 GMT, Server-Request-ID=ce2037c2-c01e-004c-7dee-feb599000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ce2037c2-c01e-004c-7dee-feb599000000Time:2018-06-08T06:03:35.0696004Z</Message></Error>.
+Client-Request-ID=ad8ae75a-6ae1-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:03:34 GMT, Server-Request-ID=3d71a16a-b01e-0069-3aee-fe1ce5000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:3d71a16a-b01e-0069-3aee-fe1ce5000000Time:2018-06-08T06:03:35.2270214Z</Message></Error>.
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 147, in <module>
+    print(service.run(input_data=test_sample))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 179, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No schema supplied. Perhaps you meant http://None?
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 113, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 66, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2euap.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-04/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 88, in <module>
+    run = sk_est.fit()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/estimator.py", line 438, in fit
+    return super(Estimator, self).fit()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/train/estimator.py", line 78, in fit
+    _telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 66, in submit
+    execute_with_zip=_execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 116, in start_run
+    execute_with_zip=execute_with_zip)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 383, in _start_internal
+    _raise_request_error(response, "starting run")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 729, in _raise_request_error
+    raise ExperimentExecutionException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.ExperimentExecutionException: {
+    "url": "https://eastus2euap.experiments.azureml.net/execution/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-07/run",
+    "status_code": 502,
+    "text": "<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body bgcolor=\"white\">\r\n<center><h1>502 Bad Gateway</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n"
+}
+Client-Request-ID=89744072-6ae6-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:38:21 GMT, Server-Request-ID=73842cf2-601e-0008-5af3-fe3fa6000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:73842cf2-601e-0008-5af3-fe3fa6000000Time:2018-06-08T06:38:21.6956943Z</Message></Error>.
+Client-Request-ID=89744074-6ae6-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:38:21 GMT, Server-Request-ID=3e3683d5-f01e-000a-20f3-fe811e000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:3e3683d5-f01e-000a-20f3-fe811e000000Time:2018-06-08T06:38:21.8510581Z</Message></Error>.
+Client-Request-ID=89744076-6ae6-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:38:21 GMT, Server-Request-ID=c80891d0-c01e-002e-2df3-fe77be000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:c80891d0-c01e-002e-2df3-fe77be000000Time:2018-06-08T06:38:22.0079709Z</Message></Error>.
+Client-Request-ID=89744078-6ae6-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 06:38:21 GMT, Server-Request-ID=8882246c-f01e-0068-2bf3-fe4339000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:8882246c-f01e-0068-2bf3-fe4339000000Time:2018-06-08T06:38:22.1656074Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 64, in <module>
+    image = image)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 791, in deploy_webservice
+    'creation state.'.format(image.id))
+azureml.exceptions.azureml_exception.WebserviceException: Unable to create service with image myimage:42 in non "Succeeded" creation state.
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/best_model.pkl
+	e2e_test/mse_over_alpha.png
+Please, commit your changes or stash them before you can switch branches.
+Aborting
