@@ -1,0 +1,7 @@
+name: myenv
+channels:
+  - defaults
+dependencies:
+  - pip:
+    - numpy
+    - scikit-learn
