@@ -1,0 +1,51 @@
+Switched to branch 'candidate'
+Client-Request-ID=4b08b8d5-6ad9-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:03:33 GMT, Server-Request-ID=a7a71a7d-501e-00e1-7de6-feb344000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:a7a71a7d-501e-00e1-7de6-feb344000000Time:2018-06-08T05:03:34.1149476Z</Message></Error>.
+Client-Request-ID=4b08b8d7-6ad9-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:03:34 GMT, Server-Request-ID=776bb7fe-201e-0104-69e6-fee7e6000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:776bb7fe-201e-0104-69e6-fee7e6000000Time:2018-06-08T05:03:34.2833421Z</Message></Error>.
+Client-Request-ID=4b08b8d9-6ad9-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:03:34 GMT, Server-Request-ID=ae64ae39-a01e-00ff-7fe6-fe69a9000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ae64ae39-a01e-00ff-7fe6-fe69a9000000Time:2018-06-08T05:03:34.4411985Z</Message></Error>.
+Client-Request-ID=4b08b8db-6ad9-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:03:33 GMT, Server-Request-ID=983275cd-c01e-0089-6ee6-feed15000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:983275cd-c01e-0089-6ee6-feed15000000Time:2018-06-08T05:03:34.6230508Z</Message></Error>.
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 147, in <module>
+    print(service.run(input_data=test_sample))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No schema supplied. Perhaps you meant http://None?
+Client-Request-ID=3d2d6e94-6ade-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:38:56 GMT, Server-Request-ID=653d09e5-101e-0125-1aea-fe8ad7000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:653d09e5-101e-0125-1aea-fe8ad7000000Time:2018-06-08T05:38:57.7464815Z</Message></Error>.
+Client-Request-ID=3d2d6e96-6ade-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:38:57 GMT, Server-Request-ID=a7ac66a6-501e-00e1-67ea-feb344000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:a7ac66a6-501e-00e1-67ea-feb344000000Time:2018-06-08T05:38:57.9051664Z</Message></Error>.
+Client-Request-ID=3d2d6e98-6ade-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:38:57 GMT, Server-Request-ID=ae6bae08-a01e-00ff-74ea-fe69a9000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ae6bae08-a01e-00ff-74ea-fe69a9000000Time:2018-06-08T05:38:58.0610039Z</Message></Error>.
+Client-Request-ID=3d2d6e9a-6ade-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Fri, 08 Jun 2018 05:38:57 GMT, Server-Request-ID=9837f250-c01e-0089-39ea-feed15000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:9837f250-c01e-0089-39ea-feed15000000Time:2018-06-08T05:38:58.2272115Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 77, in <module>
+    prediction = service.run(input_data = test_sample)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No schema supplied. Perhaps you meant http://None?
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/aml_config/config.json
+	e2e_test/best_model.pkl
+	e2e_test/mse_over_alpha.png
+Please, commit your changes or stash them before you can switch branches.
+Aborting
