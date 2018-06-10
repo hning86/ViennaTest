@@ -3,3 +3,75 @@ Client-Request-ID=34f4b929-6cd0-11e8-9288-000d3a71b7c3 Retry policy did not allo
 Client-Request-ID=34f4b92b-6cd0-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:03:33 GMT, Server-Request-ID=d52f680a-601e-0007-08dc-00a2b4000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:d52f680a-601e-0007-08dc-00a2b4000000Time:2018-06-10T17:03:34.0999798Z</Message></Error>.
 Client-Request-ID=34f4b92d-6cd0-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:03:33 GMT, Server-Request-ID=beb94a07-901e-00b8-61dc-00b6c2000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:beb94a07-901e-00b8-61dc-00b6c2000000Time:2018-06-10T17:03:34.3732410Z</Message></Error>.
 Client-Request-ID=34f4b92f-6cd0-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:03:33 GMT, Server-Request-ID=e73ba36c-301e-00b5-32dc-0059ce000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e73ba36c-301e-00b5-32dc-0059ce000000Time:2018-06-10T17:03:34.5359780Z</Message></Error>.
+Client-Request-ID=d3263018-6cd5-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:43:45 GMT, Server-Request-ID=79a2ff72-601e-0025-6be2-00cc82000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:79a2ff72-601e-0025-6be2-00cc82000000Time:2018-06-10T17:43:46.2215032Z</Message></Error>.
+Client-Request-ID=d326301a-6cd5-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:43:46 GMT, Server-Request-ID=dc4ed80d-b01e-000e-7ce2-00b83a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:dc4ed80d-b01e-000e-7ce2-00b83a000000Time:2018-06-10T17:43:46.4247508Z</Message></Error>.
+Client-Request-ID=d326301c-6cd5-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:43:46 GMT, Server-Request-ID=b379c077-901e-00f7-71e2-0072da000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b379c077-901e-00f7-71e2-0072da000000Time:2018-06-10T17:43:46.6082765Z</Message></Error>.
+Client-Request-ID=d326301e-6cd5-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 17:43:46 GMT, Server-Request-ID=16adae80-001e-00f9-5ce2-009ed1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:16adae80-001e-00f9-5ce2-009ed1000000Time:2018-06-10T17:43:46.7819820Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connection.py", line 146, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7f9d9f875860>, 'Connection to 40.121.67.120 timed out. (connect timeout=80)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='40.121.67.120', port=5001): Max retries exceeded with url: /score (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9d9f875860>, 'Connection to 40.121.67.120 timed out. (connect timeout=80)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 77, in <module>
+    prediction = service.run(input_data = test_sample)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='40.121.67.120', port=5001): Max retries exceeded with url: /score (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7f9d9f875860>, 'Connection to 40.121.67.120 timed out. (connect timeout=80)'))
+./test-all.sh: 98: ./test-all.sh: get: not found
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/aml_config/config.json
+	e2e_test/best_model.pkl
+	e2e_test/mse_over_alpha.png
+Please, commit your changes or stash them before you can switch branches.
+Aborting
