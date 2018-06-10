@@ -1,0 +1,55 @@
+Switched to branch 'daily'
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f14f21c3308>
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f14f21c3308>
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f14f21c3308>
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f14f21c3308>
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 67, in <module>
+    run.log("alpha", alpha)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 448, in log
+    self._client.log(name, value, description)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 45, in log
+    self.log_scalar(name, value, description)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 155, in log_scalar
+    self._check_is_valid_scalar(value)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 185, in _check_is_valid_scalar
+    valid_types))
+azureml.exceptions.azureml_exception.AzureMLException: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "./02.local.py", line 92, in <module>
+    min(metrics['mse']), 
+KeyError: 'mse'
+Client-Request-ID=a05f1a12-6caa-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 12:34:32 GMT, Server-Request-ID=f205fb84-401e-00dc-5fb7-000662000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:f205fb84-401e-00dc-5fb7-000662000000Time:2018-06-10T12:34:32.6687178Z</Message></Error>.
+Client-Request-ID=a05f1a14-6caa-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 12:34:31 GMT, Server-Request-ID=648575c6-c01e-0127-62b7-00882d000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:648575c6-c01e-0127-62b7-00882d000000Time:2018-06-10T12:34:32.8824991Z</Message></Error>.
+Client-Request-ID=a05f1a16-6caa-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 12:34:32 GMT, Server-Request-ID=5425a15b-801e-0042-1db7-007f25000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:5425a15b-801e-0042-1db7-007f25000000Time:2018-06-10T12:34:33.1111940Z</Message></Error>.
+Client-Request-ID=a05f1a18-6caa-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 12:34:32 GMT, Server-Request-ID=7f87d3f8-101e-00cf-21b7-003383000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7f87d3f8-101e-00cf-21b7-003383000000Time:2018-06-10T12:34:33.2891918Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 268, in _deploy_webservice
+    resp.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/models.py", line 935, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://eastus2.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/services?api-version=2018-03-01-preview
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 64, in <module>
+    image = image)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 792, in deploy_webservice
+    return Webservice.deploy_from_image(self, name, image, deploy_config, target)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 230, in deploy_from_image
+    return child._deploy(workspace, name, image, deployment_config)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 88, in _deploy
+    return Webservice._deploy_webservice(workspace, name, create_payload, AciWebservice)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 273, in _deploy_webservice
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 409
+Headers: {'Date': 'Sun, 10 Jun 2018 12:36:50 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': 'a686729b5eee49d8a4b261e082047c99', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"Conflict","statusCode":409,"message":"Conflict","details":[{"code":"ServiceWithNameExists","message":"Workspace haieastus2ws3 already contains a Service with name: rrs02"}]}'
+./test-all.sh: 98: ./test-all.sh: get: not found
+Already on 'master'
