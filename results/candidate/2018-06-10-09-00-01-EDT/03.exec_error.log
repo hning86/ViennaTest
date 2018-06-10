@@ -1,0 +1,81 @@
+Switched to branch 'candidate'
+Client-Request-ID=ae5e2669-6cae-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:03:33 GMT, Server-Request-ID=fbd139e4-c01e-00e4-06bb-00473b000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:fbd139e4-c01e-00e4-06bb-00473b000000Time:2018-06-10T13:03:34.6240748Z</Message></Error>.
+Client-Request-ID=ae5e266b-6cae-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:03:34 GMT, Server-Request-ID=77b28e3f-c01e-0105-4cbb-00e61b000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:77b28e3f-c01e-0105-4cbb-00e61b000000Time:2018-06-10T13:03:34.8312324Z</Message></Error>.
+Client-Request-ID=ae5e266d-6cae-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:03:34 GMT, Server-Request-ID=7b6d0a2b-401e-00d7-06bb-001e16000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7b6d0a2b-401e-00d7-06bb-001e16000000Time:2018-06-10T13:03:35.0307906Z</Message></Error>.
+Client-Request-ID=ae5e266f-6cae-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:03:34 GMT, Server-Request-ID=b9e5d496-a01e-0011-75bb-00632a000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:b9e5d496-a01e-0011-75bb-00632a000000Time:2018-06-10T13:03:35.2000233Z</Message></Error>.
+Client-Request-ID=d0b94abd-6cb3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:40:19 GMT, Server-Request-ID=0f1bc862-601e-00ad-34c0-00745b000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:0f1bc862-601e-00ad-34c0-00745b000000Time:2018-06-10T13:40:20.7325231Z</Message></Error>.
+Client-Request-ID=d0b94abf-6cb3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:40:20 GMT, Server-Request-ID=d8b47501-301e-0097-1fc0-0037f8000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:d8b47501-301e-0097-1fc0-0037f8000000Time:2018-06-10T13:40:20.8979497Z</Message></Error>.
+Client-Request-ID=d0b94ac1-6cb3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:40:20 GMT, Server-Request-ID=f24a4092-c01e-0045-51c0-0089a0000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:f24a4092-c01e-0045-51c0-0089a0000000Time:2018-06-10T13:40:21.1001511Z</Message></Error>.
+Client-Request-ID=d1e54617-6cb3-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 13:40:20 GMT, Server-Request-ID=6a6c5eaf-a01e-0092-7bc0-00c387000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:6a6c5eaf-a01e-0092-7bc0-00c387000000Time:2018-06-10T13:40:21.2752767Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connection.py", line 141, in _new_conn
+    (self.host, self.port), self.timeout, **extra_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/connection.py", line 83, in create_connection
+    raise err
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/connection.py", line 73, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 601, in urlopen
+    chunked=chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 357, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 1026, in _send_output
+    self.send(msg)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/http/client.py", line 964, in send
+    self.connect()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connection.py", line 166, in connect
+    conn = self._new_conn()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connection.py", line 146, in _new_conn
+    (self.host, self.timeout))
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x7fbf3fd4bc18>, 'Connection to 104.211.19.0 timed out. (connect timeout=80)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 639, in urlopen
+    _stacktrace=sys.exc_info()[2])
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='104.211.19.0', port=5001): Max retries exceeded with url: /score (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fbf3fd4bc18>, 'Connection to 104.211.19.0 timed out. (connect timeout=80)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 77, in <module>
+    prediction = service.run(input_data = test_sample)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 496, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='104.211.19.0', port=5001): Max retries exceeded with url: /score (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x7fbf3fd4bc18>, 'Connection to 104.211.19.0 timed out. (connect timeout=80)'))
+./test-all.sh: 98: ./test-all.sh: get: not found
+error: Your local changes to the following files would be overwritten by checkout:
+	e2e_test/aml_config/config.json
+	e2e_test/best_model.pkl
+	e2e_test/mse_over_alpha.png
+Please, commit your changes or stash them before you can switch branches.
+Aborting
+From github.com:Azure/hai
+   fa81e6e..74d9c4c  candidate  -> origin/candidate
+   709ea6f..af8f237  daily      -> origin/daily
+   28a73b0..1f7a274  master     -> origin/master
