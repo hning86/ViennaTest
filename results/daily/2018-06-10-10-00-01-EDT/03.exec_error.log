@@ -1,0 +1,40 @@
+Switched to branch 'daily'
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f75f9c1f7c8>
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f75f9c1f7c8>
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f75f9c1f7c8>
+<class 'azureml.exceptions.azureml_exception.AzureMLException'>: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+<traceback object at 0x7f75f9c1f7c8>
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 67, in <module>
+    run.log("alpha", alpha)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 448, in log
+    self._client.log(name, value, description)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 45, in log
+    self.log_scalar(name, value, description)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 155, in log_scalar
+    self._check_is_valid_scalar(value)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/metrics_client.py", line 185, in _check_is_valid_scalar
+    valid_types))
+azureml.exceptions.azureml_exception.AzureMLException: Value of type <class 'numpy.float64'> is not supported, supported types include [<class 'int'>, <class 'float'>, <class 'str'>, <class 'NoneType'>]
+Traceback (most recent call last):
+  File "./02.local.py", line 92, in <module>
+    min(metrics['mse']), 
+KeyError: 'mse'
+Client-Request-ID=89f7c796-6cba-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 14:28:26 GMT, Server-Request-ID=55194d15-401e-0042-57c7-009c29000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:55194d15-401e-0042-57c7-009c29000000Time:2018-06-10T14:28:27.0333569Z</Message></Error>.
+Client-Request-ID=89f7c798-6cba-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 14:28:27 GMT, Server-Request-ID=ea008034-f01e-0078-2cc7-008651000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ea008034-f01e-0078-2cc7-008651000000Time:2018-06-10T14:28:27.1899161Z</Message></Error>.
+Client-Request-ID=89f7c79a-6cba-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 14:28:26 GMT, Server-Request-ID=33375ac6-301e-0077-31c7-00f03d000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:33375ac6-301e-0077-31c7-00f03d000000Time:2018-06-10T14:28:27.3492695Z</Message></Error>.
+Client-Request-ID=89f7c79c-6cba-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 14:28:27 GMT, Server-Request-ID=56c048a4-701e-002b-1fc7-00a565000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:56c048a4-701e-002b-1fc7-00a565000000Time:2018-06-10T14:28:27.5057793Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 88, in <module>
+    model.delete()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/model.py", line 313, in delete
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 412
+Headers: {'Date': 'Sun, 10 Jun 2018 14:35:18 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '91b6698168634f8ca963f4b55d52bcc1', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"PreconditionFailed","statusCode":412,"message":"PreconditionFailed","details":[{"code":"DeletionRequired","message":"The model with id mymodel:1 can not be deleted because it is currently being used in one or more images"}]}'
+./test-all.sh: 98: ./test-all.sh: get: not found
+Switched to branch 'master'
