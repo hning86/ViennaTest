@@ -1,0 +1,29 @@
+Already on 'master'
+Client-Request-ID=415f8751-6c63-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:03:38 GMT, Server-Request-ID=f62a7fa8-001e-0113-3670-002785000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:f62a7fa8-001e-0113-3670-002785000000Time:2018-06-10T04:03:39.6922955Z</Message></Error>.
+Client-Request-ID=415f8753-6c63-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:03:39 GMT, Server-Request-ID=e67d705c-401e-0039-4270-001495000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e67d705c-401e-0039-4270-001495000000Time:2018-06-10T04:03:40.0398873Z</Message></Error>.
+Client-Request-ID=420da1bf-6c63-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:03:39 GMT, Server-Request-ID=3d90d02f-b01e-00c2-2070-00dc8f000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:3d90d02f-b01e-00c2-2070-00dc8f000000Time:2018-06-10T04:03:40.1987597Z</Message></Error>.
+Client-Request-ID=420da1c1-6c63-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:03:39 GMT, Server-Request-ID=d83d4060-301e-0097-0170-0037f8000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:d83d4060-301e-0097-0170-0037f8000000Time:2018-06-10T04:03:40.3793867Z</Message></Error>.
+Client-Request-ID=5dd260e2-6c68-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:40:13 GMT, Server-Request-ID=1b98695a-a01e-00b0-3475-00adb1000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:1b98695a-a01e-00b0-3475-00adb1000000Time:2018-06-10T04:40:14.2376439Z</Message></Error>.
+Client-Request-ID=5dd260e4-6c68-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:40:14 GMT, Server-Request-ID=80113ffc-801e-0085-2075-0003e4000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:80113ffc-801e-0085-2075-0003e4000000Time:2018-06-10T04:40:14.4289179Z</Message></Error>.
+Client-Request-ID=5dd260e6-6c68-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:40:14 GMT, Server-Request-ID=79c752ca-301e-00be-5275-0041ba000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:79c752ca-301e-00be-5275-0041ba000000Time:2018-06-10T04:40:14.7535942Z</Message></Error>.
+Client-Request-ID=5dd260e8-6c68-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Sun, 10 Jun 2018 04:40:14 GMT, Server-Request-ID=7b5ce466-101e-010c-0f75-00fc95000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:7b5ce466-101e-010c-0f75-00fc95000000Time:2018-06-10T04:40:14.9660400Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 77, in <module>
+    prediction = service.run(input_data = test_sample)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No schema supplied. Perhaps you meant http://None?
+./test-all.sh: 98: ./test-all.sh: get: not found
+Already on 'master'
