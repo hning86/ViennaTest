@@ -1,0 +1,32 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** candidate ***
+HEAD is now at 1f7a274 preview
+git checkout candidate
+Your branch is up-to-date with 'origin/candidate'.
+Already up-to-date.
+*** git branch status after ***
+* candidate
+  daily
+  master
+On branch candidate
+Your branch is up-to-date with 'origin/candidate'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aml_config/config.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+###################################
+START AT: 2018-06-10-13:02:30
+###################################
+
+
+##### 01.interactive.e2e.py (2018-06-10-13:02:30) ######
