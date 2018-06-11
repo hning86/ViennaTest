@@ -1,0 +1,14 @@
+Current directory is: 
+/data/git/hai
+*** git reset --hard ***
+*** git checkout master ***
+Your branch is up-to-date with 'origin/master'.
+*** git pull ***
+Updating 7142f34..8a6b80c
+Fast-forward
+ e2e_test/utils.py | 22 +++++++++++++++++++++-
+ 1 file changed, 21 insertions(+), 1 deletion(-)
+*** current branch ***
+  candidate
+  daily
+* master
