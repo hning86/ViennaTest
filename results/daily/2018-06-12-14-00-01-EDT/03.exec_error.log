@@ -1,0 +1,22 @@
+Switched to branch 'daily'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 133, in <module>
+    service = ws.deploy_webservice(name = web_service_name,
+AttributeError: 'Workspace' object has no attribute 'deploy_webservice'
+Traceback (most recent call last):
+  File "./02.local.py", line 92, in <module>
+    min(metrics['mse']), 
+KeyError: 'mse'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 47, in <module>
+    for ct in ws.list_compute_targets():
+AttributeError: 'Workspace' object has no attribute 'list_compute_targets'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 48, in <module>
+    for ct in ws.list_compute_targets():
+AttributeError: 'Workspace' object has no attribute 'list_compute_targets'
+Traceback (most recent call last):
+  File "./10.o16n.py", line 30, in <module>
+    model = ws.register_model(model_path = "best_model.pkl",
+AttributeError: 'Workspace' object has no attribute 'register_model'
+Switched to branch 'master'
