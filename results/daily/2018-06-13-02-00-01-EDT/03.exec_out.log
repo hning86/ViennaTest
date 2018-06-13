@@ -1,0 +1,71 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** daily ***
+HEAD is now at 8a6b80c clean up o16n
+git checkout daily
+Your branch is up-to-date with 'origin/daily'.
+Already up-to-date.
+*** git branch status after ***
+  candidate
+* daily
+  master
+On branch daily
+Your branch is up-to-date with 'origin/daily'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-06-13-02:02:34
+###################################
+
+
+##### 01.interactive.e2e.py (2018-06-13-02:02:34) ######
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 02.local.py (2018-06-13-02:03:43) ################
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 03.aci.py (2018-06-13-02:04:48) ##################
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 04.dsvm (2018-06-13-02:05:54) ####################
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 05.spark (2018-06-13-02:07:00) ###################
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 07.sklearn.hd.py (2018-06-13-02:08:05) ###########
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 08.tf.hd.py (2018-06-13-02:09:10) ################
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 10.o16n.py (2018-06-13-02:10:16) #################
+Azure ML Core SDK Version: 0.1.0.1039658
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+HEAD is now at 832b63e remove files
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+
+###################################
+########### END AT 2018-06-13-02:11:22
+###################################
