@@ -1,0 +1,98 @@
+Current directory is: 
+/data/git/hai
+*** git reset --hard ***
+*** git checkout master ***
+Your branch is up-to-date with 'origin/master'.
+*** git pull ***
+Updating 8a6b80c..c890ccc
+Fast-forward
+ MNIST with Azure ML.ipynb                          | 1305 ------------------
+ MnistTutorial/3s_as_5s.png                         |  Bin 0 -> 3905 bytes
+ MnistTutorial/6s_as_5s.png                         |  Bin 0 -> 3171 bytes
+ MnistTutorial/8s_as_5s.png                         |  Bin 0 -> 2727 bytes
+ MnistTutorial/9s_as_4s.png                         |  Bin 0 -> 5022 bytes
+ MnistTutorial/MNIST with Azure ML.ipynb            | 1406 ++++++++++++++++++++
+ MnistTutorial/aml_config/config.json               |    5 +
+ MnistTutorial/confmat.png                          |  Bin 0 -> 10918 bytes
+ MnistTutorial/data/test-images.gz                  |  Bin 0 -> 1648877 bytes
+ MnistTutorial/data/test-labels.gz                  |  Bin 0 -> 4542 bytes
+ MnistTutorial/data/train-images.gz                 |  Bin 0 -> 9912422 bytes
+ MnistTutorial/data/train-labels.gz                 |  Bin 0 -> 28881 bytes
+ MnistTutorial/helpers.py                           |   30 +
+ MnistTutorial/model/checkpoint                     |    2 +
+ .../model/mnist-tf.model.data-00000-of-00001       |  Bin 0 -> 1066440 bytes
+ MnistTutorial/model/mnist-tf.model.index           |  Bin 0 -> 295 bytes
+ MnistTutorial/model/mnist-tf.model.meta            |  Bin 0 -> 31817 bytes
+ MnistTutorial/tf-mnist-proj/.amlignore             |    9 +
+ .../aml_config/auto_conda_dependencies.yml         |   32 +
+ .../aml_config/conda_dependencies.yml              |   31 +
+ .../tf-mnist-proj/aml_config/docker.runconfig      |   87 ++
+ .../tf-mnist-proj/aml_config/local.runconfig       |   87 ++
+ .../tf-mnist-proj/aml_config/project.json          |    1 +
+ MnistTutorial/tf-mnist-proj/tf_mnist.py            |   98 ++
+ MnistTutorial/tf-mnist-proj/utils.py               |   22 +
+ MnistTutorial/tf_mnist.py                          |   98 ++
+ MnistTutorial/utils.py                             |   22 +
+ e2e_test/MNIST_data/t10k-images-idx3-ubyte.gz      |  Bin 0 -> 1648877 bytes
+ e2e_test/MNIST_data/t10k-labels-idx1-ubyte.gz      |  Bin 0 -> 4542 bytes
+ e2e_test/MNIST_data/train-images-idx3-ubyte.gz     |  Bin 0 -> 9912422 bytes
+ e2e_test/MNIST_data/train-labels-idx1-ubyte.gz     |  Bin 0 -> 28881 bytes
+ e2e_test/mnist_tf_cnn.py                           |  132 ++
+ e2e_test/outputs/checkpoint                        |    2 +
+ e2e_test/outputs/model.ckpt.data-00000-of-00001    |  Bin 0 -> 39295616 bytes
+ e2e_test/outputs/model.ckpt.index                  |  Bin 0 -> 914 bytes
+ e2e_test/outputs/model.ckpt.meta                   |  Bin 0 -> 74849 bytes
+ e2e_test/test-images.gz                            |  Bin 0 -> 9912422 bytes
+ e2e_test/test-labels.gz                            |  Bin 0 -> 9912422 bytes
+ e2e_test/test.py                                   |   88 ++
+ e2e_test/tftb.py                                   |  168 +++
+ e2e_test/train-images.gz                           |  Bin 0 -> 9912422 bytes
+ e2e_test/train-labels.gz                           |  Bin 0 -> 9912422 bytes
+ e2e_test/utils.py                                  |   28 +-
+ 43 files changed, 2347 insertions(+), 1306 deletions(-)
+ delete mode 100644 MNIST with Azure ML.ipynb
+ create mode 100644 MnistTutorial/3s_as_5s.png
+ create mode 100644 MnistTutorial/6s_as_5s.png
+ create mode 100644 MnistTutorial/8s_as_5s.png
+ create mode 100644 MnistTutorial/9s_as_4s.png
+ create mode 100644 MnistTutorial/MNIST with Azure ML.ipynb
+ create mode 100644 MnistTutorial/aml_config/config.json
+ create mode 100644 MnistTutorial/confmat.png
+ create mode 100644 MnistTutorial/data/test-images.gz
+ create mode 100644 MnistTutorial/data/test-labels.gz
+ create mode 100644 MnistTutorial/data/train-images.gz
+ create mode 100644 MnistTutorial/data/train-labels.gz
+ create mode 100644 MnistTutorial/helpers.py
+ create mode 100644 MnistTutorial/model/checkpoint
+ create mode 100644 MnistTutorial/model/mnist-tf.model.data-00000-of-00001
+ create mode 100644 MnistTutorial/model/mnist-tf.model.index
+ create mode 100644 MnistTutorial/model/mnist-tf.model.meta
+ create mode 100644 MnistTutorial/tf-mnist-proj/.amlignore
+ create mode 100644 MnistTutorial/tf-mnist-proj/aml_config/auto_conda_dependencies.yml
+ create mode 100644 MnistTutorial/tf-mnist-proj/aml_config/conda_dependencies.yml
+ create mode 100644 MnistTutorial/tf-mnist-proj/aml_config/docker.runconfig
+ create mode 100644 MnistTutorial/tf-mnist-proj/aml_config/local.runconfig
+ create mode 100644 MnistTutorial/tf-mnist-proj/aml_config/project.json
+ create mode 100644 MnistTutorial/tf-mnist-proj/tf_mnist.py
+ create mode 100644 MnistTutorial/tf-mnist-proj/utils.py
+ create mode 100644 MnistTutorial/tf_mnist.py
+ create mode 100644 MnistTutorial/utils.py
+ create mode 100644 e2e_test/MNIST_data/t10k-images-idx3-ubyte.gz
+ create mode 100644 e2e_test/MNIST_data/t10k-labels-idx1-ubyte.gz
+ create mode 100644 e2e_test/MNIST_data/train-images-idx3-ubyte.gz
+ create mode 100644 e2e_test/MNIST_data/train-labels-idx1-ubyte.gz
+ create mode 100644 e2e_test/mnist_tf_cnn.py
+ create mode 100644 e2e_test/outputs/checkpoint
+ create mode 100644 e2e_test/outputs/model.ckpt.data-00000-of-00001
+ create mode 100644 e2e_test/outputs/model.ckpt.index
+ create mode 100644 e2e_test/outputs/model.ckpt.meta
+ create mode 100644 e2e_test/test-images.gz
+ create mode 100644 e2e_test/test-labels.gz
+ create mode 100644 e2e_test/test.py
+ create mode 100644 e2e_test/tftb.py
+ create mode 100644 e2e_test/train-images.gz
+ create mode 100644 e2e_test/train-labels.gz
+*** current branch ***
+  candidate
+  daily
+* master
