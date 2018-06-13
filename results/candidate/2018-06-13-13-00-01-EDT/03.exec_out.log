@@ -1,0 +1,320 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** candidate ***
+HEAD is now at 8a6b80c clean up o16n
+git checkout candidate
+Your branch is up-to-date with 'origin/candidate'.
+Already up-to-date.
+*** git branch status after ***
+* candidate
+  daily
+  master
+On branch candidate
+Your branch is up-to-date with 'origin/candidate'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-06-13-13:02:30
+###################################
+
+
+##### 01.interactive.e2e.py (2018-06-13-13:02:30) ######
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 02.local.py (2018-06-13-13:04:35) ################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 03.aci.py (2018-06-13-13:06:35) ##################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/03 already exists, remove it.
+/tmp/e2e-test/03
+e2e-03
+copy train-sklearn.py to the project folder.
+
+##################################################
+ACI run...
+##################################################
+
+Create a run config object for ACI
+base image is continuumio/miniconda3:4.4.10
+submitting run...
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-03/run-history/run-details/e2e-03_1528909655408
+RunId: e2e-03_1528909655408
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha is 0.00, and mse is 3424.32
+alpha is 0.05, and mse is 3408.92
+alpha is 0.10, and mse is 3372.65
+alpha is 0.15, and mse is 3345.15
+alpha is 0.20, and mse is 3325.29
+alpha is 0.25, and mse is 3311.56
+alpha is 0.30, and mse is 3302.67
+alpha is 0.35, and mse is 3297.66
+alpha is 0.40, and mse is 3295.74
+alpha is 0.45, and mse is 3296.32
+alpha is 0.50, and mse is 3298.91
+alpha is 0.55, and mse is 3303.14
+alpha is 0.60, and mse is 3308.70
+alpha is 0.65, and mse is 3315.36
+alpha is 0.70, and mse is 3322.90
+alpha is 0.75, and mse is 3331.17
+alpha is 0.80, and mse is 3340.02
+alpha is 0.85, and mse is 3349.36
+alpha is 0.90, and mse is 3359.09
+alpha is 0.95, and mse is 3369.13
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-03_1528909655408
+
+When alpha is 0.40, we have min MSE 3295.74.
+
+
+##### 04.dsvm (2018-06-13-13:13:27) ####################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 05.spark (2018-06-13-13:15:41) ###################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+
+
+##### 07.sklearn.hd.py (2018-06-13-13:17:52) ###########
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/07 already exists, remove it.
+/tmp/e2e-test/07
+e2e-07
+copy train-sklearn-one-model.py to the project folder.
+create or load BatchAI compute cpucluster...
+gpucluster BatchAI
+cpucluster BatchAI
+found compute target. just use it.
+create generic estimator.
+
+##################################################
+Batch AI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-07/run-history/run-details/e2e-07_1528910280683
+RunId: e2e-07_1528910280683
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha value is: 0.1
+Ridget model fitted.
+Mean Squared Error is: 3372.6496278100326
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-07_1528910280683
+
+configure hyperdrive.
+
+##################################################
+Hyperdrive run on Batch AI...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-07/run-history/run-details/e2e-07_1528910467449
+
+
+##### 08.tf.hd.py (2018-06-13-13:21:08) ################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/08 already exists, remove it.
+/tmp/e2e-test/08
+e2e-08
+copy mnist_tf.py to the project folder.
+create or load BatchAI compute gpucluster...
+gpucluster BatchAI
+found compute target. just use it.
+create TensorFlow estimator.
+
+##################################################
+submitting mnist_tf.py for a Batch AI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-08/run-history/run-details/e2e-08_1528910471290
+RunId: e2e-08_1528910471290
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/60_control_log.txt
+=========================================
+
+Uploading experiment status to history service.
+Adding run profile attachment azureml-logs/80_driver_log.txt
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+18/06/13 17:21:37 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+/azureml-envs/azureml_7a360e01fb3f8bf77a09082a58fa4865/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+data path: /tmp
+fetching MNIST data...
+MNIST dataset downloaded.
+MNIST dataset loaded in memory.
+X:  (70000, 784)
+y:  (70000,)
+labels:  [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
+training a tensorflow model...
+(55000, 784) (55000,)
+batch_size: 50
+n_batches: 1100
+first layer neurons: 300
+second layer neurons: 100
+2018-06-13 17:21:43.305379: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-06-13 17:21:43.518456: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 3607:00:00.0
+totalMemory: 11.92GiB freeMemory: 11.84GiB
+2018-06-13 17:21:43.518504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla K80, pci bus id: 3607:00:00.0, compute capability: 3.7)
+0 Train accuracy: 0.8972909 , Val accuracy; 0.9
+1 Train accuracy: 0.9165273 , Val accuracy; 0.91786665
+2 Train accuracy: 0.9304364 , Val accuracy; 0.9298
+3 Train accuracy: 0.9366909 , Val accuracy; 0.9348
+4 Train accuracy: 0.94421816 , Val accuracy; 0.94226664
+5 Train accuracy: 0.94963634 , Val accuracy; 0.94666666
+6 Train accuracy: 0.95149094 , Val accuracy; 0.9462
+7 Train accuracy: 0.9568 , Val accuracy; 0.9518667
+8 Train accuracy: 0.9589818 , Val accuracy; 0.9532667
+9 Train accuracy: 0.96212727 , Val accuracy; 0.95673335
+10 Train accuracy: 0.9641455 , Val accuracy; 0.9596
+11 Train accuracy: 0.9669818 , Val accuracy; 0.9612
+12 Train accuracy: 0.9682 , Val accuracy; 0.961
+13 Train accuracy: 0.9706909 , Val accuracy; 0.96286666
+14 Train accuracy: 0.9726 , Val accuracy; 0.9644
+15 Train accuracy: 0.9737273 , Val accuracy; 0.9664
+16 Train accuracy: 0.97603637 , Val accuracy; 0.96746665
+17 Train accuracy: 0.97612727 , Val accuracy; 0.96666664
+18 Train accuracy: 0.9786364 , Val accuracy; 0.9680667
+19 Train accuracy: 0.9798 , Val accuracy; 0.97
+20 Train accuracy: 0.9806727 , Val accuracy; 0.96993333
+21 Train accuracy: 0.9820727 , Val accuracy; 0.97
+22 Train accuracy: 0.98254544 , Val accuracy; 0.9704
+23 Train accuracy: 0.9836 , Val accuracy; 0.97153336
+24 Train accuracy: 0.98474544 , Val accuracy; 0.9719333
+Overall accuracy: 0.9719333333333333
+Confusion matrix:
+[[1415    0    2    2    0    4    6    1    4    7]
+ [   0 1655   11    3    1    0    2    2    1    1]
+ [   3    8 1456    7    1    1    2    9    8    2]
+ [   1    0   10 1499    0   19    0    7    9    3]
+ [   1    2    3    0 1400    0    2    4    1   21]
+ [   6    2    4   13    5 1327    9    0   11   10]
+ [  11    1    6    1    6    6 1465    0    4    0]
+ [   1    2    5    8    6    1    1 1534    1   15]
+ [   3   12    7   14    3    5    5    3 1417   14]
+ [   5    3    1    9   12    3    0   11    5 1411]]
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-08_1528910471290
+
+configure hyperdrive.
+
+##################################################
+submitting mnist_tf.py for a hyperdrive run on Batch AI...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-08/run-history/run-details/e2e-08_1528910583077
+
+
+##### 10.o16n.py (2018-06-13-13:23:06) #################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+Registering model best_model.pkl
+Name: best_model.pkl 	Version: 228 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 226 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 224 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 222 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 220 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 218 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 216 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 214 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 212 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 210 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 208 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 206 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 204 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 202 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 200 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 198 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 196 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 194 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 192 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 189 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Ridge regression model to predict diabetes
+Creating image
+Running.........................
+SucceededImage creation operation finished for image myimage:123, operation "Succeeded"
+myimage(v.123 [Succeeded]) stored at haieastuacrgghjerik.azurecr.io/myimage:123 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrgghjerik15289105968208354.txt?sp=r&sig=QhSBxv/B7jdYJUe78VzNhhMK1Tsc5%2BB5mAoWskYYeCU%3D&sr=b&sv=2017-04-17&se=2018-07-13T17%3A25%3A17Z
+myimage(v.104 [Failed]) stored at haieastuacrgghjerik.azurecr.io/myimage:104 with build log None
+Creating service
+Running.............................................................
+SucceededACI service creation operation finished, operation "Succeeded"
+{"result": [5215.19813157987, 3726.9954859385766]}
+rrs02-candidate http://40.76.74.161:5001/score
+rrs01-preview http://104.41.138.121:5001/score
+delete service.
+delete image
+delete model
+HEAD is now at f2d8808 remove files
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+
+###################################
+########### END AT 2018-06-13-13:30:49
+###################################

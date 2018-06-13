@@ -1,0 +1,283 @@
+Switched to branch 'candidate'
+Accept header absent and forced to application/json
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 30, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 142, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 214, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_commands.py", line 531, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 75, in get
+    response = self._client.send(request, header_parameters, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 369, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/exceptions.py", line 54, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+Accept header absent and forced to application/json
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./02.local.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 142, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 214, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_commands.py", line 531, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 75, in get
+    response = self._client.send(request, header_parameters, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 369, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/exceptions.py", line 54, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 142, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 214, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_commands.py", line 531, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 75, in get
+    response = self._client.send(request, header_parameters, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 369, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/exceptions.py", line 54, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+Accept header absent and forced to application/json
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 440, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./05.spark.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 142, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 214, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_commands.py", line 531, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 75, in get
+    response = self._client.send(request, header_parameters, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 369, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/exceptions.py", line 54, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 342, in send
+    response = http_driver.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 187, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 508, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 618, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 499, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 500 error responses',))
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Client-Request-ID=72022e6c-6f2e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:23:10 GMT, Server-Request-ID=dfd938cd-501e-000f-773b-03b9c7000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:dfd938cd-501e-000f-773b-03b9c7000000Time:2018-06-13T17:23:10.8152354Z</Message></Error>.
+Client-Request-ID=72022e6e-6f2e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:23:10 GMT, Server-Request-ID=2bdd2369-601e-0084-4c3b-030219000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:2bdd2369-601e-0084-4c3b-030219000000Time:2018-06-13T17:23:10.9930535Z</Message></Error>.
+Client-Request-ID=72022e70-6f2e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:23:10 GMT, Server-Request-ID=aa8f99e4-201e-006d-643b-03fe1f000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:aa8f99e4-201e-006d-643b-03fe1f000000Time:2018-06-13T17:23:11.1983151Z</Message></Error>.
+Client-Request-ID=72022e72-6f2e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:23:10 GMT, Server-Request-ID=24710ad7-301e-011b-3c3b-033cf6000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:24710ad7-301e-011b-3c3b-033cf6000000Time:2018-06-13T17:23:11.4437550Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 88, in <module>
+    model.delete()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/model.py", line 313, in delete
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 412
+Headers: {'Date': 'Wed, 13 Jun 2018 17:30:49 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '677cf19a7c9d49f692e352dc3bec4d59', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"PreconditionFailed","statusCode":412,"message":"PreconditionFailed","details":[{"code":"DeletionRequired","message":"The model with id best_model.pkl:189 can not be deleted because it is currently being used in one or more images"}]}'
+Switched to branch 'master'
