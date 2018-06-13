@@ -2444,3 +2444,2461 @@ com.microsoft.sqlserver#mssql-jdbc added as a dependency
 18/06/13 17:30:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
 18/06/13 17:30:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
 18/06/13 17:30:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:30:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:34 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:34 INFO Client: 
+	 client token: N/A
+	 diagnostics: [Wed Jun 13 17:31:34 +0000 2018] Scheduler has assigned a container for AM, waiting for AM container to be launched
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1528909441765
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0211/
+	 user: ninghai
+18/06/13 17:31:35 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:36 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:37 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:38 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:39 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:40 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:41 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:42 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:43 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:44 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:45 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:46 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:47 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:48 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:49 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:50 INFO Client: Application report for application_1527512542584_0211 (state: ACCEPTED)
+18/06/13 17:31:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:51 INFO Client: 
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 10.0.0.14
+	 ApplicationMaster RPC port: 0
+	 queue: default
+	 start time: 1528909441765
+	 final status: UNDEFINED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/proxy/application_1527512542584_0211/
+	 user: ninghai
+18/06/13 17:31:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:31:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:34 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:35 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:36 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:37 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:38 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:39 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:40 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:41 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:32:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:34 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:35 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:36 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:37 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:38 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:39 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:40 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:41 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:33:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:34 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:35 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:36 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:37 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:38 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:39 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:40 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:41 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:34:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:34 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:35 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:36 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:37 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:38 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:39 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:40 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:41 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:35:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:34 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:35 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:36 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:37 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:38 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:39 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:40 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:41 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:36:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:27 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:28 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:29 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:30 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:31 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:32 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:33 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:34 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:35 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:36 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:37 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:38 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:39 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:40 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:41 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:42 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:43 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:44 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:45 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:46 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:47 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:48 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:49 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:50 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:51 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:52 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:53 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:54 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:55 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:56 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:57 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:58 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:37:59 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:00 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:01 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:02 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:03 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:04 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:05 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:06 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:07 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:08 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:09 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:10 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:11 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:12 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:13 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:14 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:15 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:16 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:17 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:18 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:19 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:20 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:21 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:22 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:23 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:24 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:25 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:26 INFO Client: Application report for application_1527512542584_0211 (state: RUNNING)
+18/06/13 17:38:27 INFO Client: Application report for application_1527512542584_0211 (state: FAILED)
+18/06/13 17:38:27 INFO Client: 
+	 client token: N/A
+	 diagnostics: Application application_1527512542584_0211 failed 5 times due to AM Container for appattempt_1527512542584_0211_000005 exited with  exitCode: 1
+For more detailed output, check the application tracking page: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/cluster/app/application_1527512542584_0211 Then click on links to logs of each attempt.
+Diagnostics: Exception from container-launch.
+Container id: container_e25_1527512542584_0211_05_000001
+Exit code: 1
+Stack trace: ExitCodeException exitCode=1: 
+	at org.apache.hadoop.util.Shell.runCommand(Shell.java:933)
+	at org.apache.hadoop.util.Shell.run(Shell.java:844)
+	at org.apache.hadoop.util.Shell$ShellCommandExecutor.execute(Shell.java:1123)
+	at org.apache.hadoop.yarn.server.nodemanager.DefaultContainerExecutor.launchContainer(DefaultContainerExecutor.java:237)
+	at org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.call(ContainerLaunch.java:317)
+	at org.apache.hadoop.yarn.server.nodemanager.containermanager.launcher.ContainerLaunch.call(ContainerLaunch.java:83)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+Container exited with a non-zero exit code 1
+Failing this attempt. Failing the application.
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: default
+	 start time: 1528909441765
+	 final status: FAILED
+	 tracking URL: http://hn0-sparkh.01gbvfzxeqquvorlqntixlipbb.jx.internal.cloudapp.net:8088/cluster/app/application_1527512542584_0211
+	 user: ninghai
+18/06/13 17:38:34 WARN AzureFileSystemThreadPoolExecutor: Disabling threads for Delete operation as thread count 0 is <= 1
+18/06/13 17:38:35 INFO AzureFileSystemThreadPoolExecutor: Time taken for Delete operation is: 1181 ms with threads: 0
+18/06/13 17:38:35 INFO Client: Deleted staging directory wasb://sparkhai@sparkstores2.blob.core.windows.net/user/ninghai/.sparkStaging/application_1527512542584_0211
+Exception in thread "main" org.apache.spark.SparkException: Application application_1527512542584_0211 finished with failed status
+	at org.apache.spark.deploy.yarn.Client.run(Client.scala:1241)
+	at org.apache.spark.deploy.yarn.Client$.main(Client.scala:1287)
+	at org.apache.spark.deploy.yarn.Client.main(Client.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.spark.deploy.SparkSubmit$.org$apache$spark$deploy$SparkSubmit$$runMain(SparkSubmit.scala:745)
+	at org.apache.spark.deploy.SparkSubmit$.doRunMain$1(SparkSubmit.scala:187)
+	at org.apache.spark.deploy.SparkSubmit$.submit(SparkSubmit.scala:212)
+	at org.apache.spark.deploy.SparkSubmit$.main(SparkSubmit.scala:126)
+	at org.apache.spark.deploy.SparkSubmit.main(SparkSubmit.scala)
+18/06/13 17:38:35 INFO ShutdownHookManager: Shutdown hook called
+18/06/13 17:38:35 INFO ShutdownHookManager: Deleting directory /tmp/spark-6766f580-a062-4ad2-8995-c93c9afc95da
+18/06/13 17:38:35 INFO MetricsSystemImpl: Stopping azure-file-system metrics system...
+18/06/13 17:38:35 INFO MetricsSinkAdapter: azurefs2 thread interrupted.
+18/06/13 17:38:35 INFO MetricsSystemImpl: azure-file-system metrics system stopped.
+18/06/13 17:38:35 INFO MetricsSystemImpl: azure-file-system metrics system shutdown complete.
+18/06/13 17:38:37 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.0.0.21:10200
+18/06/13 17:38:38 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm1, rm2]...
+18/06/13 17:38:38 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm1]
+Can not find any log file matching the pattern: [stderr] for the container: container_e25_1527512542584_0211_01_000001 within the application: application_1527512542584_0211
+Can not find any log file matching the pattern: [stderr] for the container: container_e25_1527512542584_0211_02_000001 within the application: application_1527512542584_0211
+18/06/13 17:38:42 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+18/06/13 17:38:42 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+Container: container_e25_1527512542584_0211_03_000001 on 10.0.0.14_30050_1528911510790
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:40:18 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Wed Jun 13 17:38:30 +0000 2018
+LogLength:695
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/06/13 17:28:00 ERROR ApplicationMaster: User application exited with status 1
+18/06/13 17:28:01 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(3,WrappedArray())
+
+End of LogType:stderr
+
+Container: container_e25_1527512542584_0211_04_000001 on 10.0.0.15_30050_1528911523637
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:40:59 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Wed Jun 13 17:38:43 +0000 2018
+LogLength:1283
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/06/13 17:31:28 ERROR ApplicationMaster: User application exited with status 1
+18/06/13 17:31:28 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(4,WrappedArray())
+18/06/13 17:31:29 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(5,WrappedArray())
+18/06/13 17:31:29 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(1,WrappedArray())
+18/06/13 17:31:30 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(2,WrappedArray())
+18/06/13 17:31:32 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(3,WrappedArray())
+
+End of LogType:stderr
+
+Container: container_e25_1527512542584_0211_05_000001 on 10.0.0.14_30050_1528911510790
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:41:13 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stderr
+Log Upload Time:Wed Jun 13 17:38:30 +0000 2018
+LogLength:4148
+Log Contents:
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/spark2/jars/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/hdp/2.6.0.2-76/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+18/06/13 17:38:16 ERROR ApplicationMaster: User application exited with status 1
+18/06/13 17:38:18 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(2,WrappedArray())
+18/06/13 17:38:19 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(3,WrappedArray())
+18/06/13 17:38:22 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(1,WrappedArray())
+18/06/13 17:38:24 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(5,WrappedArray())
+18/06/13 17:38:26 ERROR LiveListenerBus: SparkListenerBus has already stopped! Dropping event SparkListenerExecutorMetricsUpdate(4,WrappedArray())
+18/06/13 17:38:26 ERROR Utils: Uncaught exception in thread pool-1-thread-1
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryAwait(Promise.scala:208)
+	at scala.concurrent.impl.Promise$DefaultPromise.ready(Promise.scala:218)
+	at scala.concurrent.impl.Promise$DefaultPromise.result(Promise.scala:223)
+	at scala.concurrent.Await$$anonfun$result$1.apply(package.scala:190)
+	at scala.concurrent.BlockContext$DefaultBlockContext$.blockOn(BlockContext.scala:53)
+	at scala.concurrent.Await$.result(package.scala:190)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:81)
+	at org.apache.spark.scheduler.cluster.CoarseGrainedSchedulerBackend.requestTotalExecutors(CoarseGrainedSchedulerBackend.scala:512)
+	at org.apache.spark.scheduler.cluster.YarnSchedulerBackend.stop(YarnSchedulerBackend.scala:93)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:467)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1588)
+	at org.apache.spark.SparkContext$$anonfun$stop$8.apply$mcV$sp(SparkContext.scala:1833)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1283)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1832)
+	at org.apache.spark.SparkContext$$anonfun$2.apply$mcV$sp(SparkContext.scala:581)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1951)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+
+End of LogType:stderr
+
+
+Specified ALL for -am option. Printed logs for all am containers.
+18/06/13 17:41:15 INFO client.AHSProxy: Connecting to Application History server at headnodehost/10.0.0.21:10200
+18/06/13 17:41:15 INFO client.RequestHedgingRMFailoverProxyProvider: Looking for the active RM in [rm1, rm2]...
+18/06/13 17:41:16 INFO client.RequestHedgingRMFailoverProxyProvider: Found active RM [rm1]
+18/06/13 17:41:24 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+18/06/13 17:41:24 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+Can not find any log file matching the pattern: [stdout] for the container: container_e25_1527512542584_0211_01_000001 within the application: application_1527512542584_0211
+Container: container_e25_1527512542584_0211_02_000001 on 10.0.0.15_30050_1528911523637
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:41:24 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Wed Jun 13 17:38:43 +0000 2018
+LogLength:64672
+Log Contents:
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+ERROR:py4j.java_gateway:An error occurred while trying to connect to the Java server (127.0.0.1:39674)
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1035, in send_command
+    raise Py4JNetworkError("Answer from Java side is empty")
+py4j.protocol.Py4JNetworkError: Answer from Java side is empty
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 883, in send_command
+    response = connection.send_command(command)
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 1040, in send_command
+    "Error while receiving", e, proto.ERROR_ON_RECEIVE)
+py4j.protocol.Py4JNetworkError: Error while receiving
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 827, in _get_connection
+    connection = self.deque.pop()
+IndexError: pop from an empty deque
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/hdp/current/spark2-client/python/lib/py4j-0.10.4-src.zip/py4j/java_gateway.py", line 963, in start
+    self.socket.connect((self.address, self.port))
+ConnectionRefusedError: [Errno 111] Connection refused
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0211_03_000001 on 10.0.0.14_30050_1528911510790
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:41:31 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Wed Jun 13 17:38:30 +0000 2018
+LogLength:8771
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Load featurized dataset for machine learning...
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.4,3.0,1.3,0.2]|  0.0|[5.94187206493651...|[0.97492984628844...|       0.0|
+|[4.4,3.2,1.3,0.2]|  0.0|[6.38011607513427...|[0.98659961703237...|       0.0|
+|[4.7,3.2,1.6,0.2]|  0.0|[5.71347517388490...|[0.97072391017356...|       0.0|
+|[4.8,3.0,1.4,0.1]|  0.0|[5.56810012007492...|[0.95085718582906...|       0.0|
+|[4.8,3.1,1.6,0.2]|  0.0|[5.37169203565784...|[0.95240650981820...|       0.0|
+|[4.8,3.4,1.9,0.2]|  0.0|[5.73040054908966...|[0.97618891506112...|       0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.56500849142401...|[0.95328630823650...|       0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.56500849142401...|[0.95328630823650...|       0.0|
+|[5.0,3.5,1.6,0.6]|  0.0|[5.13715743670596...|[0.96769805973260...|       0.0|
+|[5.1,2.5,3.0,1.1]|  1.0|[0.34741580252273...|[0.14981467580105...|       1.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9259259259259259
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 52, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 140, in __exit__
+    self.py_wd.track(self.run_tracker, self.trackfolders, self.blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 89, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_03_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0211_04_000001 on 10.0.0.15_30050_1528911523637
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:41:31 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Wed Jun 13 17:38:43 +0000 2018
+LogLength:10761
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Load featurized dataset for machine learning...
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.3,3.0,1.1,0.1]|  0.0|[6.41699323614860...|[0.98747509675637...|       0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|[6.21678894085245...|[0.98929704690056...|       0.0|
+|[4.7,3.2,1.6,0.2]|  0.0|[5.63673239681243...|[0.97460202157322...|       0.0|
+|[4.9,2.4,3.3,1.0]|  1.0|[0.49509895406856...|[0.20939399868647...|       1.0|
+|[4.9,2.5,4.5,1.7]|  2.0|[-1.7223326475226...|[0.03636281067974...|       1.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.41377656490927...|[0.95659007308264...|       0.0|
+|[5.0,2.3,3.3,1.0]|  1.0|[0.13224587424447...|[0.13622702079414...|       1.0|
+|[5.0,3.3,1.4,0.2]|  0.0|[5.61678792356328...|[0.96984322628666...|       0.0|
+|[5.0,3.4,1.6,0.4]|  0.0|[5.27351353610351...|[0.96851964531492...|       0.0|
+|[5.0,3.5,1.3,0.3]|  0.0|[5.96191027269794...|[0.98305681288305...|       0.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.975609756097561
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 140, in __exit__
+    self.py_wd.track(self.run_tracker, self.trackfolders, self.blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 89, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 52, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 156, in __exit__
+    self.run_tracker.upload_file(self.driver_log_name, self.user_log_path)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/core/run.py", line 474, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_04_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 57, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+
+End of LogType:stdout
+
+Container: container_e25_1527512542584_0211_05_000001 on 10.0.0.14_30050_1528911510790
+LogAggregationType: AGGREGATED
+======================================================================================
+18/06/13 17:41:32 INFO compress.CodecPool: Got brand-new decompressor [.deflate]
+LogType:stdout
+Log Upload Time:Wed Jun 13 17:38:30 +0000 2018
+LogLength:10762
+Log Contents:
+****************
+Python version: 3.6.2 |Anaconda, Inc.| (default, Oct  5 2017, 07:59:26) 
+[GCC 7.2.0]
+Spark version: 2.1.0.2.6.0.2-76
+****************
+First 10 rows of Iris dataset:
++------------+-----------+------------+-----------+-----------+
+|sepal-length|sepal-width|petal-length|petal-width|      class|
++------------+-----------+------------+-----------+-----------+
+|         5.1|        3.5|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.0|         1.4|        0.2|Iris-setosa|
+|         4.7|        3.2|         1.3|        0.2|Iris-setosa|
+|         4.6|        3.1|         1.5|        0.2|Iris-setosa|
+|         5.0|        3.6|         1.4|        0.2|Iris-setosa|
+|         5.4|        3.9|         1.7|        0.4|Iris-setosa|
+|         4.6|        3.4|         1.4|        0.3|Iris-setosa|
+|         5.0|        3.4|         1.5|        0.2|Iris-setosa|
+|         4.4|        2.9|         1.4|        0.2|Iris-setosa|
+|         4.9|        3.1|         1.5|        0.1|Iris-setosa|
++------------+-----------+------------+-----------+-----------+
+only showing top 10 rows
+
+Load featurized dataset for machine learning...
++-----------------+-----+
+|         features|label|
++-----------------+-----+
+|[5.1,3.5,1.4,0.2]|  0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|
+|[4.7,3.2,1.3,0.2]|  0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|
+|[5.0,3.6,1.4,0.2]|  0.0|
+|[5.4,3.9,1.7,0.4]|  0.0|
+|[4.6,3.4,1.4,0.3]|  0.0|
+|[5.0,3.4,1.5,0.2]|  0.0|
+|[4.4,2.9,1.4,0.2]|  0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|
++-----------------+-----+
+only showing top 10 rows
+
+Prediction
++-----------------+-----+--------------------+--------------------+----------+
+|         features|label|       rawPrediction|         probability|prediction|
++-----------------+-----+--------------------+--------------------+----------+
+|[4.4,3.0,1.3,0.2]|  0.0|[5.77830443466486...|[0.97067091689476...|       0.0|
+|[4.4,3.2,1.3,0.2]|  0.0|[6.24145370029315...|[0.98343099477361...|       0.0|
+|[4.6,3.1,1.5,0.2]|  0.0|[5.59115219347674...|[0.96356531128466...|       0.0|
+|[4.8,3.0,1.4,0.3]|  0.0|[5.02116506103823...|[0.92918969581122...|       0.0|
+|[4.8,3.1,1.6,0.2]|  0.0|[5.27097430110241...|[0.94461128184487...|       0.0|
+|[4.8,3.4,1.6,0.2]|  0.0|[5.96569819954485...|[0.97616688958513...|       0.0|
+|[4.9,3.0,1.4,0.2]|  0.0|[5.12568317617094...|[0.92546565990558...|       0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.47404139786306...|[0.94576884677411...|       0.0|
+|[4.9,3.1,1.5,0.1]|  0.0|[5.47404139786306...|[0.94576884677411...|       0.0|
+|[5.0,2.0,3.5,1.0]|  1.0|[-1.0930667855775...|[0.03711078199086...|       1.0|
++-----------------+-----+--------------------+--------------------+----------+
+only showing top 10 rows
+
+
+#####################################
+Regularization rate is 0.01
+Accuracy is 0.9814814814814815
+#####################################
+
+The experiment completed successfully. Starting post-processing steps.
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml-setup/complete'
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 72, in execute_with_context
+    with open(complete_file_path, "a") as stream:
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml-setup/complete'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 140, in __exit__
+    self.py_wd.track(self.run_tracker, self.trackfolders, self.blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 89, in track
+    fs.track(run_tracker, track_folders, blacklist)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 130, in track
+    self._upload_hdi_outputs(run_tracker)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/filesystem.py", line 154, in _upload_hdi_outputs
+    container_sas = get_container_sas(wasburl)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/_hdi_wasb_utils.py", line 32, in get_container_sas
+    from azure.storage.models import AccountPermissions
+ModuleNotFoundError: No module named 'azure.storage.models'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "context_manager_injector.py", line 111, in <module>
+    execute_with_context(cm_objects, options.invocation)
+  File "context_manager_injector.py", line 73, in execute_with_context
+    print("Prehistory!", file=stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "context_manager_injector.py", line 30, in __exit__
+    self.context_manager.__exit__(*exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/context_managers.py", line 49, in __exit__
+    self.history_context.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 52, in __exit__
+    self._exit_stack.__exit__(*args)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 380, in __exit__
+    raise exc_details[1]
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 365, in __exit__
+    if cb(*exc_details):
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/contextlib.py", line 284, in _exit_wrapper
+    return cm_exit(cm, *exc_details)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 156, in __exit__
+    self.run_tracker.upload_file(self.driver_log_name, self.user_log_path)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/core/run.py", line 474, in upload_file
+    return self._client.upload_file(name, path_or_stream)
+  File "/mnt/resource/hadoop/yarn/local/usercache/ninghai/appcache/application_1527512542584_0211/container_e25_1527512542584_0211_05_000001/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9.zip/home/ninghai/.azureml/envs/azureml_6a453c57a1dbcf50c0b45c4aa1aba8f9/lib/python3.6/site-packages/azureml/_run_impl/artifacts_client.py", line 57, in upload_file
+    assert(len(artifact_keys) == 1)
+AssertionError
+
+End of LogType:stdout
+
+
+Specified ALL for -am option. Printed logs for all am containers.
+
+Execution Summary
+=================
+RunId: e2e-05_1528907064199
+
+{'Regularization Rate': [0.01, 0.01, 0.01], 'Accuracy': [0.9259259259259259, 0.975609756097561, 0.9814814814814815]}
+
+
+##### 07.sklearn.hd.py (2018-06-13-13:41:43) ###########
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/07 already exists, remove it.
+/tmp/e2e-test/07
+e2e-07
+copy train-sklearn-one-model.py to the project folder.
+create or load BatchAI compute cpucluster...
+gpucluster BatchAI
+cpucluster BatchAI
+found compute target. just use it.
+create generic estimator.
+
+##################################################
+Batch AI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-07/run-history/run-details/e2e-07_1528911706624
+RunId: e2e-07_1528911706624
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+alpha value is: 0.1
+Ridget model fitted.
+Mean Squared Error is: 3372.6496278100326
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-07_1528911706624
+
+configure hyperdrive.
+
+##################################################
+Hyperdrive run on Batch AI...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-07/run-history/run-details/e2e-07_1528911756134
+
+
+##### 08.tf.hd.py (2018-06-13-13:42:38) ################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/08 already exists, remove it.
+/tmp/e2e-test/08
+e2e-08
+copy mnist_tf.py to the project folder.
+create or load BatchAI compute gpucluster...
+gpucluster BatchAI
+found compute target. just use it.
+create TensorFlow estimator.
+
+##################################################
+submitting mnist_tf.py for a Batch AI run...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-08/run-history/run-details/e2e-08_1528911761495
+RunId: e2e-08_1528911761495
+
+Streaming azureml-logs/20_ice_log.txt
+=====================================
+
+
+Streaming azureml-logs/80_driver_log.txt
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+18/06/13 17:48:01 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+/azureml-envs/azureml_7a360e01fb3f8bf77a09082a58fa4865/lib/python3.6/importlib/_bootstrap.py:205: RuntimeWarning: compiletime version 3.5 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.6
+  return f(*args, **kwds)
+data path: /tmp
+fetching MNIST data...
+MNIST dataset downloaded.
+MNIST dataset loaded in memory.
+X:  (70000, 784)
+y:  (70000,)
+labels:  [0. 1. 2. 3. 4. 5. 6. 7. 8. 9.]
+training a tensorflow model...
+(55000, 784) (55000,)
+batch_size: 50
+n_batches: 1100
+first layer neurons: 300
+second layer neurons: 100
+2018-06-13 17:48:06.827580: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+2018-06-13 17:48:07.036136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0938:00:00.0
+totalMemory: 11.17GiB freeMemory: 11.09GiB
+2018-06-13 17:48:07.036180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1120] Creating TensorFlow device (/device:GPU:0) -> (device: 0, name: Tesla K80, pci bus id: 0938:00:00.0, compute capability: 3.7)
+0 Train accuracy: 0.89821815 , Val accuracy; 0.9014
+1 Train accuracy: 0.91785455 , Val accuracy; 0.9182
+2 Train accuracy: 0.9289273 , Val accuracy; 0.9268
+3 Train accuracy: 0.93683636 , Val accuracy; 0.9349333
+4 Train accuracy: 0.9432727 , Val accuracy; 0.9412
+5 Train accuracy: 0.94894546 , Val accuracy; 0.94593334
+6 Train accuracy: 0.9531636 , Val accuracy; 0.95026666
+7 Train accuracy: 0.9571818 , Val accuracy; 0.9529333
+8 Train accuracy: 0.9611273 , Val accuracy; 0.9568667
+9 Train accuracy: 0.9632546 , Val accuracy; 0.9587333
+10 Train accuracy: 0.9640909 , Val accuracy; 0.9586
+11 Train accuracy: 0.9681818 , Val accuracy; 0.9612
+12 Train accuracy: 0.97023636 , Val accuracy; 0.96393335
+13 Train accuracy: 0.97245455 , Val accuracy; 0.96533334
+14 Train accuracy: 0.97376364 , Val accuracy; 0.96613336
+15 Train accuracy: 0.97516364 , Val accuracy; 0.96646667
+16 Train accuracy: 0.97581816 , Val accuracy; 0.96893334
+17 Train accuracy: 0.9778 , Val accuracy; 0.9690667
+18 Train accuracy: 0.9788182 , Val accuracy; 0.9705333
+19 Train accuracy: 0.97947276 , Val accuracy; 0.96993333
+20 Train accuracy: 0.98112726 , Val accuracy; 0.9706
+21 Train accuracy: 0.9817273 , Val accuracy; 0.97186667
+22 Train accuracy: 0.98269093 , Val accuracy; 0.9719333
+23 Train accuracy: 0.98434544 , Val accuracy; 0.9728
+24 Train accuracy: 0.98447275 , Val accuracy; 0.9732
+Overall accuracy: 0.9732
+Confusion matrix:
+[[1405    0    1    1    2    6   10    1    7    8]
+ [   0 1652    8    1    2    0    6    2    4    1]
+ [   3    3 1457    7    2    1    6    7   11    0]
+ [   1    0   11 1502    1   17    0    5    9    2]
+ [   2    2    3    0 1405    0    4    2    3   13]
+ [   4    2    3   15    2 1331   10    1   12    7]
+ [   7    1    2    0    5    3 1478    0    4    0]
+ [   3    2    8    7    8    1    2 1525    1   17]
+ [   2    8    2   11    3    6    5    2 1438    6]
+ [   4    3    2    9   13    6    0    8   10 1405]]
+The experiment completed successfully. Starting post-processing steps.
+
+Execution Summary
+=================
+RunId: e2e-08_1528911761495
+
+configure hyperdrive.
+
+##################################################
+submitting mnist_tf.py for a hyperdrive run on Batch AI...
+##################################################
+
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-08/run-history/run-details/e2e-08_1528912168222
+
+
+##### 10.o16n.py (2018-06-13-13:49:29) #################
+Azure ML Core SDK Version: 0.1.0.1027341
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+Registering model best_model.pkl
+Name: best_model.pkl 	Version: 229 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 228 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 226 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 224 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 222 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 220 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 218 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 216 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 214 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 212 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 210 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 208 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 206 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 204 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 202 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 200 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 198 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 196 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 194 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 192 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: best_model.pkl 	Version: 189 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Ridge regression model to predict diabetes
+Creating image
+Running.......................
+SucceededImage creation operation finished for image myimage:124, operation "Succeeded"
+myimage(v.124 [Succeeded]) stored at haieastuacrgghjerik.azurecr.io/myimage:124 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrgghjerik15289121766990950.txt?sp=r&sv=2017-04-17&sr=b&sig=fGgifNJaZsbUahVMKvGQgY0nrFXHk8qRHAcT3GnIv80%3D&se=2018-07-13T17%3A51%3A30Z
+myimage(v.104 [Failed]) stored at haieastuacrgghjerik.azurecr.io/myimage:104 with build log None
+Creating service
+Running..............................................................................
+FailedACI service creation operation finished, operation "Failed"
+Service creation failed, unexpected error response:
+{'code': 'AciDeploymentFailed', 'message': 'Aci Deployment failed', 'details': [{'code': 'CrashLoopBackOff', 'message': 'CrashLoopBackOff: Back-off 20s restarting failed'}]}
+HEAD is now at 8a6b80c clean up o16n
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+
+###################################
+########### END AT 2018-06-13-13:58:30
+###################################

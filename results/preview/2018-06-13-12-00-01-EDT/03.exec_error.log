@@ -276,3 +276,43 @@ Accept header absent and forced to application/json
 Accept header absent and forced to application/json
 Accept header absent and forced to application/json
 Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Accept header absent and forced to application/json
+Client-Request-ID=20a3aa4c-6f32-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:49:32 GMT, Server-Request-ID=8aefc42c-401e-0098-433e-03da0e000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:8aefc42c-401e-0098-433e-03da0e000000Time:2018-06-13T17:49:32.2514809Z</Message></Error>.
+Client-Request-ID=20a3aa4e-6f32-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:49:31 GMT, Server-Request-ID=83b0b4a7-e01e-0095-6e3e-033502000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:83b0b4a7-e01e-0095-6e3e-033502000000Time:2018-06-13T17:49:32.6153860Z</Message></Error>.
+Client-Request-ID=20a3aa50-6f32-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:49:32 GMT, Server-Request-ID=cb54a242-901e-0056-3b3e-03bc41000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:cb54a242-901e-0056-3b3e-03bc41000000Time:2018-06-13T17:49:32.7922111Z</Message></Error>.
+Client-Request-ID=20a3aa52-6f32-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Wed, 13 Jun 2018 17:49:32 GMT, Server-Request-ID=03d294b0-e01e-007b-803e-033f81000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:03d294b0-e01e-007b-803e-033f81000000Time:2018-06-13T17:49:32.9694090Z</Message></Error>.
+Traceback (most recent call last):
+  File "./10.o16n.py", line 77, in <module>
+    prediction = service.run(input_data = test_sample)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 180, in run
+    resp = requests.post(self.scoring_uri, headers=headers, data=input_data, timeout=MMS_SYNC_TIMEOUT_SECONDS)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/api.py", line 112, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/api.py", line 58, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 494, in request
+    prep = self.prepare_request(req)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/sessions.py", line 437, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/models.py", line 305, in prepare
+    self.prepare_url(url, params)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/models.py", line 379, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'None': No schema supplied. Perhaps you meant http://None?
+Already on 'master'
