@@ -1,0 +1,72 @@
+Switched to branch 'daily'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 46, in <module>
+    root_run = Run.start_logging(workspace = ws, history_name = run_history_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 261, in start_logging
+    run_id=run_id, outputs=outputs, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 286, in _create
+    run_dto = HistoryClient.create_run(history_object, name=name, run_id=run_id)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/run_client.py", line 137, in create_run
+    name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/run_history_client.py", line 109, in create_run
+    create_run_dto=create_run_dto)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/project_client.py", line 58, in _execute_with_project_arguments
+    **kwargs_copy)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/clientbase.py", line 171, in _execute_with_base_arguments
+    return func(*args, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/operations/run_operations.py", line 180, in create
+    raise HttpOperationError(self._deserialize, response)
+msrest.exceptions.HttpOperationError: Operation returned an invalid status code 'Not authorized'
+Traceback (most recent call last):
+  File "./02.local.py", line 30, in <module>
+    directory = project_folder)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 104, in attach
+    project = Project(auth=auth, directory=directory)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 50, in __init__
+    self._workspace_object = Workspace(info_dict[_commands.SUBSCRIPTION_KEY],
+KeyError: 'subscriptions'
+Traceback (most recent call last):
+  File "./03.aci.py", line 31, in <module>
+    directory = project_folder)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 104, in attach
+    project = Project(auth=auth, directory=directory)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 50, in __init__
+    self._workspace_object = Workspace(info_dict[_commands.SUBSCRIPTION_KEY],
+KeyError: 'subscriptions'
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 30, in <module>
+    directory = project_folder)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 104, in attach
+    project = Project(auth=auth, directory=directory)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 50, in __init__
+    self._workspace_object = Workspace(info_dict[_commands.SUBSCRIPTION_KEY],
+KeyError: 'subscriptions'
+Traceback (most recent call last):
+  File "./05.spark.py", line 30, in <module>
+    directory = project_folder)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 104, in attach
+    project = Project(auth=auth, directory=directory)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 50, in __init__
+    self._workspace_object = Workspace(info_dict[_commands.SUBSCRIPTION_KEY],
+KeyError: 'subscriptions'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 32, in <module>
+    directory = project_folder)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 104, in attach
+    project = Project(auth=auth, directory=directory)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 50, in __init__
+    self._workspace_object = Workspace(info_dict[_commands.SUBSCRIPTION_KEY],
+KeyError: 'subscriptions'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 33, in <module>
+    directory = project_folder)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 104, in attach
+    project = Project(auth=auth, directory=directory)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/project.py", line 50, in __init__
+    self._workspace_object = Workspace(info_dict[_commands.SUBSCRIPTION_KEY],
+KeyError: 'subscriptions'
+Traceback (most recent call last):
+  File "./10.o16n.py", line 30, in <module>
+    model = ws.register_model(model_path = "best_model.pkl",
+AttributeError: 'Workspace' object has no attribute 'register_model'
+Switched to branch 'master'
