@@ -1,0 +1,682 @@
+Switched to branch 'daily'
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "1601e928-4842599c0065d8e0",
+    "request": "8VUW9Ain234="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 30, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: 934be552-e9d2-4880-9032-4662c5232000. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "1601e928-4842599c0065d8e0",
+    "request": "8VUW9Ain234="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "85d42e80-41e75c65bfe1c530",
+    "request": "W2gDMZS8vkI="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./02.local.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: c2c5e23d-15c0-42b9-b833-9c4b2fb8e1f1. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "85d42e80-41e75c65bfe1c530",
+    "request": "W2gDMZS8vkI="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "5dc2f49e-482ec04c06630a70",
+    "request": "8aos5r+sNBU="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./03.aci.py", line 20, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: f2f0ca35-69e1-407d-b18c-5834998b0ee9. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "5dc2f49e-482ec04c06630a70",
+    "request": "8aos5r+sNBU="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "9f346296-43e0e61e211e8dd3",
+    "request": "Q1Hq9KUFosY="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: 10f7a403-02c9-4996-b7e6-d26bccf3f71e. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "9f346296-43e0e61e211e8dd3",
+    "request": "Q1Hq9KUFosY="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "1601ee9e-4842599c0065d8e0",
+    "request": "p0tVtwDqPvE="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./05.spark.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: 6e276c95-e829-469c-b982-dea56fb239f6. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "1601ee9e-4842599c0065d8e0",
+    "request": "p0tVtwDqPvE="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "9f346536-43e0e61e211e8dd3",
+    "request": "NSy/2WTSgjc="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 21, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: eeb976e1-b417-4577-aaa9-a58aa608335a. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "9f346536-43e0e61e211e8dd3",
+    "request": "NSy/2WTSgjc="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "1601f170-4842599c0065d8e0",
+    "request": "cT609j8HlXg="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 22, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: 1571c489-8500-4420-a5ee-df9635dda2e5. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "1601f170-4842599c0065d8e0",
+    "request": "cT609j8HlXg="
+  }
+}
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 78, in get
+    raise models.ErrorResponseWrapperException(self._deserialize, response)
+azureml.base_sdk_common.workspace.models.error_response_wrapper.ErrorResponseWrapperException: Operation returned an invalid status code 'Not Found'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 514, in get_workspace
+    resource_error_handling(response_exception, WORKSPACE)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/common.py", line 260, in resource_error_handling
+    raise ProjectSystemException("{resource_type} not found.".format(resource_type=resource_type))
+azureml.exceptions.azureml_exception.ProjectSystemException: Workspace not found.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 527, in __call__
+    result = poller.result()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 496, in result
+    self.wait(timeout)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrestazure/azure_operation.py", line 511, in wait
+    raise self._exception
+msrestazure.azure_exceptions.CloudError: Azure Error: DeploymentFailed
+Message: At least one resource deployment operation failed. Please list deployment operations for details. Please see https://aka.ms/arm-debug for usage details.
+Exception Details:
+	Error Code: NotFound
+	Message: {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "9f3467f8-43e0e61e211e8dd3",
+    "request": "iBvwHgoQQr8="
+  }
+}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 25, in <module>
+    ws = Workspace.from_config('./aml_config/config.json')
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 266, in get_or_create
+    _friendly_name=_friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 178, in create
+    app_insights=_app_insights, container_registry=_container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/workspace.py", line 594, in _create_legacy
+    containerRegistry=container_registry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/project/_commands.py", line 491, in create_workspace
+    friendly_name=friendly_name)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/custom.py", line 78, in ml_workspace_create_resources
+    containerRegistry=containerRegistry)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/workspace/_utils.py", line 145, in arm_deploy_template_new_resources
+    LongRunningOperation(get_default_cli())(poller)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/__init__.py", line 531, in __call__
+    handle_long_running_operation_exception(client_exception)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azure/cli/core/commands/arm.py", line 127, in handle_long_running_operation_exception
+    raise cli_error
+knack.util.CLIError: Deployment failed. Correlation ID: dd4401be-2ac2-4794-a8a4-83cfd0987844. {
+  "error": {
+    "code": "UserError",
+    "message": "Unable to find workspace: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourcegroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws",
+    "target": null,
+    "details": [],
+    "innerError": null,
+    "debugInfo": null
+  },
+  "correlation": {
+    "operation": "9f3467f8-43e0e61e211e8dd3",
+    "request": "iBvwHgoQQr8="
+  }
+}
+Switched to branch 'master'
