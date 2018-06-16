@@ -1,0 +1,36 @@
+Current directory is: 
+/data/git/hai
+*** git reset --hard ***
+*** git checkout master ***
+Your branch is up-to-date with 'origin/master'.
+*** git pull ***
+Updating 2144e49..9171f4a
+Fast-forward
+ e2e_test/01.interactive.e2e.py |  21 +++++++++++---------
+ e2e_test/02.local.py           |   4 ++--
+ e2e_test/03.aci.py             |   4 ++--
+ e2e_test/04.dsvm.py            |   4 ++--
+ e2e_test/05.spark.py           |   4 ++--
+ e2e_test/07.sklearn.hd.py      |   6 +++---
+ e2e_test/08.tf.hd.py           |   6 +++---
+ e2e_test/10.o16n.py            |  44 ++++++++++++++++++++---------------------
+ e2e_test/best_model.pkl        | Bin 658 -> 658 bytes
+ e2e_test/score-2.py            |  21 ++++++++++++++++++++
+ e2e_test/score.py              |   5 +++--
+ e2e_test/test-images.gz        | Bin 9912422 -> 0 bytes
+ e2e_test/test-labels.gz        | Bin 9912422 -> 0 bytes
+ e2e_test/train-images.gz       | Bin 9912422 -> 0 bytes
+ e2e_test/train-labels.gz       | Bin 9912422 -> 0 bytes
+ e2e_test/utils.py              |   3 ++-
+ restartrg.sh                   |  11 +++++++++++
+ 17 files changed, 85 insertions(+), 48 deletions(-)
+ create mode 100644 e2e_test/score-2.py
+ delete mode 100644 e2e_test/test-images.gz
+ delete mode 100644 e2e_test/test-labels.gz
+ delete mode 100644 e2e_test/train-images.gz
+ delete mode 100644 e2e_test/train-labels.gz
+ create mode 100755 restartrg.sh
+*** current branch ***
+  candidate
+  daily
+* master
