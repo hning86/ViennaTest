@@ -1,0 +1,96 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** candidate ***
+HEAD is now at f5731dc more echos
+git checkout candidate
+Your branch is up-to-date with 'origin/candidate'.
+git pull
+Already up-to-date.
+*** git branch status after ***
+git branch --list
+* candidate
+  daily
+  master
+git status
+On branch candidate
+Your branch is up-to-date with 'origin/candidate'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-06-19-17:02:26
+###################################
+
+
+##### 01.interactive.e2e.py (2018-06-19-17:02:26) ######
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+
+
+##### 02.local.py (2018-06-19-17:02:30) ################
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/02 already exists, remove it.
+
+
+##### 03.aci.py (2018-06-19-17:02:31) ##################
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/03 already exists, remove it.
+
+
+##### 04.dsvm (2018-06-19-17:02:32) ####################
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/04 already exists, remove it.
+
+
+##### 05.spark (2018-06-19-17:02:33) ###################
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/05 already exists, remove it.
+
+
+##### 07.sklearn.hd.py (2018-06-19-17:02:35) ###########
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/07 already exists, remove it.
+
+
+##### 08.tf.hd.py (2018-06-19-17:02:36) ################
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/08 already exists, remove it.
+
+
+##### 10.o16n.py (2018-06-19-17:02:37) #################
+Azure ML Core SDK Version: 0.1.0.1065385
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+HEAD is now at f2d8808 remove files
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+
+###################################
+########### END AT 2018-06-19-17:02:40
+###################################
