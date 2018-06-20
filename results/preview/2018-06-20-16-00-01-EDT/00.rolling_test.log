@@ -1,0 +1,19 @@
+Current directory is: 
+/data/git/hai
+*** git reset --hard ***
+*** git checkout master ***
+Your branch is up-to-date with 'origin/master'.
+*** git pull ***
+Updating f5731dc..84d5e5f
+Fast-forward
+ e2e_test/01.interactive.e2e.py |  1 +
+ e2e_test/07.sklearn.hd.py      |  2 +-
+ e2e_test/08.tf.hd.py           |  2 +-
+ e2e_test/helpers.py            | 10 ++++++++++
+ e2e_test/mnist_tf.py           |  3 ++-
+ e2e_test/train-sklearn.py      |  6 +++---
+ 6 files changed, 18 insertions(+), 6 deletions(-)
+*** current branch ***
+  candidate
+  daily
+* master
