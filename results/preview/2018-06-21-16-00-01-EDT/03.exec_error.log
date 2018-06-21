@@ -1,0 +1,280 @@
+Already on 'master'
+ERROR:azure.storage.common.storageclient:Client-Request-ID=69ae6a12-758e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:05:15 GMT, Server-Request-ID=6bee16c9-e01e-009d-409b-092124000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:6bee16c9-e01e-009d-409b-092124000000Time:2018-06-21T20:05:15.4825969Z</Message></Error>.
+ERROR:azure.storage.common.storageclient:Client-Request-ID=69ae6a14-758e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:05:15 GMT, Server-Request-ID=cbd2f9bf-401e-003a-049b-0918c7000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:cbd2f9bf-401e-003a-049b-0918c7000000Time:2018-06-21T20:05:15.6668543Z</Message></Error>.
+ERROR:azure.storage.common.storageclient:Client-Request-ID=69ae6a16-758e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:05:15 GMT, Server-Request-ID=ee28b5ca-b01e-012b-6e9b-096989000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:ee28b5ca-b01e-012b-6e9b-096989000000Time:2018-06-21T20:05:15.8506370Z</Message></Error>.
+ERROR:azure.storage.common.storageclient:Client-Request-ID=69ae6a18-758e-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:05:15 GMT, Server-Request-ID=e3bb8eef-f01e-00a0-1b9b-099402000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:e3bb8eef-f01e-00a0-1b9b-099402000000Time:2018-06-21T20:05:16.0184927Z</Message></Error>.
+Traceback (most recent call last):
+  File "./02.local.py", line 51, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/run.py", line 64, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 109, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 272, in _start_internal_local_cloud
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 129, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 404,
+    "text": {
+        "correlation": {
+            "operation": "354d242-422e9e60cd6d6304",
+            "request": "1Rm3WwbquK4="
+        },
+        "error": {
+            "code": "UserError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "Unable to find snapshot with id: 2bd3167f-0978-42bd-9795-6c89fc1e31b2",
+                "stackTrace": "   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetBlobAsStringOrFailNotFound>d__17.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 271\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetSnapshot>d__7.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 113\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 212\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Common.WebApi.Exceptions.ResourceNotFoundException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "Unable to find snapshot with id: 2bd3167f-0978-42bd-9795-6c89fc1e31b2",
+            "target": null
+        }
+    },
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/cfa8a1b1-fa12-44cc-a7e2-84ed8f41b586?parentSnapshotId=2bd3167f-0978-42bd-9795-6c89fc1e31b2"
+}
+Traceback (most recent call last):
+  File "./03.aci.py", line 85, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/run.py", line 64, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 114, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 381, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 129, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 404,
+    "text": {
+        "correlation": {
+            "operation": "48bb3406-4152fc13217d2006",
+            "request": "sFq6uNJN6f0="
+        },
+        "error": {
+            "code": "UserError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "Unable to find snapshot with id: b8317c26-6671-44a6-9859-67a0a7be6afa",
+                "stackTrace": "   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetBlobAsStringOrFailNotFound>d__17.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 271\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetSnapshot>d__7.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 113\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 212\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Common.WebApi.Exceptions.ResourceNotFoundException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "Unable to find snapshot with id: b8317c26-6671-44a6-9859-67a0a7be6afa",
+            "target": null
+        }
+    },
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/42d01329-abb5-49ad-a45d-e36309f9fe1b?parentSnapshotId=b8317c26-6671-44a6-9859-67a0a7be6afa"
+}
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 71, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/run.py", line 64, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 114, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 381, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 129, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 404,
+    "text": {
+        "correlation": {
+            "operation": "a3865b4e-475176cfac6b28be",
+            "request": "Jg8TipPf3uE="
+        },
+        "error": {
+            "code": "UserError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "Unable to find snapshot with id: 4eb7d8fa-4b2e-4c7c-99cc-37dd5695023d",
+                "stackTrace": "   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetBlobAsStringOrFailNotFound>d__17.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 271\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetSnapshot>d__7.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 113\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 212\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Common.WebApi.Exceptions.ResourceNotFoundException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "Unable to find snapshot with id: 4eb7d8fa-4b2e-4c7c-99cc-37dd5695023d",
+            "target": null
+        }
+    },
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/536370a6-698e-4c91-860a-1fd7f8e822ba?parentSnapshotId=4eb7d8fa-4b2e-4c7c-99cc-37dd5695023d"
+}
+Traceback (most recent call last):
+  File "./05.spark.py", line 81, in <module>
+    script_to_run = "train-spark.py")
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/run.py", line 64, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 114, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 381, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 129, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 404,
+    "text": {
+        "correlation": {
+            "operation": "a3865b51-475176cfac6b28be",
+            "request": "tUA0S/k2t2o="
+        },
+        "error": {
+            "code": "UserError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "Unable to find snapshot with id: e9c619a7-7486-4eb3-8e27-4efdb021ec32",
+                "stackTrace": "   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetBlobAsStringOrFailNotFound>d__17.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 271\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetSnapshot>d__7.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 113\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 212\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Common.WebApi.Exceptions.ResourceNotFoundException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "Unable to find snapshot with id: e9c619a7-7486-4eb3-8e27-4efdb021ec32",
+            "target": null
+        }
+    },
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/f49e45cb-6c2c-44c2-9bba-f562f7a9871d?parentSnapshotId=e9c619a7-7486-4eb3-8e27-4efdb021ec32"
+}
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 88, in <module>
+    run = sk_est.fit()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/train/estimator.py", line 421, in fit
+    return super(Estimator, self).fit()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/train/estimator.py", line 78, in fit
+    _telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/run.py", line 64, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 114, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 381, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 129, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 404,
+    "text": {
+        "correlation": {
+            "operation": "354d248-422e9e60cd6d6304",
+            "request": "bCU8mkpAgy0="
+        },
+        "error": {
+            "code": "UserError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "Unable to find snapshot with id: 87311c3d-6b5f-4da6-a9ad-6d027c1096bc",
+                "stackTrace": "   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetBlobAsStringOrFailNotFound>d__17.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 271\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetSnapshot>d__7.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 113\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 212\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Common.WebApi.Exceptions.ResourceNotFoundException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "Unable to find snapshot with id: 87311c3d-6b5f-4da6-a9ad-6d027c1096bc",
+            "target": null
+        }
+    },
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/0898b3b4-2a66-4bf7-ac2b-423473d98e6d?parentSnapshotId=87311c3d-6b5f-4da6-a9ad-6d027c1096bc"
+}
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 92, in <module>
+    run = tfe.fit()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/train/dnn.py", line 332, in fit
+    return super(TensorFlow, self).fit()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/train/estimator.py", line 78, in fit
+    _telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/run.py", line 64, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 114, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/execution/_commands.py", line 381, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 129, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 404,
+    "text": {
+        "correlation": {
+            "operation": "70eb998f-4fa154d2e7b3b1f2",
+            "request": "2Rj7oq1RINM="
+        },
+        "error": {
+            "code": "UserError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "Unable to find snapshot with id: f2407d9f-2238-46f6-92ce-8f95174e96e7",
+                "stackTrace": "   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetBlobAsStringOrFailNotFound>d__17.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 271\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.Project.Services.SnapshotStore.<GetSnapshot>d__7.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotStore.cs:line 113\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 212\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Common.WebApi.Exceptions.ResourceNotFoundException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "Unable to find snapshot with id: f2407d9f-2238-46f6-92ce-8f95174e96e7",
+            "target": null
+        }
+    },
+    "url": "https://eastus2.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/snapshots/f45ffae7-5109-47be-a2aa-4a36575ff640?parentSnapshotId=f2407d9f-2238-46f6-92ce-8f95174e96e7"
+}
+ERROR:azure.storage.common.storageclient:Client-Request-ID=96a1a696-758f-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:13:40 GMT, Server-Request-ID=63453098-c01e-0081-449c-09f933000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:63453098-c01e-0081-449c-09f933000000Time:2018-06-21T20:13:40.3885861Z</Message></Error>.
+ERROR:azure.storage.common.storageclient:Client-Request-ID=96a1a698-758f-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:13:40 GMT, Server-Request-ID=dd2a0829-001e-00be-439c-094eef000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:dd2a0829-001e-00be-439c-094eef000000Time:2018-06-21T20:13:40.5713053Z</Message></Error>.
+ERROR:azure.storage.common.storageclient:Client-Request-ID=96a1a69a-758f-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:13:40 GMT, Server-Request-ID=8a57feb5-e01e-00bf-4d9c-094f12000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:8a57feb5-e01e-00bf-4d9c-094f12000000Time:2018-06-21T20:13:40.7547644Z</Message></Error>.
+ERROR:azure.storage.common.storageclient:Client-Request-ID=96a1a69c-758f-11e8-9288-000d3a71b7c3 Retry policy did not allow for a retry: Server-Timestamp=Thu, 21 Jun 2018 20:13:40 GMT, Server-Request-ID=84e69709-b01e-00e8-449c-09a69f000000, HTTP status code=409, Exception=The specified container already exists.ErrorCode: ContainerAlreadyExists<?xml version="1.0" encoding="utf-8"?><Error><Code>ContainerAlreadyExists</Code><Message>The specified container already exists.RequestId:84e69709-b01e-00e8-449c-09a69f000000Time:2018-06-21T20:13:40.9236363Z</Message></Error>.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 268, in _deploy_webservice
+    resp.raise_for_status()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/requests/models.py", line 939, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://eastus2.modelmanagement.azureml.net/api/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/services?api-version=2018-03-01-preview
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 65, in <module>
+    service = Webservice.deploy_from_image(workspace = ws, name = web_service_name, image = image, deployment_config = aciconfig)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 230, in deploy_from_image
+    return child._deploy(workspace, name, image, deployment_config)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/aci.py", line 88, in _deploy
+    return Webservice._deploy_webservice(workspace, name, create_payload, AciWebservice)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/azureml/core/webservice/webservice.py", line 273, in _deploy_webservice
+    'Content: {}'.format(resp.status_code, resp.headers, resp.content))
+azureml.exceptions.azureml_exception.WebserviceException: Received bad response from Model Management Service:
+Response Code: 409
+Headers: {'Date': 'Thu, 21 Jun 2018 20:15:56 GMT', 'Content-Type': 'application/json', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'api-supported-versions': '2018-03-01-preview', 'x-ms-client-request-id': '4d11647ce498496f90fe5ef8f94dce6f', 'x-ms-client-session-id': '', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains; preload'}
+Content: b'{"code":"Conflict","statusCode":409,"message":"Conflict","details":[{"code":"ServiceWithNameExists","message":"Workspace haieastus2ws3 already contains a Service with name: rrs02-preview"}]}'
+Already on 'master'
