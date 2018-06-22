@@ -1,0 +1,72 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** preview ***
+HEAD is now at c3d6d1a update
+git checkout master
+Your branch is up-to-date with 'origin/master'.
+git pull
+Already up-to-date.
+*** git branch status after ***
+git branch --list
+  candidate
+  daily
+* master
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-06-21-20:02:38
+###################################
+
+
+##### 01.interactive.e2e.py (2018-06-21-20:02:38) ######
+Azure ML Core SDK Version: 0.1.0.1060109
+Found config.json in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+start sequential parameter sweep...
+try alpha value of 0.00
+try alpha value of 0.05
+try alpha value of 0.10
+try alpha value of 0.15
+try alpha value of 0.20
+try alpha value of 0.25
+try alpha value of 0.30
+try alpha value of 0.35
+try alpha value of 0.40
+try alpha value of 0.45
+try alpha value of 0.50
+try alpha value of 0.55
+try alpha value of 0.60
+try alpha value of 0.65
+try alpha value of 0.70
+try alpha value of 0.75
+try alpha value of 0.80
+try alpha value of 0.85
+try alpha value of 0.90
+try alpha value of 0.95
+Find the best run.
+Best run is: b3f75cdd-9195-4ecc-a796-96dba5028dff
+Metrics: {'alpha': 0.4, 'mse': 3295.741064355809, 'columns': ['age', 'gender', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6']}
+Run history url:
+https://mlworkspace.azureml-test.net/portal/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/history/e2e-01/runs/b3f75cdd-9195-4ecc-a796-96dba5028dff
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-01/run-history/run-details/b3f75cdd-9195-4ecc-a796-96dba5028dff
+plot mse_over_alpha.png
+upload mse_over_alpha.png.
+deploying to ACI...
+Registering model best_model.pkl
+Creating image
+Image creation operation finished for image rrs01-preview:24, operation "Succeeded"
+Creating service
+Running....................................................................
+SucceededACI service creation operation finished, operation "Succeeded"
+test the web service.
+{"result": [217.67978776218717, 224.78937091757172, 163.3196311066946, 125.1273401431565, 169.90947633176765, 228.5134871431722, 116.72451334033745, 182.98787464375403, 144.67889653294637, 204.44059121904507]}
+delete ACI
