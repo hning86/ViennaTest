@@ -1,0 +1,251 @@
+Switched to branch 'daily'
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='management.azure.com', port=443): Read timed out. (read timeout=100)",)': /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws?api-version=2018-03-01-preview
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/adapters.py", line 445, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='eastus2euap.experiments.azureml.net', port=443): Max retries exceeded with url: /history/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-01/runs/1a84fd76-cdce-447c-a681-395cf7e0ac45/events (Caused by ResponseError('too many 502 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrest/service_client.py", line 257, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='eastus2euap.experiments.azureml.net', port=443): Max retries exceeded with url: /history/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-01/runs/1a84fd76-cdce-447c-a681-395cf7e0ac45/events (Caused by ResponseError('too many 502 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 57, in <module>
+    with root_run.child_run("alpha" + str(alpha)) as run:
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 374, in __enter__
+    super(Run, self).__enter__()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/run_base.py", line 70, in __enter__
+    return self._context_manager.__enter__()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/run_context_manager.py", line 87, in __enter__
+    return self.context_manager.__enter__()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/history/utils/context_managers.py", line 48, in __enter__
+    self._exit_stack.enter_context(context_manager)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/contextlib.py", line 330, in enter_context
+    result = _cm_type.__enter__(cm)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/run_context_manager.py", line 47, in __enter__
+    self._daemon.start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/history/utils/daemon.py", line 40, in start
+    self._do_work()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/history/utils/daemon.py", line 32, in _do_work
+    self.work()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/_run_impl/run_base.py", line 76, in _heartbeat
+    self._client._client.post_event_run_heartbeat(self._run_id, 120)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/run_history_client.py", line 97, in post_event_run_heartbeat
+    return self.post_event(run_id, event)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/run_history_client.py", line 77, in post_event
+    event_message=event)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/project_client.py", line 58, in _execute_with_project_arguments
+    **kwargs_copy)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/clientbase.py", line 175, in _execute_with_base_arguments
+    return func(*args, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/restclient/operations/events_operations.py", line 182, in post
+    request, header_parameters, body_content, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrest/service_client.py", line 290, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrest/exceptions.py", line 45, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/msrest/service_client.py", line 257, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='eastus2euap.experiments.azureml.net', port=443): Max retries exceeded with url: /history/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/projects/e2e-01/runs/1a84fd76-cdce-447c-a681-395cf7e0ac45/events (Caused by ResponseError('too many 502 error responses',))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='management.azure.com', port=443): Read timed out. (read timeout=100)",)': /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws?api-version=2018-03-01-preview
+Traceback (most recent call last):
+  File "./02.local.py", line 51, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 70, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 110, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 274, in _start_internal_local_cloud
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 120, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 500,
+    "text": {
+        "correlation": {
+            "operation": "c5d35315-45adfa7ec6867c4c",
+            "request": "eHf4KaDx5OA="
+        },
+        "error": {
+            "code": "ServiceError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "The specified container does not exist.",
+                "stackTrace": "   at Microsoft.WindowsAzure.Storage.Core.Executor.Executor.<ExecuteAsyncInternal>d__4`1.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob.<>c__DisplayClass31_0.<<UploadFromStreamAsyncHelper>b__0>d.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.SnapshotBlobProvider.<PutFileBlob>d__4.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotBlobProvider.cs:line 60\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.NewSnapshotFilesWriter.<SaveDeltaFiles>d__3.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/NewSnapshotFilesWriter.cs:line 58\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 210\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Microsoft.WindowsAzure.Storage.StorageException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "InternalServerError",
+            "target": null
+        }
+    },
+    "url": "https://eastus2euap.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/snapshots/dbfc4df7-0eb2-4d41-985d-864bff61d536?parentSnapshotId=45ad0386-55c9-4681-b7ec-027c8ba0decd"
+}
+Traceback (most recent call last):
+  File "./03.aci.py", line 85, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 70, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 115, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 384, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 120, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 500,
+    "text": {
+        "correlation": {
+            "operation": "8bf3a72b-42a5ca1c51c6d988",
+            "request": "OL6TP7bXKXA="
+        },
+        "error": {
+            "code": "ServiceError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "The specified container does not exist.",
+                "stackTrace": "   at Microsoft.WindowsAzure.Storage.Core.Executor.Executor.<ExecuteAsyncInternal>d__4`1.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob.<>c__DisplayClass31_0.<<UploadFromStreamAsyncHelper>b__0>d.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.SnapshotBlobProvider.<PutFileBlob>d__4.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotBlobProvider.cs:line 60\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.NewSnapshotFilesWriter.<SaveDeltaFiles>d__3.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/NewSnapshotFilesWriter.cs:line 58\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 210\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Microsoft.WindowsAzure.Storage.StorageException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "InternalServerError",
+            "target": null
+        }
+    },
+    "url": "https://eastus2euap.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/snapshots/7c7eeec1-3220-41e7-a37d-275bd0467d6d?parentSnapshotId=55c9c171-7b49-43c2-b623-b2e822f9907b"
+}
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 70, in <module>
+    script_to_run = train_script)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 70, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 115, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 384, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 120, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 500,
+    "text": {
+        "correlation": {
+            "operation": "fb8db478-4a81b652c36aa900",
+            "request": "uW29JvGhqlM="
+        },
+        "error": {
+            "code": "ServiceError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "The specified container does not exist.",
+                "stackTrace": "   at Microsoft.WindowsAzure.Storage.Core.Executor.Executor.<ExecuteAsyncInternal>d__4`1.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob.<>c__DisplayClass31_0.<<UploadFromStreamAsyncHelper>b__0>d.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.SnapshotBlobProvider.<PutFileBlob>d__4.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotBlobProvider.cs:line 60\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.NewSnapshotFilesWriter.<SaveDeltaFiles>d__3.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/NewSnapshotFilesWriter.cs:line 58\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 210\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Microsoft.WindowsAzure.Storage.StorageException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "InternalServerError",
+            "target": null
+        }
+    },
+    "url": "https://eastus2euap.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/snapshots/a2604f4e-b898-431e-a008-f8e991cc0848?parentSnapshotId=d9fa0027-1375-4afc-8dde-fab7955c0676"
+}
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='management.azure.com', port=443): Read timed out. (read timeout=100)",)': /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws?api-version=2018-03-01-preview
+Traceback (most recent call last):
+  File "./05.spark.py", line 81, in <module>
+    script_to_run = "train-spark.py")
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/core/run.py", line 70, in submit
+    return _commands.start_run(project_object, run_config_object, telemetry_values=_telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 115, in start_run
+    telemetry_values=telemetry_values)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/execution/_commands.py", line 384, in _start_internal
+    snapshot_id = snapshot_async.get() if snapshot_async else None
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 644, in get
+    raise self._value
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/multiprocessing/pool.py", line 119, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/base_sdk_common/create_snapshot.py", line 120, in create_snapshot
+    raise SnapshotException(get_http_exception_response_string(response))
+azureml.exceptions.azureml_exception.SnapshotException: {
+    "status_code": 500,
+    "text": {
+        "correlation": {
+            "operation": "fb8db495-4a81b652c36aa900",
+            "request": "jv/WJhjoohI="
+        },
+        "error": {
+            "code": "ServiceError",
+            "debugInfo": {
+                "data": {},
+                "errorResponse": null,
+                "innerException": null,
+                "message": "The specified container does not exist.",
+                "stackTrace": "   at Microsoft.WindowsAzure.Storage.Core.Executor.Executor.<ExecuteAsyncInternal>d__4`1.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.WindowsAzure.Storage.Blob.CloudBlockBlob.<>c__DisplayClass31_0.<<UploadFromStreamAsyncHelper>b__0>d.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.SnapshotBlobProvider.<PutFileBlob>d__4.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/SnapshotBlobProvider.cs:line 60\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.Services.NewSnapshotFilesWriter.<SaveDeltaFiles>d__3.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/Services/NewSnapshotFilesWriter.cs:line 58\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.MachineLearning.ProjectContent.EntryPoints.Controllers.SnapshotController.<CreateSnapshot>d__12.MoveNext() in /opt/vsts/work/1/s/src/azureml-api/src/ProjectContent/EntryPoints/Controllers/SnapshotController.cs:line 210\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__12.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__10.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)\n   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()\n--- End of stack trace from previous location where exception was thrown ---\n   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\n   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()",
+                "type": "Microsoft.WindowsAzure.Storage.StorageException"
+            },
+            "details": [],
+            "innerError": null,
+            "message": "InternalServerError",
+            "target": null
+        }
+    },
+    "url": "https://eastus2euap.experiments.azureml.net/content/v1.0/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2euapws/snapshots/d5395ff5-f094-4c2d-98d1-9719bffe7f1c?parentSnapshotId=ee1a8833-9b97-4a28-b0ae-3c97e3d60106"
+}
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 47, in <module>
+    for ct in ws.list_compute_targets():
+AttributeError: 'Workspace' object has no attribute 'list_compute_targets'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 48, in <module>
+    for ct in ws.list_compute_targets():
+AttributeError: 'Workspace' object has no attribute 'list_compute_targets'
+Traceback (most recent call last):
+  File "./10.o16n.py", line 30, in <module>
+    model = ws.register_model(model_path = "best_model.pkl",
+AttributeError: 'Workspace' object has no attribute 'register_model'
+Switched to branch 'master'
