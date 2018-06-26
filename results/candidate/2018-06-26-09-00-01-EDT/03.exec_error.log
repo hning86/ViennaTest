@@ -1,0 +1,87 @@
+Switched to branch 'candidate'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 46, in <module>
+    root_run = Run.start_logging(workspace = ws, run_history_name = run_history_name)
+TypeError: start_logging() missing 1 required positional argument: 'history_name'
+Traceback (most recent call last):
+  File "./02.local.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./03.aci.py", line 31, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 445, in send
+    timeout=timeout
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 732, in urlopen
+    body_pos=body_pos, **response_kw)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/connectionpool.py", line 712, in urlopen
+    retries = retries.increment(method, url, response=response, _pool=self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/urllib3/util/retry.py", line 388, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 503 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 257, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise RetryError(e, request=request)
+requests.exceptions.RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 503 error responses',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 130, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 254, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auto_rest_workspace = _commands.get_workspace(auth, subscription_id, resource_group, name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/project/_commands.py", line 512, in get_workspace
+    workspace_name)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/base_sdk_common/workspace/operations/workspaces_operations.py", line 75, in get
+    response = self._client.send(request, header_parameters, stream=False, **operation_config)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 290, in send
+    raise_with_traceback(ClientRequestError, msg, err)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/exceptions.py", line 45, in raise_with_traceback
+    raise error.with_traceback(exc_traceback)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/msrest/service_client.py", line 257, in send
+    **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 512, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/sessions.py", line 622, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/requests/adapters.py", line 504, in send
+    raise RetryError(e, request=request)
+msrest.exceptions.ClientRequestError: Error occurred in request., RetryError: HTTPSConnectionPool(host='management.azure.com', port=443): Max retries exceeded with url: /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview (Caused by ResponseError('too many 503 error responses',))
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='management.azure.com', port=443): Read timed out. (read timeout=100)",)': /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview
+Traceback (most recent call last):
+  File "./05.spark.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 32, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 33, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./10.o16n.py", line 30, in <module>
+    model = ws.register_model(model_path = "best_model.pkl",
+AttributeError: 'Workspace' object has no attribute 'register_model'
+Switched to branch 'master'
