@@ -1,0 +1,35 @@
+Switched to branch 'candidate'
+Traceback (most recent call last):
+  File "./01.interactive.e2e.py", line 46, in <module>
+    root_run = Run.start_logging(workspace = ws, run_history_name = run_history_name)
+TypeError: start_logging() missing 1 required positional argument: 'history_name'
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='management.azure.com', port=443): Read timed out. (read timeout=100)",)': /subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3?api-version=2018-03-01-preview
+Traceback (most recent call last):
+  File "./02.local.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./03.aci.py", line 31, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./04.dsvm.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./05.spark.py", line 30, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 32, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 33, in <module>
+    directory = project_folder)
+TypeError: attach() got an unexpected keyword argument 'run_history_name'
+Traceback (most recent call last):
+  File "./10.o16n.py", line 30, in <module>
+    model = ws.register_model(model_path = "best_model.pkl",
+AttributeError: 'Workspace' object has no attribute 'register_model'
+Switched to branch 'master'
