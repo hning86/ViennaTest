@@ -1,0 +1,376 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** preview ***
+HEAD is now at c3d6d1a update
+git checkout master
+Your branch is up-to-date with 'origin/master'.
+git pull
+Already up-to-date.
+*** git branch status after ***
+git branch --list
+  candidate
+  daily
+* master
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-07-03-12:02:25
+###################################
+
+
+##### 01.interactive.e2e.py (2018-07-03-12:02:25) ######
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+start sequential parameter sweep...
+try alpha value of 0.00
+try alpha value of 0.05
+try alpha value of 0.10
+try alpha value of 0.15
+try alpha value of 0.20
+try alpha value of 0.25
+try alpha value of 0.30
+try alpha value of 0.35
+try alpha value of 0.40
+try alpha value of 0.45
+try alpha value of 0.50
+try alpha value of 0.55
+try alpha value of 0.60
+try alpha value of 0.65
+try alpha value of 0.70
+try alpha value of 0.75
+try alpha value of 0.80
+try alpha value of 0.85
+try alpha value of 0.90
+try alpha value of 0.95
+Find the best run.
+Best run is: 96e11d4c-3010-440a-8d10-61bab6a62cd6
+Metrics: {'alpha': 0.4, 'mse': 3295.741064355809, 'columns': ['age', 'gender', 'bmi', 'bp', 's1', 's2', 's3', 's4', 's5', 's6']}
+Run history url:
+https://mlworkspace.azureml-test.net/portal/subscriptions/fac34303-435d-4486-8c3f-7094d82a0b60/resourceGroups/aml-notebooks/providers/Microsoft.MachineLearningServices/workspaces/haieastus2ws3/history/e2e-01/runs/96e11d4c-3010-440a-8d10-61bab6a62cd6
+https://mlworkspace.azureml-test.net/home/%2Fsubscriptions%2Ffac34303-435d-4486-8c3f-7094d82a0b60%2FresourceGroups%2Faml-notebooks%2Fproviders%2FMicrosoft.MachineLearningServices%2Fworkspaces%2Fhaieastus2ws3/projects/e2e-01/run-history/run-details/96e11d4c-3010-440a-8d10-61bab6a62cd6
+plot mse_over_alpha.png
+upload mse_over_alpha.png.
+deploying to ACI...
+Registering model best_model.pkl
+Creating image
+Image creation operation finished for image rrs01-preview:92, operation "Succeeded"
+Creating service
+Running..............................................................................
+FailedACI service creation operation finished, operation "Failed"
+Service creation failed, unexpected error response:
+{'code': 'AciDeploymentFailed', 'message': 'Aci Deployment failed', 'details': [{'code': 'CrashLoopBackOff', 'message': 'CrashLoopBackOff: Back-off 20s restarting failed'}]}
+test the web service.
+
+
+##### 02.local.py (2018-07-03-12:14:07) ################
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/02 already exists, remove it.
+/tmp/e2e-test/02
+e2e-02
+copy train-sklearn.py to the project folder.
+load run config
+
+##################################################
+submitting train-sklearn.py for a local run...
+##################################################
+
+
+
+##### 03.aci.py (2018-07-03-12:14:16) ##################
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/03 already exists, remove it.
+/tmp/e2e-test/03
+e2e-03
+copy train-sklearn.py to the project folder.
+
+##################################################
+ACI run...
+##################################################
+
+Create a run config object for ACI
+base image is continuumio/miniconda3:4.4.10
+submitting run...
+
+
+##### 04.dsvm (2018-07-03-12:14:19) ####################
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/04 already exists, remove it.
+/tmp/e2e-test/04
+e2e-04
+copy train-sklearn.py to the project folder.
+
+##################################################
+Bare VM run
+##################################################
+
+Load the cpu-dsvm config from aml_config directory...
+submit run...
+
+
+##### 05.spark (2018-07-03-12:14:22) ###################
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/05 already exists, remove it.
+/tmp/e2e-test/05
+e2e-05
+copy train-spark.py and iris.csv to the project folder.
+create an ACI run config.
+base image is microsoft/mmlspark:0.12
+
+##################################################
+submitting train-spark.py for a Spark run on ACI...
+##################################################
+
+
+
+##### 07.sklearn.hd.py (2018-07-03-12:14:24) ###########
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/07 already exists, remove it.
+/tmp/e2e-test/07
+e2e-07
+copy train-sklearn-one-model.py to the project folder.
+create or load BatchAI compute cpucluster...
+gpucluster BatchAI
+cpucluster BatchAI
+found compute target. just use it.
+create generic estimator.
+
+##################################################
+Batch AI run...
+##################################################
+
+
+
+##### 08.tf.hd.py (2018-07-03-12:14:29) ################
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+/tmp/e2e-test/08 already exists, remove it.
+/tmp/e2e-test/08
+e2e-08
+copy mnist_tf.py to the project folder.
+create or load BatchAI compute gpucluster...
+gpucluster BatchAI
+found compute target. just use it.
+create TensorFlow estimator.
+
+##################################################
+submitting mnist_tf.py for a Batch AI run...
+##################################################
+
+
+
+##### 10.o16n.py (2018-07-03-12:14:32) #################
+Azure ML Core SDK Version: 0.1.0.1095338
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Workspace details:
+aml-notebooks haieastus2ws3 eastus2
+Registering model mymodel
+Name: mymodel 	Version: 104 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 103 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 102 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 101 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 100 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 99 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 98 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 97 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 96 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 95 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 94 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 93 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 92 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 91 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 90 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 89 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 88 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 87 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 86 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 85 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 84 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 83 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 82 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 81 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 80 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 79 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 58 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 57 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 56 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 55 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 54 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 53 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 52 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 51 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 50 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 49 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 48 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 47 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 46 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 45 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 44 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 43 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 42 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 41 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 40 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 39 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 38 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 37 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 36 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 35 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 34 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 33 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 32 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 31 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 30 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 29 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 28 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 27 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 26 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 25 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 24 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 23 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 22 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 21 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 20 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 19 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 18 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 17 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 16 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 15 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 14 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 13 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 12 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 11 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 10 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 9 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 8 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 7 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 6 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 5 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 4 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 3 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 2 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Name: mymodel 	Version: 1 	Description: Ridge regression model to predict diabetes ['diabetes', 'regression']
+Ridge regression model to predict diabetes
+Creating image
+Running....................................
+SucceededImage creation operation finished for image myimage:90, operation "Succeeded"
+myimage(v.90 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:90 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15306344908268068.txt?sig=K/hxd%2Ba5qaS6UjzMUmlGMfTJwZk6nZkRRdk1fCik/eg%3D&sr=b&sp=r&se=2018-08-02T16%3A17%3A50Z&sv=2017-04-17
+myimage(v.89 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:89 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15306195944621654.txt?sig=gg%2Bwt7X34WAnbwsYo9WBi%2Bseo5ftHdC4hiwTPXowxQo%3D&sr=b&sp=r&se=2018-08-02T12%3A08%3A35Z&sv=2017-04-17
+myimage(v.88 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:88 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15306053243197520.txt?se=2018-08-02T08%3A11%3A49Z&sp=r&sv=2017-04-17&sr=b&sig=BwEn1c62wpF0xUteZthy0HBxnBCjyRN1Enu33FzR50I%3D
+myimage(v.87 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:87 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305907931504456.txt?se=2018-08-02T04%3A08%3A25Z&sp=r&sv=2017-04-17&sr=b&sig=y6ahZ3RKmK8KaEgbFpynNzseBtSwB6gH%2B%2BzGhXLpjxQ%3D
+myimage(v.86 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:86 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305764134445722.txt?sp=r&sig=mSgbKYT6ldEoM4XbA%2B9yMHy5PYRHrHCx/QuU8i2HDFk%3D&se=2018-08-02T00%3A08%3A56Z&sr=b&sv=2017-04-17
+myimage(v.85 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:85 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305619917193656.txt?sig=gGUzIbsTU%2BpjuidyNEFsB3v2qTUz12e/joXBzmfB3k0%3D&sr=b&sp=r&se=2018-08-01T20%3A08%3A25Z&sv=2017-04-17
+myimage(v.84 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:84 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305476218987960.txt?sig=naMmaszoOhmbbeRmGoQttyitNxAShwLjfKtR%2BoksvfQ%3D&sr=b&sp=r&se=2018-08-01T16%3A09%3A02Z&sv=2017-04-17
+myimage(v.83 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:83 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305332170940318.txt?sig=WiWmUizFlbb3P/i1loN/9BETQ5xnLeDyRZHJQKEGglY%3D&sr=b&sp=r&se=2018-08-01T12%3A09%3A12Z&sv=2017-04-17
+myimage(v.82 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:82 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305187937614854.txt?se=2018-08-01T08%3A08%3A31Z&sp=r&sv=2017-04-17&sr=b&sig=N1cnpGUURYaX8PnpZMJ/GWRz%2BTS0W9bXN6E3iWj4Quk%3D
+myimage(v.81 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:81 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15305043966039896.txt?se=2018-08-01T04%3A08%3A28Z&sp=r&sv=2017-04-17&sr=b&sig=c9%2BqpyB4TnhomwLg6Vw5hAOblHWJIeJPzKxFckyhtxU%3D
+myimage(v.80 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:80 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304900017606978.txt?sig=bFGkTeH4s3Or5JYKEumrOgM9a0O/8QSdRvwzorP1NRk%3D&sr=b&sp=r&se=2018-08-01T00%3A08%3A32Z&sv=2017-04-17
+myimage(v.79 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:79 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304755875237922.txt?sig=lKDP9/pcUM9q%2BgUE4oO68%2BJ2tMyZ3AhppxuXOiBefpM%3D&sr=b&sp=r&se=2018-07-31T20%3A11%3A20Z&sv=2017-04-17
+myimage(v.78 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:78 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304611863209770.txt?se=2018-07-31T16%3A08%3A26Z&sv=2017-04-17&sig=h/ddfEVnX/lTXWCOHckeGsn7wAb5sX1XREJ21MWWEjc%3D&sr=b&sp=r
+myimage(v.77 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:77 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304468166201918.txt?sig=Y2pR9byFPRjYV98TNqatH%2BdxAVGvmw2lfLG4vmHIq%2Bk%3D&sr=b&sp=r&se=2018-07-31T12%3A09%3A07Z&sv=2017-04-17
+myimage(v.76 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:76 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304323953723902.txt?se=2018-07-31T08%3A08%3A35Z&sv=2017-04-17&sig=loH1kl2XolFiEfGpbCPE7b/5jWnxbCxRF3rhZMGdPPU%3D&sr=b&sp=r
+myimage(v.75 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:75 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304179885386396.txt?sv=2017-04-17&se=2018-07-31T04%3A08%3A20Z&sp=r&sig=IC2YJRQdwfRpC5mirzBQ4rBgtRnymVENil10DB2cs/A%3D&sr=b
+myimage(v.74 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:74 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15304036012988084.txt?sig=4MN3/GhjCCvARtfmfVu/cLtNxZNL3N5iEqP48RnZM6s%3D&sr=b&sp=r&se=2018-07-31T00%3A08%3A32Z&sv=2017-04-17
+myimage(v.73 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:73 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303891815410924.txt?sig=yCtqE9FpeYgaJZgk2bbz8U5/N7bcj5IlBonpC0Xbh9E%3D&sr=b&sp=r&se=2018-07-30T20%3A08%3A12Z&sv=2017-04-17
+myimage(v.72 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:72 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303747722895350.txt?se=2018-07-30T16%3A08%3A03Z&sv=2017-04-17&sig=/QXdVTWVnBl8KaJqQs95VAyb47aagSJmynBbHOqCzJI%3D&sr=b&sp=r
+myimage(v.71 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:71 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303603931386986.txt?se=2018-07-30T12%3A08%3A45Z&sv=2017-04-17&sig=Y9eRBFrvnvD9mkNalT%2B3L3a/h8yhtEueu6ZHP9xhbjo%3D&sr=b&sp=r
+myimage(v.70 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:70 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303459869989354.txt?sig=qJIsQZP5fnEWuHBg4AbqlRsyB68yVoDaTPCUmU1ZVlU%3D&sr=b&sp=r&se=2018-07-30T08%3A08%3A23Z&sv=2017-04-17
+myimage(v.69 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:69 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303315823115302.txt?sig=4nVPxiGalqjlm1knQstsXusqXtPLwuIFoxsatvHZBQ0%3D&sr=b&sp=r&se=2018-07-30T04%3A08%3A23Z&sv=2017-04-17
+myimage(v.68 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:68 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303171799115140.txt?sv=2017-04-17&se=2018-07-30T00%3A08%3A14Z&sp=r&sig=Qzh0RsMsLK8gkeJHkZ/XHOWuYufvM453yPiqfSr9GFw%3D&sr=b
+myimage(v.67 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:67 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15303028205416860.txt?sv=2017-04-17&se=2018-07-29T20%3A09%3A03Z&sp=r&sig=gNHegey/10sbjmzloXx20XSD56z8bRaNO3X2Wg762dc%3D&sr=b
+myimage(v.66 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:66 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302884926637632.txt?se=2018-07-29T16%3A10%3A16Z&sv=2017-04-17&sig=tFR0/5mV/%2BcWOlu63cQtKfWUyBhi1TimtCR8yNCulbc%3D&sr=b&sp=r
+myimage(v.65 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:65 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302739942091052.txt?sig=z2ElVnexh6gHaA5wyOGgubfXwZwF5eN64n0fm1sjn5s%3D&sr=b&sp=r&se=2018-07-29T12%3A08%3A40Z&sv=2017-04-17
+myimage(v.64 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:64 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302595883214508.txt?se=2018-07-29T08%3A08%3A39Z&sv=2017-04-17&sig=G2%2ByBMOrcw4DJD/Cf7e%2BX1SMjwJ5bmGjjHmJ2ETLGEM%3D&sr=b&sp=r
+myimage(v.63 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:63 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302452139742592.txt?sv=2017-04-17&se=2018-07-29T04%3A08%3A55Z&sp=r&sig=kyznfKHdc5M6ZzmPB9uPuT%2BB1I%2By%2B2wOvFFmKYmTrEo%3D&sr=b
+myimage(v.62 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:62 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302307665359602.txt?sig=Kc%2B8P2lgM4SkTXG81n4urDztvCm9YZ42ZCJLyShv9PE%3D&sr=b&sp=r&se=2018-07-29T00%3A08%3A10Z&sv=2017-04-17
+myimage(v.61 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:61 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302163784665490.txt?sig=g2uWs3q6iWkR9MPnO%2BaXpYLwiUZFdlUKvi4bVR0/tPM%3D&sr=b&sp=r&se=2018-07-28T20%3A08%3A14Z&sv=2017-04-17
+myimage(v.60 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:60 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15302018035883410.txt?sig=vIP0CTHjSo5WUOhQyI/%2B4Uh1n%2B8P5Kx8Wbdqz5Wo6ts%3D&sr=b&sp=r&se=2018-07-28T16%3A08%3A16Z&sv=2017-04-17
+myimage(v.59 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:59 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301876794434664.txt?se=2018-07-28T12%3A10%3A10Z&sv=2017-04-17&sig=INTeEUjnbx5Juv8WbJaclBfNqnzL7t6beYroLaE0iGA%3D&sr=b&sp=r
+myimage(v.58 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:58 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301733116477612.txt?sig=2qM%2BYtWIyR4Hm694pcx1598wb8QO2aza%2BiFtTz5gUiI%3D&sr=b&sp=r&se=2018-07-28T08%3A10%3A23Z&sv=2017-04-17
+myimage(v.57 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:57 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301588229728026.txt?sig=x2TMi9ckci2sjSx9jKBc%2B0YfXb%2B%2B9KyXeHdsSY0ySF8%3D&sr=b&sp=r&se=2018-07-28T04%3A09%3A05Z&sv=2017-04-17
+myimage(v.56 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:56 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301443720599072.txt?sig=2ogxu5Nfars6QkJmHrdBhEcguBrMH1lugdT1BzlJ7hk%3D&sr=b&sp=r&se=2018-07-28T00%3A08%3A12Z&sv=2017-04-17
+myimage(v.55 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:55 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301299988266058.txt?se=2018-07-27T20%3A08%3A40Z&sv=2017-04-17&sig=tW2ByJ/skEUWje3edvDBKisIL7inRc/LanbnN883z88%3D&sr=b&sp=r
+myimage(v.54 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:54 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301155885867606.txt?sv=2017-04-17&se=2018-07-27T16%3A08%3A29Z&sp=r&sig=YbUStrYrCi%2B5HJJ01Z1NnLuOE/L1semsfneaK5RFGZY%3D&sr=b
+myimage(v.53 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:53 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15301011834663360.txt?se=2018-07-27T12%3A08%3A24Z&sv=2017-04-17&sig=aAz1b70tBx38nylQ3ecFoUlA1rgy2khMpDrvv12d1Us%3D&sr=b&sp=r
+myimage(v.52 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:52 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300868111763830.txt?sig=84RxOkP6H%2BDuoeVVYSVyxSXmiiBfPWH2lCcO275huPU%3D&sr=b&sp=r&se=2018-07-27T08%3A08%3A40Z&sv=2017-04-17
+myimage(v.51 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:51 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300723754457416.txt?sig=SMdwPH74pPd7mSfYz%2B4sQFSL%2BEeqJJ%2BJYNQ%2BLkPEeX0%3D&sr=b&sp=r&se=2018-07-27T04%3A08%3A15Z&sv=2017-04-17
+myimage(v.50 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:50 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300579726745906.txt?sig=oBsgrD01/nJQAR%2BAwGTsXqR1/GXw0PFAOkiz5QGy7oo%3D&sr=b&sp=r&se=2018-07-27T00%3A08%3A20Z&sv=2017-04-17
+myimage(v.49 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:49 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300435811092236.txt?se=2018-07-26T20%3A08%3A13Z&sv=2017-04-17&sig=8OLvhAlkfnRLcerfqfjL9dUAY7r5Pgus1rI1yoNYt1Y%3D&sr=b&sp=r
+myimage(v.48 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:48 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300291949382008.txt?se=2018-07-26T16%3A08%3A29Z&sv=2017-04-17&sig=StlkBMJxxMhgTf8xO4Y/FWHPJjVzMedG4hxCsuGr0/w%3D&sr=b&sp=r
+myimage(v.47 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:47 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300147758099844.txt?se=2018-07-26T12%3A08%3A17Z&sv=2017-04-17&sig=SkDtxh/F5olf/gO45I%2BOFSLdAEwOqh7nsA6pfixnGTA%3D&sr=b&sp=r
+myimage(v.46 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:46 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15300004404023592.txt?sig=gk03OYFvymQ8LhHCiVRYS6HdXwoU8XUx%2BdaJXA0nw2g%3D&sr=b&sp=r&se=2018-07-26T08%3A09%3A14Z&sv=2017-04-17
+myimage(v.45 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:45 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15299859919932716.txt?sig=wuOCnf/DpU5M4TGyJXUMhF8/lqLl0Ign3XN5aQ6628I%3D&sr=b&sp=r&se=2018-07-26T04%3A08%3A29Z&sv=2017-04-17
+myimage(v.44 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:44 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15299719864515180.txt?sv=2017-04-17&se=2018-07-26T00%3A14%3A57Z&sp=r&sig=EZz5BUuIZXvD1d6xU8m6XwcEwcXsF8fm7CvnjpSfhM4%3D&sr=b
+myimage(v.43 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:43 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15299431867900594.txt?se=2018-07-25T16%3A15%3A03Z&sv=2017-04-17&sig=GlpIV1rsuppJwzo4WjX8VcU17QmX2e2fg1oEp7f%2BbsA%3D&sr=b&sp=r
+myimage(v.42 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:42 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15299143007347898.txt?sp=r&sig=/2gI4DvUkYcQuuQfg3BzTEiweIbLAqdoTL9PCgVE8fk%3D&sr=b&sv=2017-04-17&se=2018-07-25T08%3A13%3A33Z
+myimage(v.41 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:41 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298999510193738.txt?sr=b&sig=%2Bt0%2B0PREvOai%2BUo/mhv5II5aI3AX7SeDR%2BoCkCCRals%3D&sp=r&se=2018-07-25T04%3A14%3A25Z&sv=2017-04-17
+myimage(v.40 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:40 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298855340783954.txt?sp=r&sig=21x0h62joQeq03lLyYxmg75cpZJ5C32fkPgP3YcbknE%3D&sr=b&sv=2017-04-17&se=2018-07-25T00%3A14%3A25Z
+myimage(v.39 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:39 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298711257743022.txt?sr=b&sig=UGGaEHV085NzyZ2Z1ny5M5KVWEnu87a66aaeTxm2aRE%3D&sp=r&se=2018-07-24T20%3A13%3A57Z&sv=2017-04-17
+myimage(v.38 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:38 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298566631048160.txt?sr=b&sig=DMjl%2Bz2jbxj5OzLQ7U4fJfvJt6amRlSD3//t95F6AHI%3D&sp=r&se=2018-07-24T16%3A14%3A49Z&sv=2017-04-17
+myimage(v.37 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:37 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298423677507894.txt?sr=b&sig=zKZWCvB5kDlglDvjihG4jbXZ4z6gAR33AZ89K8mDQvM%3D&sp=r&se=2018-07-24T12%3A14%3A48Z&sv=2017-04-17
+myimage(v.36 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:36 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298279207014136.txt?se=2018-07-24T08%3A13%3A59Z&sv=2017-04-17&sig=HTqh9ivNhkEFF2nI9NfINaZ%2BeYPMZHVTUp9g9MT4s%2BY%3D&sr=b&sp=r
+myimage(v.35 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:35 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15298135425437426.txt?sp=r&sig=1mzlbU1EoKcd/c2sbDABF1VVzyarHxoBokZLtk775lA%3D&sr=b&sv=2017-04-17&se=2018-07-24T04%3A14%3A14Z
+myimage(v.34 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:34 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297990847304056.txt?sr=b&sig=RcV4BQFYQpdAEHenBYMer67CAMAH3OvJe3nFpivTUCo%3D&sp=r&se=2018-07-24T00%3A13%3A20Z&sv=2017-04-17
+myimage(v.33 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:33 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297846003803160.txt?sp=r&sig=Wcfov3Si9gt87mhHtnDSqJvQPV0RmzTVQ84FEnbgLSw%3D&sr=b&sv=2017-04-17&se=2018-07-23T20%3A11%3A52Z
+myimage(v.32 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:32 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297702895308724.txt?sp=r&sig=qYGc6GuGLN92SmnpkM8iU3ctVEdy8L3WE7G5gwV2F3c%3D&sr=b&sv=2017-04-17&se=2018-07-23T16%3A13%3A20Z
+myimage(v.31 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:31 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297559223765224.txt?se=2018-07-23T12%3A14%3A03Z&sv=2017-04-17&sig=wLQtxehUemWx5/qCg/VU0URbwFfpbWIABRDEsB8n/dQ%3D&sr=b&sp=r
+myimage(v.30 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:30 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297415528056232.txt?sp=r&sig=8F55L9kKgJw66ue93B5VDExMmfd4Md9U7L2dUnAbRHQ%3D&sr=b&sv=2017-04-17&se=2018-07-23T08%3A14%3A23Z
+myimage(v.29 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:29 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297270054185038.txt?se=2018-07-23T04%3A11%3A58Z&sv=2017-04-17&sig=SHdTgjdTG09hSG7tKHRVCc/tC%2BcIBwceRAY0zz8j/cg%3D&sr=b&sp=r
+myimage(v.28 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:28 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15297127706102236.txt?sp=r&sig=zgvg9SsIq%2BzFd9zj7WMQ159Van/tM1/15mtc3qTnU4o%3D&sr=b&sv=2017-04-17&se=2018-07-23T00%3A14%3A38Z
+myimage(v.27 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:27 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15296982036717032.txt?sp=r&sig=b5R77WUot/ArotqcFhS02MuXEjaXKlnIQLPQWGqm9Zg%3D&sr=b&sv=2017-04-17&se=2018-07-22T20%3A11%3A55Z
+myimage(v.26 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:26 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15296837902938234.txt?sr=b&sig=zlbHTCNu4%2BKdIpjK78rzReBFjwxg5U6JozOGwonGs/g%3D&sp=r&se=2018-07-22T16%3A11%3A45Z&sv=2017-04-17
+myimage(v.25 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:25 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15296694323131582.txt?sp=r&sig=vCRWqZVhyK5P4GbcqSH6TKSZyfo7pOTv9Gi4nFTW7lo%3D&sr=b&sv=2017-04-17&se=2018-07-22T12%3A12%3A33Z
+myimage(v.24 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:24 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15296551290080442.txt?se=2018-07-22T08%3A14%3A03Z&sv=2017-04-17&sig=mmXLOLDXm%2BadVs6/npsR2sn%2BQjYxmEj3yF1gesJttoQ%3D&sr=b&sp=r
+myimage(v.23 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:23 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15296406223715148.txt?se=2018-07-22T04%3A12%3A13Z&sv=2017-04-17&sig=O3Y07%2BkDpxoPig46EyQhBwdZaArsQlNVOlrqib9UD5Q%3D&sr=b&sp=r
+myimage(v.22 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:22 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15296120270151294.txt?se=2018-07-21T20%3A15%3A49Z&sv=2017-04-17&sig=NKtBOH8Mk5tF%2BAGUriFQldh1CU9g94a3D/SpWMyN6I4%3D&sr=b&sp=r
+myimage(v.21 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:21 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295975203270428.txt?sp=r&sig=7ZSfEk6w4uRn%2B7q3xGIJP7AfgU3ajkfuiLiMFTm0vtc%3D&sr=b&sv=2017-04-17&se=2018-07-21T16%3A13%3A56Z
+myimage(v.20 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:20 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295831664503410.txt?sp=r&sig=MlkvZeZeg7HDKICGTUNRiBvpY8nXhFzLA1PV18LjfZ0%3D&sr=b&sv=2017-04-17&se=2018-07-21T12%3A14%3A47Z
+myimage(v.19 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:19 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295687043182232.txt?se=2018-07-21T08%3A13%3A36Z&sv=2017-04-17&sig=0eXFwmwbD4Ayw15RnwljZEmTbX5KV73N85d10A7LnFc%3D&sr=b&sp=r
+myimage(v.18 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:18 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295542854420704.txt?sp=r&sig=pNyUpGA/bOjMAJ8cWRexBqaY0gfYhchkgXAjpD6ft6o%3D&sr=b&sv=2017-04-17&se=2018-07-21T04%3A13%3A17Z
+myimage(v.17 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:17 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295399072756284.txt?se=2018-07-21T00%3A13%3A43Z&sv=2017-04-17&sig=EpzIIQRYUj36ohs6eu9dTlyV82vhvqORmxfHmo/zjPM%3D&sr=b&sp=r
+myimage(v.16 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:16 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295254928267682.txt?sp=r&sig=ka0tTAqZX0aNDx1PZH9AFfyeVD5uUj41NJbdBfiNYrU%3D&sr=b&sv=2017-04-17&se=2018-07-20T20%3A13%3A34Z
+myimage(v.15 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:15 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15295111331165748.txt?sr=b&sig=2VQnBPVMMVkoAxtRBrdawJYVSeDjE7Ah3J1oLTO0gj0%3D&sp=r&se=2018-07-20T16%3A14%3A15Z&sv=2017-04-17
+myimage(v.14 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:14 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15294967222884550.txt?sp=r&sig=PVSuVjHSk519eXEp7HbMo/yW82NS7J5KC%2BqPgseZUzA%3D&sr=b&sv=2017-04-17&se=2018-07-20T12%3A16%3A56Z
+myimage(v.13 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:13 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15294822525771986.txt?sp=r&sig=c06WSoRyoN6DoRE56d8UEm1WO2N7ZuXqQv6s5weiLGE%3D&sr=b&sv=2017-04-17&se=2018-07-20T08%3A12%3A48Z
+myimage(v.12 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:12 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15294678166680768.txt?sr=b&sig=CkPf92oyKkOnsNfHr8lxwV/cOZtFK9j9Ro0vZ98AzPU%3D&sp=r&se=2018-07-20T04%3A12%3A06Z&sv=2017-04-17
+myimage(v.11 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:11 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15294535654958064.txt?sr=b&sig=4ZsTeTVFw3ihw5c0SGjuVH4PGbiyarDkkQCqLtYCuTM%3D&sp=r&se=2018-07-20T00%3A14%3A39Z&sv=2017-04-17
+myimage(v.10 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:10 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15294392851420564.txt?sp=r&sig=kQIky5sySbizpA3QO6GfMNizj9H0B2vtop0WlRVFbcs%3D&sr=b&sv=2017-04-17&se=2018-07-19T20%3A16%3A50Z
+myimage(v.9 [Succeeded]) stored at haieastuacrahrddlyn.azurecr.io/myimage:9 with build log https://eastus2ice.blob.core.windows.net/logs/haieastuacrahrddlyn15291237065511336.txt?sp=r&sig=ogmHYmu5fYLbFxilgS/vRojQOyTh79XVlFmOOrVN%2B1A%3D&sr=b&sv=2017-04-17&se=2018-07-16T04%3A37%3A01Z
+Creating service
+Running.............................................
+FailedACI service creation operation finished, operation "Failed"
+Service creation failed, unexpected error response:
+{'code': 'AciDeploymentFailed', 'message': 'Aci Deployment failed', 'details': [{'code': 'CrashLoopBackOff', 'message': 'CrashLoopBackOff: Back-off 10s restarting failed'}]}
+HEAD is now at c3d6d1a update
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+
+###################################
+########### END AT 2018-07-03-12:23:58
+###################################
