@@ -1,0 +1,118 @@
+Current directory is: 
+/data/git/hai
+*** git reset --hard ***
+*** git checkout master ***
+Your branch is up-to-date with 'origin/master'.
+*** git pull ***
+Updating c3d6d1a..79a4ea3
+Fast-forward
+ GenDocs/azureml/asset/commands.m.html              |     4 +-
+ GenDocs/azureml/assets/persistence/index.html      |     2 +-
+ .../azureml/assets/persistence/persistence.m.html  |   379 +-
+ .../assets/persistence/pyspark_persistence.m.html  |     8 +-
+ .../assets/persistence/sklearn_persistence.m.html  |     3 +
+ .../cli_wrapper/cmd_computetarget.m.html           |   119 +-
+ .../cli_wrapper/cmd_computetarget_attach.m.html    |   324 +-
+ .../cli_wrapper/cmd_experiment.m.html              |   476 +-
+ .../base_sdk_common/cli_wrapper/cmd_project.m.html |   464 +-
+ GenDocs/azureml/base_sdk_common/common.m.html      |   116 +-
+ .../azureml/base_sdk_common/create_snapshot.m.html |   262 +-
+ .../execution_service_address.m.html               |    31 +-
+ GenDocs/azureml/base_sdk_common/project_map.m.html |     8 +-
+ .../base_sdk_common/project_snapshot_cache.m.html  |   133 +-
+ .../base_sdk_common/service_discovery.m.html       |    48 +
+ GenDocs/azureml/base_sdk_common/utils.m.html       |    86 +-
+ GenDocs/azureml/cli/aml_cli.m.html                 |   156 +-
+ GenDocs/azureml/cli/argument.m.html                |    14 +-
+ .../computetarget/attach/attach_subgroup.m.html    |    96 +-
+ .../cli/experiment/experiment_subgroup.m.html      |    65 +-
+ .../azureml/cli/project/project_subgroup.m.html    |    33 +-
+ .../cli/workspace/workspace_subgroup.m.html        |    20 +-
+ .../contrib/{daskonbatch => batch}/index.html      |    22 +-
+ .../azureml/contrib/daskonbatch/dask_helper.m.html |  1662 ---
+ GenDocs/azureml/contrib/index.html                 |    11 +-
+ GenDocs/azureml/contrib/server/index.html          |  1106 ++
+ GenDocs/azureml/contrib/server/server.m.html       |  2861 +++++
+ GenDocs/azureml/contrib/tensorboard/index.html     |     2 +-
+ GenDocs/azureml/core/index.html                    |  3616 +++---
+ GenDocs/azureml/data/abstract_datastore.m.html     |   140 +
+ .../azureml/data/azure_storage_datastore.m.html    |   495 +-
+ GenDocs/azureml/data/context_managers.m.html       |  1369 ++
+ GenDocs/azureml/data/data_reference.m.html         |   205 +-
+ GenDocs/azureml/data/datastore_client.m.html       |    27 +-
+ GenDocs/azureml/data/index.html                    |     7 +
+ .../azureml/exceptions/azureml_exception.m.html    |    96 +
+ GenDocs/azureml/flighting/flight_cache.m.html      |    12 +-
+ GenDocs/azureml/flighting/flight_helpers.m.html    |     4 +-
+ GenDocs/azureml/history/commands.m.html            |   208 +-
+ GenDocs/azureml/history/utils/constants.m.html     |  1215 ++
+ .../azureml/history/utils/context_managers.m.html  |    89 +-
+ GenDocs/azureml/history/utils/index.html           |     7 +
+ GenDocs/azureml/index.html                         |     7 +
+ GenDocs/azureml/project/ignore_file.m.html         |   547 +-
+ GenDocs/azureml/project/project_engine.m.html      |    15 +-
+ GenDocs/azureml/project/project_manager.m.html     |    25 +-
+ .../azureml/project/vendor/dulwich/client.m.html   |    16 +-
+ .../azureml/project/vendor/dulwich/config.m.html   |     4 +-
+ .../azureml/project/vendor/dulwich/index.m.html    |     4 +-
+ .../project/vendor/dulwich/object_store.m.html     |    10 +-
+ .../project/vendor/dulwich/porcelain.m.html        |    34 +-
+ .../azureml/project/vendor/dulwich/server.m.html   |     2 +-
+ GenDocs/azureml/project/vendor/dulwich/walk.m.html |     2 +-
+ GenDocs/azureml/restclient/index.html              |     4 +-
+ GenDocs/azureml/train/dnn.m.html                   |   485 +-
+ GenDocs/azureml/train/estimator.m.html             |   568 +-
+ GenDocs/azureml/train/hyperdrive/index.html        |   625 +-
+ .../azure_storage/blob/appendblobservice.m.html    |  7900 ++++++++++++
+ .../azure_storage/blob/baseblobservice.m.html      | 12548 +++++++++++++++++++
+ .../azure_storage/blob/blockblobservice.m.html     |  9230 ++++++++++++++
+ .../azureml/vendor/azure_storage/blob/index.html   |  1167 ++
+ .../vendor/azure_storage/blob/models.m.html        |  5224 ++++++++
+ .../azure_storage/blob/pageblobservice.m.html      | 10627 ++++++++++++++++
+ .../blob/sharedaccesssignature.m.html              |  1927 +++
+ .../common/cloudstorageaccount.m.html              |  1884 +++
+ .../azureml/vendor/azure_storage/common/index.html |  1189 ++
+ .../vendor/azure_storage/common/models.m.html      |  4126 ++++++
+ .../vendor/azure_storage/common/retry.m.html       |  1888 +++
+ .../common/sharedaccesssignature.m.html            |  1615 +++
+ .../azure_storage/common/storageclient.m.html      |  2215 ++++
+ .../azure_storage/common/tokencredential.m.html    |  1297 ++
+ .../vendor/azure_storage/file/fileservice.m.html   | 10172 +++++++++++++++
+ .../azureml/vendor/azure_storage/file/index.html   |  1135 ++
+ .../vendor/azure_storage/file/models.m.html        |  3322 +++++
+ .../file/sharedaccesssignature.m.html              |  1951 +++
+ GenDocs/azureml/vendor/azure_storage/index.html    |  1110 ++
+ GenDocs/azureml/vendor/index.html                  |  1096 ++
+ e2e_test/utils.py                                  |     5 +-
+ update-aml-mac.sh                                  |     5 +-
+ 79 files changed, 94251 insertions(+), 5731 deletions(-)
+ rename GenDocs/azureml/contrib/{daskonbatch => batch}/index.html (96%)
+ delete mode 100644 GenDocs/azureml/contrib/daskonbatch/dask_helper.m.html
+ create mode 100644 GenDocs/azureml/contrib/server/index.html
+ create mode 100644 GenDocs/azureml/contrib/server/server.m.html
+ create mode 100644 GenDocs/azureml/data/context_managers.m.html
+ create mode 100644 GenDocs/azureml/history/utils/constants.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/appendblobservice.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/baseblobservice.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/blockblobservice.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/index.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/models.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/pageblobservice.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/blob/sharedaccesssignature.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/cloudstorageaccount.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/index.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/models.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/retry.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/sharedaccesssignature.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/storageclient.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/common/tokencredential.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/file/fileservice.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/file/index.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/file/models.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/file/sharedaccesssignature.m.html
+ create mode 100644 GenDocs/azureml/vendor/azure_storage/index.html
+ create mode 100644 GenDocs/azureml/vendor/index.html
+*** current branch ***
+  candidate
+  daily
+* master
