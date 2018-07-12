@@ -1,0 +1,69 @@
+Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+Cannot uninstall 'PyYAML'. It is a distutils installed project and thus we cannot accurately determine which files belong to it which would lead to only a partial uninstall.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/traitlets/utils/importstring.py", line 36, in import_item
+    pak = getattr(module, obj)
+AttributeError: module 'azureml.contrib' has no attribute 'widgets'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/bin/jupyter-nbextension", line 11, in <module>
+    sys.exit(main())
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 988, in start
+    super(NBExtensionApp, self).start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/jupyter_core/application.py", line 255, in start
+    self.subapp.start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 716, in start
+    self.install_extensions()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 695, in install_extensions
+    **kwargs
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 211, in install_nbextension_python
+    m, nbexts = _get_nbextension_metadata(module)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 1122, in _get_nbextension_metadata
+    m = import_item(module)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/traitlets/utils/importstring.py", line 38, in import_item
+    raise ImportError('No module named %s' % obj)
+ImportError: No module named widgets
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/traitlets/utils/importstring.py", line 36, in import_item
+    pak = getattr(module, obj)
+AttributeError: module 'azureml.contrib' has no attribute 'widgets'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/daily/bin/jupyter-nbextension", line 11, in <module>
+    sys.exit(main())
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 988, in start
+    super(NBExtensionApp, self).start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/jupyter_core/application.py", line 255, in start
+    self.subapp.start()
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 896, in start
+    self.toggle_nbextension_python(self.extra_args[0])
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 872, in toggle_nbextension_python
+    logger=self.log)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 483, in enable_nbextension_python
+    logger=logger)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 380, in _set_nbextension_state_python
+    m, nbexts = _get_nbextension_metadata(module)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/notebook/nbextensions.py", line 1122, in _get_nbextension_metadata
+    m = import_item(module)
+  File "/home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/traitlets/utils/importstring.py", line 38, in import_item
+    raise ImportError('No module named %s' % obj)
+ImportError: No module named widgets
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'azureml.core'
+./update-aml.sh: 28: ./update-aml.sh: az: not found
+./update-aml.sh: 29: ./update-aml.sh: az: not found
+./update-aml.sh: 30: ./update-aml.sh: az: not found
+./update-aml.sh: 38: ./update-aml.sh: az: not found
