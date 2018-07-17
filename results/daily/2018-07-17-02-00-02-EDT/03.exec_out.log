@@ -1,0 +1,47 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** daily ***
+HEAD is now at 79a4ea3 docs
+git checkout daily
+Your branch is up-to-date with 'origin/daily'.
+git pull
+Already up-to-date.
+*** git branch status after ***
+git branch --list
+  candidate
+* daily
+  master
+git status
+On branch daily
+Your branch is up-to-date with 'origin/daily'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-07-17-02:02:46
+###################################
+
+
+##### 01.interactive.e2e.py (2018-07-17-02:02:46) ######
+Azure ML Core SDK Version: 0.1.0.1178729
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+
+
+##### 02.local.py (2018-07-17-02:17:54) ################
+Azure ML Core SDK Version: 0.1.0.1178729
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+
+
+##### 03.aci.py (2018-07-17-02:33:00) ##################
+Azure ML Core SDK Version: 0.1.0.1178729
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+
+
+##### 04.dsvm (2018-07-17-02:48:07) ####################
