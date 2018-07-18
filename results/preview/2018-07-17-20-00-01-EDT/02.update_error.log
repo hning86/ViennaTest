@@ -1,0 +1,57 @@
+  Could not find a version that satisfies the requirement widgetsnbextension~=3.3.0 (from ipywidgets>=7.0.0->azureml-contrib-widgets==0.1.0.1165998->azureml-contrib==0.1.0.1165998->azureml-sdk) (from versions: 1.0.0b2, 1.0.0b3, 1.0.0b4, 1.0.0b5, 1.0.0, 1.1.0, 1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.2.5, 1.2.6, 2.0.0b1, 2.0.0b2, 2.0.0b3, 2.0.0b4, 2.0.0b5, 2.0.0b6, 2.0.0b7, 2.0.0b8, 2.0.0b9, 2.0.0b10, 2.0.0b11, 2.0.0b12, 2.0.0b13, 2.0.0b14, 2.0.0b15, 2.0.0b16, 2.0.0b17, 2.0.0b18, 2.0.0b19, 2.0.0rc1, 2.0.0rc2, 2.0.0, 2.0.1, 3.0.0a0, 3.0.0a1, 3.0.0a2, 3.0.0a3, 3.0.0a4, 3.0.0a5, 3.0.0a6, 3.0.0a7, 3.0.0a8, 3.0.0a9, 3.0.0a10, 3.0.0a11, 3.0.0a12, 3.0.0a13, 3.0.0a14, 3.0.0a15, 3.0.0b0, 3.0.0b1, 3.0.0b2, 3.0.0b3, 3.0.0b4, 3.0.0b5, 3.0.0b6, 3.0.0b7, 3.0.0b8, 3.0.0b9, 3.0.0b10, 3.0.0b11, 3.0.0b12, 3.0.0b13, 3.0.0rc0, 3.0.0rc1, 3.0.0rc2, 3.0.0, 3.0.1, 3.0.2, 3.0.3, 3.0.4, 3.0.5, 3.0.6, 3.0.7, 3.0.8, 3.1.0rc0, 3.1.0rc1, 3.1.0rc2, 3.1.0, 3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.2.0, 3.2.1, 3.3.0b0)
+No matching distribution found for widgetsnbextension~=3.3.0 (from ipywidgets>=7.0.0->azureml-contrib-widgets==0.1.0.1165998->azureml-contrib==0.1.0.1165998->azureml-sdk)
+  Could not find a version that satisfies the requirement widgetsnbextension~=3.3.0 (from ipywidgets>=7.0.0->azureml-contrib-widgets) (from versions: 1.0.0b2, 1.0.0b3, 1.0.0b4, 1.0.0b5, 1.0.0, 1.1.0, 1.2.1, 1.2.2, 1.2.3, 1.2.4, 1.2.5, 1.2.6, 2.0.0b1, 2.0.0b2, 2.0.0b3, 2.0.0b4, 2.0.0b5, 2.0.0b6, 2.0.0b7, 2.0.0b8, 2.0.0b9, 2.0.0b10, 2.0.0b11, 2.0.0b12, 2.0.0b13, 2.0.0b14, 2.0.0b15, 2.0.0b16, 2.0.0b17, 2.0.0b18, 2.0.0b19, 2.0.0rc1, 2.0.0rc2, 2.0.0, 2.0.1, 3.0.0a0, 3.0.0a1, 3.0.0a2, 3.0.0a3, 3.0.0a4, 3.0.0a5, 3.0.0a6, 3.0.0a7, 3.0.0a8, 3.0.0a9, 3.0.0a10, 3.0.0a11, 3.0.0a12, 3.0.0a13, 3.0.0a14, 3.0.0a15, 3.0.0b0, 3.0.0b1, 3.0.0b2, 3.0.0b3, 3.0.0b4, 3.0.0b5, 3.0.0b6, 3.0.0b7, 3.0.0b8, 3.0.0b9, 3.0.0b10, 3.0.0b11, 3.0.0b12, 3.0.0b13, 3.0.0rc0, 3.0.0rc1, 3.0.0rc2, 3.0.0, 3.0.1, 3.0.2, 3.0.3, 3.0.4, 3.0.5, 3.0.6, 3.0.7, 3.0.8, 3.1.0rc0, 3.1.0rc1, 3.1.0rc2, 3.1.0, 3.1.1, 3.1.2, 3.1.3, 3.1.4, 3.2.0, 3.2.1, 3.3.0b0)
+No matching distribution found for widgetsnbextension~=3.3.0 (from ipywidgets>=7.0.0->azureml-contrib-widgets)
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/preview/bin/jupyter-nbextension", line 11, in <module>
+    sys.exit(main())
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 988, in start
+    super(NBExtensionApp, self).start()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/jupyter_core/application.py", line 255, in start
+    self.subapp.start()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 716, in start
+    self.install_extensions()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 695, in install_extensions
+    **kwargs
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 211, in install_nbextension_python
+    m, nbexts = _get_nbextension_metadata(module)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 1122, in _get_nbextension_metadata
+    m = import_item(module)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/traitlets/utils/importstring.py", line 34, in import_item
+    module = __import__(package, fromlist=[obj])
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/preview/bin/jupyter-nbextension", line 11, in <module>
+    sys.exit(main())
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/jupyter_core/application.py", line 266, in launch_instance
+    return super(JupyterApp, cls).launch_instance(argv=argv, **kwargs)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/traitlets/config/application.py", line 658, in launch_instance
+    app.start()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 988, in start
+    super(NBExtensionApp, self).start()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/jupyter_core/application.py", line 255, in start
+    self.subapp.start()
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 896, in start
+    self.toggle_nbextension_python(self.extra_args[0])
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 872, in toggle_nbextension_python
+    logger=self.log)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 483, in enable_nbextension_python
+    logger=logger)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 380, in _set_nbextension_state_python
+    m, nbexts = _get_nbextension_metadata(module)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/notebook/nbextensions.py", line 1122, in _get_nbextension_metadata
+    m = import_item(module)
+  File "/home/ninghai/miniconda3/envs/preview/lib/python3.6/site-packages/traitlets/utils/importstring.py", line 34, in import_item
+    module = __import__(package, fromlist=[obj])
+ModuleNotFoundError: No module named 'azureml'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'azureml'
+WARNING: Unable to load extension 'azure-cli-machinelearning'. Use --debug for more information.
+ERROR: Request to https://azuremlsdktestpypi.azureedge.net/sdk-release/Preview/E7501C02541B433786111FE8E140CAA1/azure_cli_ml--py2.py3-none-any.whl failed with 404
+ERROR: The extension azure-cli-ml is not installed.
+ERROR: The extension azure-cli-ml is not installed.
