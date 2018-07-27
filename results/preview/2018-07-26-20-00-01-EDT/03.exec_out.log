@@ -1,0 +1,29 @@
+/data/git/hai/e2e_test
+*** git branch status before ***
+  candidate
+  daily
+* master
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+*** preview ***
+HEAD is now at 79a4ea3 docs
+git checkout master
+Your branch is up-to-date with 'origin/master'.
+git pull
+Already up-to-date.
+*** git branch status after ***
+git branch --list
+  candidate
+  daily
+* master
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+###################################
+START AT: 2018-07-26-20:02:47
+###################################
+
+
+##### 01.interactive.e2e.py (2018-07-26-20:02:47) ######
