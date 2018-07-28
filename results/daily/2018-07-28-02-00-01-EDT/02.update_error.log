@@ -1,0 +1,23 @@
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+azureml-train 0.1.0.1230514 has requirement azureml-train-core==0.1.0.1230514, but you'll have azureml-train-core 0.1.0.1205139 which is incompatible.
+azureml-sdk 0.1.0.1230514 has requirement azureml-core==0.1.0.1230514, but you'll have azureml-core 0.1.0.1205139 which is incompatible.
+azureml-pipeline-core 0.1.0.1230514 has requirement azureml-core==0.1.0.1230514, but you'll have azureml-core 0.1.0.1205139 which is incompatible.
+You are using pip version 10.0.1, however version 18.0 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Installing /home/ninghai/miniconda3/envs/daily/lib/python3.6/site-packages/azureml/contrib/widgets/static -> azureml_contrib_widgets
+Up to date: /home/ninghai/miniconda3/envs/daily/share/jupyter/nbextensions/azureml_contrib_widgets/index.js.map
+Up to date: /home/ninghai/miniconda3/envs/daily/share/jupyter/nbextensions/azureml_contrib_widgets/index.js
+Up to date: /home/ninghai/miniconda3/envs/daily/share/jupyter/nbextensions/azureml_contrib_widgets/extension.js
+- Validating: [32mOK[0m
+
+    To initialize this nbextension in the browser every time the notebook (or other app) loads:
+    
+          jupyter nbextension enable azureml.contrib.widgets --py --sys-prefix
+    
+Enabling notebook extension azureml_contrib_widgets/extension...
+      - Validating: [32mOK[0m
+WARNING: Unable to load extension 'azure-cli-machinelearning'. Use --debug for more information.
+WARNING: Unable to load extension 'azure-cli-machinelearning'. Use --debug for more information.
+WARNING: Unable to load extension 'azure-cli-machinelearning'. Use --debug for more information.
+WARNING: Unable to load extension 'azure-cli-machinelearning'. Use --debug for more information.
