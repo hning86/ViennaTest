@@ -51,3 +51,32 @@ Performing interactive authentication. Please follow the instructions on the ter
 
 
 ##### 05.spark (2018-07-29-10:02:44) ###################
+Azure ML Core SDK Version: 0.1.0.1179783
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+
+
+##### 07.sklearn.hd.py (2018-07-29-10:17:49) ###########
+Azure ML Core SDK Version: 0.1.0.1179783
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+
+
+##### 08.tf.hd.py (2018-07-29-10:32:55) ################
+Azure ML Core SDK Version: 0.1.0.1179783
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+
+
+##### 10.o16n.py (2018-07-29-10:48:01) #################
+Azure ML Core SDK Version: 0.1.0.1179783
+Found the config file in: /data/git/hai/e2e_test/aml_config/config.json
+Performing interactive authentication. Please follow the instructions on the terminal.
+HEAD is now at 79a4ea3 docs
+Your branch is up-to-date with 'origin/master'.
+Already up-to-date.
+
+
+###################################
+########### END AT 2018-07-29-11:03:07
+###################################
