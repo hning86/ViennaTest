@@ -1,0 +1,346 @@
+Looking in indexes: https://pypi.org/simple, https://azuremlsdktestpypi.azureedge.net/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D
+Collecting azureml-sdk
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_sdk-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=OtMsEWwGlvi0Xc34WEb4dgb2gw6SqK%2FSc%2BwiQfXR12A%3D&st=2018-07-25T22%3A19%3A33Z&se=2019-07-25T22%3A19%3A33Z&sp=rl
+Collecting azureml-core==0.1.0.1217125 (from azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_core-0.1.0.1217125-py2.py3-none-any.whl?sv=2017-04-17&sr=b&sig=YiDpfjZ%2F6z8tKs05UKWfDSsm%2FCnefmLkOAyCZuXj%2B3U%3D&st=2018-07-25T22%3A19%3A32Z&se=2019-07-25T22%3A19%3A32Z&sp=rl
+Collecting azureml-train==0.1.0.1217125 (from azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_train-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=xoJcAgfkrSlphEaKOERcdJOvQ26PQUq4QUyHz4rIHFM%3D&st=2018-07-25T22%3A19%3A33Z&se=2019-07-25T22%3A19%3A33Z&sp=rl
+Collecting azureml-pipeline==0.1.0.1217125 (from azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_pipeline-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=JivrBaoFAh%2Fau3kJ06vMx26D1Z6nx7%2F5Nzk5N2c0omA%3D&st=2018-07-25T22%3A19%3A32Z&se=2019-07-25T22%3A19%3A32Z&sp=rl
+Requirement not upgraded as not directly required: azure-graphrbac>=0.40.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (0.40.0)
+Collecting ndg-httpsclient (from azureml-core==0.1.0.1217125->azureml-sdk)
+  Using cached https://files.pythonhosted.org/packages/fb/67/c2f508c00ed2a6911541494504b7cac16fe0b0473912568df65fd1801132/ndg_httpsclient-0.5.1-py3-none-any.whl
+Requirement not upgraded as not directly required: azure-common>=1.1.12 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (1.1.14)
+Requirement not upgraded as not directly required: urllib3>=1.23 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (1.23)
+Requirement not upgraded as not directly required: azure-storage-nspkg>=3.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (3.0.0)
+Requirement not upgraded as not directly required: six>=1.11.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (1.11.0)
+Collecting contextlib2 (from azureml-core==0.1.0.1217125->azureml-sdk)
+  Using cached https://files.pythonhosted.org/packages/a2/71/8273a7eeed0aff6a854237ab5453bc9aa67deb49df4832801c21f0ff3782/contextlib2-0.5.5-py2.py3-none-any.whl
+Collecting pathspec (from azureml-core==0.1.0.1217125->azureml-sdk)
+Requirement not upgraded as not directly required: azure-cli-core>=2.0.38 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.0.42)
+Requirement not upgraded as not directly required: python-dateutil>=2.7.3 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.7.3)
+Requirement not upgraded as not directly required: azure-storage-blob>=1.1.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (1.1.0)
+Requirement not upgraded as not directly required: pytz in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2018.5)
+Requirement not upgraded as not directly required: azure-mgmt-storage>=1.5.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (1.5.0)
+Requirement not upgraded as not directly required: azure-mgmt-resource>=1.2.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.0.0rc2)
+Requirement not upgraded as not directly required: msrest>=0.5.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (0.5.4)
+Collecting backports.tempfile (from azureml-core==0.1.0.1217125->azureml-sdk)
+  Using cached https://files.pythonhosted.org/packages/b4/5c/077f910632476281428fe254807952eb47ca78e720d059a46178c541e669/backports.tempfile-1.0-py2.py3-none-any.whl
+Requirement not upgraded as not directly required: azure-mgmt-authorization>=0.40.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (0.40.0)
+Requirement not upgraded as not directly required: azure-storage-common>=1.1.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (1.1.0)
+Requirement not upgraded as not directly required: azure-mgmt-containerregistry>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.0.0)
+Collecting SecretStorage<3.0.0 (from azureml-core==0.1.0.1217125->azureml-sdk)
+Collecting ruamel.yaml>=0.15.35 (from azureml-core==0.1.0.1217125->azureml-sdk)
+  Using cached https://files.pythonhosted.org/packages/bf/6b/b75ca2a3005e70b6c47c6fef2e1248859d721c830c5f963e08907e8f6562/ruamel.yaml-0.15.46-cp36-cp36m-manylinux1_x86_64.whl
+Requirement not upgraded as not directly required: azure-cli-profile>=2.0.26 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.1.0)
+Requirement not upgraded as not directly required: cryptography in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.2.2)
+Collecting jsonpickle (from azureml-core==0.1.0.1217125->azureml-sdk)
+Requirement not upgraded as not directly required: requests>=2.19.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (2.19.1)
+Requirement not upgraded as not directly required: msrestazure>=0.4.33 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (0.4.34)
+Requirement not upgraded as not directly required: azure-mgmt-keyvault>=0.40.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1217125->azureml-sdk) (0.40.0)
+Collecting azureml-train-core==0.1.0.1217125 (from azureml-train==0.1.0.1217125->azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_train_core-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=UzeiYLoEco%2BlBc2uAC4WZY9jTLT2cFw%2F%2FZWKiIIifjI%3D&st=2018-07-25T22%3A19%3A33Z&se=2019-07-25T22%3A19%3A33Z&sp=rl
+Collecting azureml-pipeline-steps==0.1.0.1217125 (from azureml-pipeline==0.1.0.1217125->azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_pipeline_steps-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=praN6pORUsdRFMHeAuuQd7VT%2BwsTXnAC4bRFU97WR3E%3D&st=2018-07-25T22%3A19%3A32Z&se=2019-07-25T22%3A19%3A32Z&sp=rl
+Collecting azureml-pipeline-core==0.1.0.1217125 (from azureml-pipeline==0.1.0.1217125->azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_pipeline_core-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=dMWFjEhilxIxiuGEgqTot8i0DsDQdybrKmuCAmUkVdg%3D&st=2018-07-25T22%3A19%3A32Z&se=2019-07-25T22%3A19%3A32Z&sp=rl
+Requirement not upgraded as not directly required: azure-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-graphrbac>=0.40.0->azureml-core==0.1.0.1217125->azureml-sdk) (2.0.0)
+Requirement not upgraded as not directly required: pyasn1>=0.1.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ndg-httpsclient->azureml-core==0.1.0.1217125->azureml-sdk) (0.4.3)
+Requirement not upgraded as not directly required: PyOpenSSL in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ndg-httpsclient->azureml-core==0.1.0.1217125->azureml-sdk) (18.0.0)
+Requirement not upgraded as not directly required: jmespath in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (0.9.3)
+Requirement not upgraded as not directly required: wheel==0.30.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (0.30.0)
+Requirement not upgraded as not directly required: applicationinsights>=0.11.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (0.11.5)
+Requirement not upgraded as not directly required: pyyaml~=4.2b4 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (4.2b4)
+Requirement not upgraded as not directly required: pip in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (10.0.1)
+Requirement not upgraded as not directly required: colorama>=0.3.9 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (0.3.9)
+Requirement not upgraded as not directly required: pygments in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (2.2.0)
+Requirement not upgraded as not directly required: humanfriendly>=4.7 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (4.16.1)
+Requirement not upgraded as not directly required: knack==0.4.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (0.4.1)
+Requirement not upgraded as not directly required: PyJWT in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (1.6.4)
+Requirement not upgraded as not directly required: paramiko in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (2.4.1)
+Requirement not upgraded as not directly required: tabulate<=0.8.2,>=0.7.7 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (0.8.2)
+Requirement not upgraded as not directly required: azure-cli-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (3.0.3)
+Requirement not upgraded as not directly required: argcomplete>=1.8.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (1.9.4)
+Requirement not upgraded as not directly required: azure-mgmt-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-mgmt-storage>=1.5.0->azureml-core==0.1.0.1217125->azureml-sdk) (2.0.0)
+Requirement not upgraded as not directly required: isodate>=0.6.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrest>=0.5.1->azureml-core==0.1.0.1217125->azureml-sdk) (0.6.0)
+Requirement not upgraded as not directly required: requests-oauthlib>=0.5.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrest>=0.5.1->azureml-core==0.1.0.1217125->azureml-sdk) (1.0.0)
+Requirement not upgraded as not directly required: certifi>=2017.4.17 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrest>=0.5.1->azureml-core==0.1.0.1217125->azureml-sdk) (2018.4.16)
+Collecting backports.weakref (from backports.tempfile->azureml-core==0.1.0.1217125->azureml-sdk)
+  Using cached https://files.pythonhosted.org/packages/88/ec/f598b633c3d5ffe267aaada57d961c94fdfa183c5c3ebda2b6d151943db6/backports.weakref-1.0.post1-py2.py3-none-any.whl
+Requirement not upgraded as not directly required: azure-cli-command-modules-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-profile>=2.0.26->azureml-core==0.1.0.1217125->azureml-sdk) (2.0.2)
+Requirement not upgraded as not directly required: idna>=2.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cryptography->azureml-core==0.1.0.1217125->azureml-sdk) (2.7)
+Requirement not upgraded as not directly required: asn1crypto>=0.21.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cryptography->azureml-core==0.1.0.1217125->azureml-sdk) (0.24.0)
+Requirement not upgraded as not directly required: cffi>=1.7 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cryptography->azureml-core==0.1.0.1217125->azureml-sdk) (1.11.5)
+Requirement not upgraded as not directly required: chardet<3.1.0,>=3.0.2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from requests>=2.19.1->azureml-core==0.1.0.1217125->azureml-sdk) (3.0.4)
+Requirement not upgraded as not directly required: keyring>=12.0.2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrestazure>=0.4.33->azureml-core==0.1.0.1217125->azureml-sdk) (13.2.1)
+Requirement not upgraded as not directly required: adal<2.0.0,>=0.5.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrestazure>=0.4.33->azureml-core==0.1.0.1217125->azureml-sdk) (1.0.2)
+Collecting azureml-train-restclients-hyperdrive==0.1.0.1217125 (from azureml-train-core==0.1.0.1217125->azureml-train==0.1.0.1217125->azureml-sdk)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_train_restclients_hyperdrive-0.1.0.1217125-py3-none-any.whl?sv=2017-04-17&sr=b&sig=Fy9%2BLt7k3xb6joKgQ8PWogBW0S9ATdF7Dk0bAqn5cM8%3D&st=2018-07-25T22%3A19%3A33Z&se=2019-07-25T22%3A19%3A33Z&sp=rl
+Requirement not upgraded as not directly required: bcrypt>=3.1.3 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from paramiko->azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (3.1.4)
+Requirement not upgraded as not directly required: pynacl>=1.0.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from paramiko->azure-cli-core>=2.0.38->azureml-core==0.1.0.1217125->azureml-sdk) (1.2.1)
+Requirement not upgraded as not directly required: oauthlib>=0.6.2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from requests-oauthlib>=0.5.0->msrest>=0.5.1->azureml-core==0.1.0.1217125->azureml-sdk) (2.1.0)
+Requirement not upgraded as not directly required: pycparser in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cffi>=1.7->cryptography->azureml-core==0.1.0.1217125->azureml-sdk) (2.18)
+Requirement not upgraded as not directly required: entrypoints in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from keyring>=12.0.2->msrestazure>=0.4.33->azureml-core==0.1.0.1217125->azureml-sdk) (0.2.3)
+Installing collected packages: ndg-httpsclient, contextlib2, pathspec, backports.weakref, backports.tempfile, SecretStorage, ruamel.yaml, jsonpickle, azureml-core, azureml-train-restclients-hyperdrive, azureml-train-core, azureml-train, azureml-pipeline-core, azureml-pipeline-steps, azureml-pipeline, azureml-sdk
+  Found existing installation: SecretStorage 3.0.1
+    Uninstalling SecretStorage-3.0.1:
+      Successfully uninstalled SecretStorage-3.0.1
+Successfully installed SecretStorage-2.3.1 azureml-core-0.1.0.1217125 azureml-pipeline-0.1.0.1217125 azureml-pipeline-core-0.1.0.1217125 azureml-pipeline-steps-0.1.0.1217125 azureml-sdk-0.1.0.1217125 azureml-train-0.1.0.1217125 azureml-train-core-0.1.0.1217125 azureml-train-restclients-hyperdrive-0.1.0.1217125 backports.tempfile-1.0 backports.weakref-1.0.post1 contextlib2-0.5.5 jsonpickle-0.9.6 ndg-httpsclient-0.5.1 pathspec-0.5.6 ruamel.yaml-0.15.46
+Looking in indexes: https://pypi.org/simple, https://azuremlsdktestpypi.azureedge.net/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D
+Collecting azureml-contrib-widgets
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_contrib_widgets-0.1.0.1179783-py3-none-any.whl?sv=2017-04-17&sr=b&sig=BC2Pb7WDvI5WeOkvxt7lB9Yz3nYXgMmK6MfQpgThp5w%3D&st=2018-07-25T22%3A19%3A32Z&se=2019-07-25T22%3A19%3A32Z&sp=rl
+Collecting azureml-train-core==0.1.0.1179783 (from azureml-contrib-widgets)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_train_core-0.1.0.1179783-py3-none-any.whl?sv=2017-04-17&sr=b&sig=rPlOCp8Nd8H1Uw4oJkJNltKVIseVHrcU7GKfwJeY%2FRY%3D&st=2018-07-25T22%3A19%3A33Z&se=2019-07-25T22%3A19%3A33Z&sp=rl
+Collecting azureml-core==0.1.0.1179783 (from azureml-contrib-widgets)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_core-0.1.0.1179783-py2.py3-none-any.whl?sv=2017-04-17&sr=b&sig=JL9NcOSIvmcUkiDCL6PaQKp%2FWToRcE2ash%2FDHGJl83I%3D&st=2018-07-25T22%3A19%3A32Z&se=2019-07-25T22%3A19%3A32Z&sp=rl
+Collecting ipywidgets>=7.0.0 (from azureml-contrib-widgets)
+  Using cached https://files.pythonhosted.org/packages/95/0d/0a97f753f1cd070c1dae077b242038e4de0749e7b29789abca75ee881bbe/ipywidgets-7.3.1-py2.py3-none-any.whl
+Collecting azureml-train-restclients-hyperdrive==0.1.0.1179783 (from azureml-train-core==0.1.0.1179783->azureml-contrib-widgets)
+  Using cached https://azuremlsdktestpypi.blob.core.windows.net/repo/sdk-release/Candidate/604C89A437BA41BD942B4F46D9A3591D/azureml_train_restclients_hyperdrive-0.1.0.1179783-py3-none-any.whl?sv=2017-04-17&sr=b&sig=HZ1lNKmovwlUj4h925GKfZjzBbXi690D6RmB6UQKo54%3D&st=2018-07-25T22%3A19%3A33Z&se=2019-07-25T22%3A19%3A33Z&sp=rl
+Requirement not upgraded as not directly required: ruamel.yaml>=0.15.35 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.15.46)
+Requirement not upgraded as not directly required: contextlib2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.5.5)
+Requirement not upgraded as not directly required: backports.tempfile in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.0)
+Requirement not upgraded as not directly required: cryptography in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.2.2)
+Requirement not upgraded as not directly required: azure-mgmt-authorization>=0.40.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.40.0)
+Requirement not upgraded as not directly required: azure-cli-core>=2.0.38 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.0.42)
+Requirement not upgraded as not directly required: azure-mgmt-storage>=1.5.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.5.0)
+Requirement not upgraded as not directly required: pathspec in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.5.6)
+Requirement not upgraded as not directly required: msrest>=0.5.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.5.4)
+Requirement not upgraded as not directly required: azure-mgmt-resource>=1.2.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.0.0rc2)
+Requirement not upgraded as not directly required: ndg-httpsclient in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.5.1)
+Requirement not upgraded as not directly required: urllib3>=1.23 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.23)
+Requirement not upgraded as not directly required: azure-storage-blob>=1.1.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.1.0)
+Requirement not upgraded as not directly required: jsonpickle in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.9.6)
+Requirement not upgraded as not directly required: azure-mgmt-containerregistry>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.0.0)
+Requirement not upgraded as not directly required: requests>=2.19.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.19.1)
+Requirement not upgraded as not directly required: azure-storage-common>=1.1.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.1.0)
+Requirement not upgraded as not directly required: python-dateutil>=2.7.3 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.7.3)
+Requirement not upgraded as not directly required: azure-cli-profile>=2.0.26 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.1.0)
+Requirement not upgraded as not directly required: pytz in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2018.5)
+Requirement not upgraded as not directly required: azure-storage-nspkg>=3.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (3.0.0)
+Requirement not upgraded as not directly required: SecretStorage<3.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.3.1)
+Requirement not upgraded as not directly required: azure-mgmt-keyvault>=0.40.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.40.0)
+Requirement not upgraded as not directly required: azure-common>=1.1.12 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.1.14)
+Requirement not upgraded as not directly required: azure-graphrbac>=0.40.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.40.0)
+Requirement not upgraded as not directly required: msrestazure>=0.4.33 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.4.34)
+Requirement not upgraded as not directly required: six>=1.11.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.11.0)
+Requirement not upgraded as not directly required: nbformat>=4.2.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipywidgets>=7.0.0->azureml-contrib-widgets) (4.4.0)
+Requirement not upgraded as not directly required: ipykernel>=4.5.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipywidgets>=7.0.0->azureml-contrib-widgets) (4.8.2)
+Requirement not upgraded as not directly required: traitlets>=4.3.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipywidgets>=7.0.0->azureml-contrib-widgets) (4.3.2)
+Collecting widgetsnbextension~=3.3.0 (from ipywidgets>=7.0.0->azureml-contrib-widgets)
+  Using cached https://files.pythonhosted.org/packages/1e/dd/847f6e5cb98caf819e2dca50109611cc0e43b54e0f0d740ee8586a954b18/widgetsnbextension-3.3.1-py2.py3-none-any.whl
+Requirement not upgraded as not directly required: ipython>=4.0.0; python_version >= "3.3" in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipywidgets>=7.0.0->azureml-contrib-widgets) (6.4.0)
+Requirement not upgraded as not directly required: certifi in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azureml-train-restclients-hyperdrive==0.1.0.1179783->azureml-train-core==0.1.0.1179783->azureml-contrib-widgets) (2018.4.16)
+Requirement not upgraded as not directly required: backports.weakref in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from backports.tempfile->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.0.post1)
+Requirement not upgraded as not directly required: idna>=2.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cryptography->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.7)
+Requirement not upgraded as not directly required: asn1crypto>=0.21.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cryptography->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.24.0)
+Requirement not upgraded as not directly required: cffi>=1.7 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cryptography->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.11.5)
+Requirement not upgraded as not directly required: azure-mgmt-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-mgmt-authorization>=0.40.0->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.0.0)
+Requirement not upgraded as not directly required: PyJWT in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.6.4)
+Requirement not upgraded as not directly required: knack==0.4.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.4.1)
+Requirement not upgraded as not directly required: pygments in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.2.0)
+Requirement not upgraded as not directly required: humanfriendly>=4.7 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (4.16.1)
+Requirement not upgraded as not directly required: pyopenssl>=17.1.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (18.0.0)
+Requirement not upgraded as not directly required: applicationinsights>=0.11.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.11.5)
+Requirement not upgraded as not directly required: colorama>=0.3.9 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.3.9)
+Requirement not upgraded as not directly required: tabulate<=0.8.2,>=0.7.7 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.8.2)
+Requirement not upgraded as not directly required: azure-cli-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (3.0.3)
+Requirement not upgraded as not directly required: pyyaml~=4.2b4 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (4.2b4)
+Requirement not upgraded as not directly required: wheel==0.30.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.30.0)
+Requirement not upgraded as not directly required: paramiko in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.4.1)
+Requirement not upgraded as not directly required: jmespath in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.9.3)
+Requirement not upgraded as not directly required: pip in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (10.0.1)
+Requirement not upgraded as not directly required: argcomplete>=1.8.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.9.4)
+Requirement not upgraded as not directly required: isodate>=0.6.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrest>=0.5.1->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.6.0)
+Requirement not upgraded as not directly required: requests-oauthlib>=0.5.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrest>=0.5.1->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.0.0)
+Requirement not upgraded as not directly required: pyasn1>=0.1.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ndg-httpsclient->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.4.3)
+Requirement not upgraded as not directly required: chardet<3.1.0,>=3.0.2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from requests>=2.19.1->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (3.0.4)
+Requirement not upgraded as not directly required: azure-cli-command-modules-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-cli-profile>=2.0.26->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.0.2)
+Requirement not upgraded as not directly required: azure-nspkg>=2.0.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from azure-storage-nspkg>=3.0.0->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.0.0)
+Requirement not upgraded as not directly required: keyring>=12.0.2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrestazure>=0.4.33->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (13.2.1)
+Requirement not upgraded as not directly required: adal<2.0.0,>=0.5.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from msrestazure>=0.4.33->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.0.2)
+Requirement not upgraded as not directly required: jupyter-core in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbformat>=4.2.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (4.4.0)
+Requirement not upgraded as not directly required: jsonschema!=2.5.0,>=2.4 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbformat>=4.2.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (2.6.0)
+Requirement not upgraded as not directly required: ipython-genutils in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbformat>=4.2.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.2.0)
+Requirement not upgraded as not directly required: jupyter_client in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipykernel>=4.5.1->ipywidgets>=7.0.0->azureml-contrib-widgets) (5.2.3)
+Requirement not upgraded as not directly required: tornado>=4.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipykernel>=4.5.1->ipywidgets>=7.0.0->azureml-contrib-widgets) (5.0.2)
+Requirement not upgraded as not directly required: decorator in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from traitlets>=4.3.1->ipywidgets>=7.0.0->azureml-contrib-widgets) (4.3.0)
+Requirement not upgraded as not directly required: notebook>=4.4.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (5.6.0)
+Requirement not upgraded as not directly required: simplegeneric>0.8 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.8.1)
+Requirement not upgraded as not directly required: jedi>=0.10 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.12.1)
+Requirement not upgraded as not directly required: pexpect; sys_platform != "win32" in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (4.6.0)
+Requirement not upgraded as not directly required: setuptools>=18.5 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (39.2.0)
+Requirement not upgraded as not directly required: pickleshare in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.7.4)
+Requirement not upgraded as not directly required: prompt-toolkit<2.0.0,>=1.0.15 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (1.0.15)
+Requirement not upgraded as not directly required: backcall in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.1.0)
+Requirement not upgraded as not directly required: pycparser in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from cffi>=1.7->cryptography->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.18)
+Requirement not upgraded as not directly required: pynacl>=1.0.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from paramiko->azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (1.2.1)
+Requirement not upgraded as not directly required: bcrypt>=3.1.3 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from paramiko->azure-cli-core>=2.0.38->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (3.1.4)
+Requirement not upgraded as not directly required: oauthlib>=0.6.2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from requests-oauthlib>=0.5.0->msrest>=0.5.1->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (2.1.0)
+Requirement not upgraded as not directly required: entrypoints in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from keyring>=12.0.2->msrestazure>=0.4.33->azureml-core==0.1.0.1179783->azureml-contrib-widgets) (0.2.3)
+Requirement not upgraded as not directly required: pyzmq>=13 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from jupyter_client->ipykernel>=4.5.1->ipywidgets>=7.0.0->azureml-contrib-widgets) (17.0.0)
+Requirement not upgraded as not directly required: terminado>=0.8.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.8.1)
+Requirement not upgraded as not directly required: jinja2 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (2.10)
+Requirement not upgraded as not directly required: prometheus-client in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.3.0)
+Requirement not upgraded as not directly required: nbconvert in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (5.3.1)
+Requirement not upgraded as not directly required: Send2Trash in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (1.5.0)
+Requirement not upgraded as not directly required: parso>=0.3.0 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from jedi>=0.10->ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.3.1)
+Requirement not upgraded as not directly required: ptyprocess>=0.5 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from pexpect; sys_platform != "win32"->ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.6.0)
+Requirement not upgraded as not directly required: wcwidth in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from prompt-toolkit<2.0.0,>=1.0.15->ipython>=4.0.0; python_version >= "3.3"->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.1.7)
+Requirement not upgraded as not directly required: MarkupSafe>=0.23 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from jinja2->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (1.0)
+Requirement not upgraded as not directly required: bleach in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (2.1.3)
+Requirement not upgraded as not directly required: mistune>=0.7.4 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.8.3)
+Requirement not upgraded as not directly required: testpath in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.3.1)
+Requirement not upgraded as not directly required: pandocfilters>=1.4.1 in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from nbconvert->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (1.4.2)
+Requirement not upgraded as not directly required: html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (1.0.1)
+Requirement not upgraded as not directly required: webencodings in /home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages (from html5lib!=1.0b1,!=1.0b2,!=1.0b3,!=1.0b4,!=1.0b5,!=1.0b6,!=1.0b7,!=1.0b8,>=0.99999999pre->bleach->nbconvert->notebook>=4.4.1->widgetsnbextension~=3.3.0->ipywidgets>=7.0.0->azureml-contrib-widgets) (0.5.1)
+Installing collected packages: azureml-core, azureml-train-restclients-hyperdrive, azureml-train-core, widgetsnbextension, ipywidgets, azureml-contrib-widgets
+  Found existing installation: azureml-core 0.1.0.1217125
+    Uninstalling azureml-core-0.1.0.1217125:
+      Successfully uninstalled azureml-core-0.1.0.1217125
+  Found existing installation: azureml-train-restclients-hyperdrive 0.1.0.1217125
+    Uninstalling azureml-train-restclients-hyperdrive-0.1.0.1217125:
+      Successfully uninstalled azureml-train-restclients-hyperdrive-0.1.0.1217125
+  Found existing installation: azureml-train-core 0.1.0.1217125
+    Uninstalling azureml-train-core-0.1.0.1217125:
+      Successfully uninstalled azureml-train-core-0.1.0.1217125
+Successfully installed azureml-contrib-widgets-0.1.0.1179783 azureml-core-0.1.0.1179783 azureml-train-core-0.1.0.1179783 azureml-train-restclients-hyperdrive-0.1.0.1179783 ipywidgets-7.3.1 widgetsnbextension-3.3.1
+install azure-cli-ml
+{
+  "extensionType": "whl",
+  "metadata": {
+    "azext.minCliCoreVersion": "2.0.28",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3.5"
+    ],
+    "extensions": {
+      "python.details": {
+        "contacts": [
+          {
+            "email": "azpycli@microsoft.com",
+            "name": "Microsoft Corporation",
+            "role": "author"
+          }
+        ],
+        "document_names": {
+          "description": "DESCRIPTION.rst",
+          "license": "LICENSE.txt"
+        },
+        "project_urls": {
+          "Home": "https://github.com/Azure/azure-cli"
+        }
+      }
+    },
+    "extras": [],
+    "generator": "bdist_wheel (0.30.0)",
+    "metadata_version": "2.0",
+    "name": "azure-cli-ml",
+    "run_requires": [
+      {
+        "requires": [
+          "adal (>=0.4.7)",
+          "azureml-core (==0.1.0.1179783)",
+          "azureml-model-management-sdk (==1.0.1b6)",
+          "docker (>=2.5.1)",
+          "future (>=0.16.0)",
+          "kubernetes (>=3.0.0)",
+          "msrest (>=0.4.16)",
+          "pyyaml (>=3.12.0)",
+          "requests (>=2.18.1)",
+          "scp (>=0.10.2)",
+          "tabulate (>=0.7.7)"
+        ]
+      }
+    ],
+    "summary": "Microsoft Azure Command-Line Tools AzureML Command Module",
+    "test_requires": [
+      {
+        "requires": [
+          "azure-keyvault",
+          "mock",
+          "nose",
+          "unittest-xml-reporting"
+        ]
+      }
+    ],
+    "version": "0.1.0.1179783"
+  },
+  "name": "azure-cli-ml",
+  "version": "0.1.0.1179783"
+}
+
+###### azureml.core ########
+0.1.0.1179783
+############################
+{
+  "extensionType": "whl",
+  "metadata": {
+    "azext.minCliCoreVersion": "2.0.28",
+    "classifiers": [
+      "Development Status :: 3 - Alpha",
+      "Intended Audience :: Developers",
+      "Intended Audience :: System Administrators",
+      "License :: OSI Approved :: MIT License",
+      "Programming Language :: Python :: 2.7",
+      "Programming Language :: Python :: 3.5"
+    ],
+    "extensions": {
+      "python.details": {
+        "contacts": [
+          {
+            "email": "azpycli@microsoft.com",
+            "name": "Microsoft Corporation",
+            "role": "author"
+          }
+        ],
+        "document_names": {
+          "description": "DESCRIPTION.rst",
+          "license": "LICENSE.txt"
+        },
+        "project_urls": {
+          "Home": "https://github.com/Azure/azure-cli"
+        }
+      }
+    },
+    "extras": [],
+    "generator": "bdist_wheel (0.30.0)",
+    "metadata_version": "2.0",
+    "name": "azure-cli-ml",
+    "run_requires": [
+      {
+        "requires": [
+          "adal (>=0.4.7)",
+          "azureml-core (==0.1.0.1179783)",
+          "azureml-model-management-sdk (==1.0.1b6)",
+          "docker (>=2.5.1)",
+          "future (>=0.16.0)",
+          "kubernetes (>=3.0.0)",
+          "msrest (>=0.4.16)",
+          "pyyaml (>=3.12.0)",
+          "requests (>=2.18.1)",
+          "scp (>=0.10.2)",
+          "tabulate (>=0.7.7)"
+        ]
+      }
+    ],
+    "summary": "Microsoft Azure Command-Line Tools AzureML Command Module",
+    "test_requires": [
+      {
+        "requires": [
+          "azure-keyvault",
+          "mock",
+          "nose",
+          "unittest-xml-reporting"
+        ]
+      }
+    ],
+    "version": "0.1.0.1179783"
+  },
+  "name": "azure-cli-ml",
+  "version": "0.1.0.1179783"
+}
