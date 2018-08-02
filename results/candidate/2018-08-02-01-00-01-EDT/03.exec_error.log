@@ -144,3 +144,147 @@ Traceback (most recent call last):
     raise CLIError(err)
 knack.util.CLIError: Unexpected polling state code_expired
 WARNING:cli.azure.cli.core._profile:To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FRVN28GK9 to authenticate.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 128, in login
+    allow_no_subscriptions=allow_no_subscriptions)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 191, in find_subscriptions_on_login
+    tenant, self._ad_resource_uri)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 748, in find_through_interactive_flow
+    token_entry = context.acquire_token_with_device_code(resource, code, _CLIENT_ID)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 296, in acquire_token_with_device_code
+    return self._acquire_token(token_func, user_code_info.get('correlation_id', None))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 128, in _acquire_token
+    return token_func(self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 289, in token_func
+    token = token_request.get_token_with_device_code(user_code_info)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/token_request.py", line 397, in get_token_with_device_code
+    token = client.get_token_with_polling(oauth_parameters, interval, expires_in)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/oauth2_client.py", line 362, in get_token_with_polling
+    wire_response)
+adal.adal_error.AdalError: Unexpected polling state code_expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./05.spark.py", line 19, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 135, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 259, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auth = InteractiveLoginAuthentication()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/authentication.py", line 189, in __init__
+    az_cli_custom.login(DummyCommandLoader())
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 138, in login
+    raise CLIError(err)
+knack.util.CLIError: Unexpected polling state code_expired
+WARNING:cli.azure.cli.core._profile:To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FXAH8W6UL to authenticate.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 128, in login
+    allow_no_subscriptions=allow_no_subscriptions)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 191, in find_subscriptions_on_login
+    tenant, self._ad_resource_uri)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 748, in find_through_interactive_flow
+    token_entry = context.acquire_token_with_device_code(resource, code, _CLIENT_ID)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 296, in acquire_token_with_device_code
+    return self._acquire_token(token_func, user_code_info.get('correlation_id', None))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 128, in _acquire_token
+    return token_func(self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 289, in token_func
+    token = token_request.get_token_with_device_code(user_code_info)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/token_request.py", line 397, in get_token_with_device_code
+    token = client.get_token_with_polling(oauth_parameters, interval, expires_in)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/oauth2_client.py", line 362, in get_token_with_polling
+    wire_response)
+adal.adal_error.AdalError: Unexpected polling state code_expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./07.sklearn.hd.py", line 21, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 135, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 259, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auth = InteractiveLoginAuthentication()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/authentication.py", line 189, in __init__
+    az_cli_custom.login(DummyCommandLoader())
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 138, in login
+    raise CLIError(err)
+knack.util.CLIError: Unexpected polling state code_expired
+WARNING:cli.azure.cli.core._profile:To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FTERL8HMY to authenticate.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 128, in login
+    allow_no_subscriptions=allow_no_subscriptions)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 191, in find_subscriptions_on_login
+    tenant, self._ad_resource_uri)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 748, in find_through_interactive_flow
+    token_entry = context.acquire_token_with_device_code(resource, code, _CLIENT_ID)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 296, in acquire_token_with_device_code
+    return self._acquire_token(token_func, user_code_info.get('correlation_id', None))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 128, in _acquire_token
+    return token_func(self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 289, in token_func
+    token = token_request.get_token_with_device_code(user_code_info)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/token_request.py", line 397, in get_token_with_device_code
+    token = client.get_token_with_polling(oauth_parameters, interval, expires_in)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/oauth2_client.py", line 362, in get_token_with_polling
+    wire_response)
+adal.adal_error.AdalError: Unexpected polling state code_expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./08.tf.hd.py", line 22, in <module>
+    ws = Workspace.from_config()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 135, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 259, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auth = InteractiveLoginAuthentication()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/authentication.py", line 189, in __init__
+    az_cli_custom.login(DummyCommandLoader())
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 138, in login
+    raise CLIError(err)
+knack.util.CLIError: Unexpected polling state code_expired
+WARNING:cli.azure.cli.core._profile:To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code FAZX4WXGU to authenticate.
+Traceback (most recent call last):
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 128, in login
+    allow_no_subscriptions=allow_no_subscriptions)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 191, in find_subscriptions_on_login
+    tenant, self._ad_resource_uri)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/core/_profile.py", line 748, in find_through_interactive_flow
+    token_entry = context.acquire_token_with_device_code(resource, code, _CLIENT_ID)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 296, in acquire_token_with_device_code
+    return self._acquire_token(token_func, user_code_info.get('correlation_id', None))
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 128, in _acquire_token
+    return token_func(self)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/authentication_context.py", line 289, in token_func
+    token = token_request.get_token_with_device_code(user_code_info)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/token_request.py", line 397, in get_token_with_device_code
+    token = client.get_token_with_polling(oauth_parameters, interval, expires_in)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/adal/oauth2_client.py", line 362, in get_token_with_polling
+    wire_response)
+adal.adal_error.AdalError: Unexpected polling state code_expired
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./10.o16n.py", line 25, in <module>
+    ws = Workspace.from_config('./aml_config/config.json')
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 135, in from_config
+    resource_group=resource_group_from_config, auth=auth)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 259, in get_or_create
+    resource_group=resource_group)
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/workspace.py", line 202, in get
+    auth = InteractiveLoginAuthentication()
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azureml/core/authentication.py", line 189, in __init__
+    az_cli_custom.login(DummyCommandLoader())
+  File "/home/ninghai/miniconda3/envs/candidate/lib/python3.6/site-packages/azure/cli/command_modules/profile/custom.py", line 138, in login
+    raise CLIError(err)
+knack.util.CLIError: Unexpected polling state code_expired
+Already on 'master'
